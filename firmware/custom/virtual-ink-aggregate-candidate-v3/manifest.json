@@ -1,5 +1,5 @@
 {
-  "status": "EXPERIMENTAL; remaining UI predicate and physical operation unverified",
+  "status": "USER_REPORTED_FAILURE: ink-pack recognition message remains",
   "build": {
     "status": "OFFLINE PROTOTYPE: physical boot, update acceptance and operation without a chip UNVERIFIED",
     "parent_user_confirmed_maintenance_efu_sha256": "2d7909a02b2a2520ca8374122a9cb80512e998beb3a7e244790633286fd01561",
@@ -720,5 +720,10 @@
         "stock_unchanged": true
       }
     ]
+  },
+  "user_report": {
+    "message": "다음 잉크팩을 인식할 수 없습니다",
+    "result": "No recognition-error repair established",
+    "separate_supply_symptom": "User reports poor M ink supply under T3400 LUT v1"
   }
 }
