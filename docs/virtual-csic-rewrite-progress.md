@@ -113,3 +113,11 @@ A separate V5 offline startup-regression candidate corrects the reproduced
 setter/dependency defects and restores stock CSIC initialization. Physical boot
 and the exact V4 shutdown cause remain unconfirmed. See `virtual-csic-v5-boot-fix.md`.
 V4 remains withdrawn and its builder remains disabled.
+
+## V5 failure and confirmed framebuffer collision
+
+V5 also shut down during boot and has been withdrawn. Both versions placed
+helpers inside the stock LCD framebuffer. Original display clear destroys
+them and the patched call fails to return. See `virtual-csic-framebuffer-collision.md`
+and the native reproduction JSON. V6 relocates helpers into retired auth code
+and passes the new display regressions; physical boot remains unverified.

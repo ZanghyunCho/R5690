@@ -1,0 +1,1343 @@
+{
+  "status": "RELOCATED INTEGRATION AND DISPLAY-CLEAR REGRESSIONS PASSED; physical boot unverified",
+  "retired_code_arenas_read_execute_only": true,
+  "stock_display_clears": 12,
+  "controller_sha256": "4e75ad9b22d56eb21eb116b3fb1b3c2fd980dab9e6db172b3b292bd4da204ea4",
+  "cpu_model": "ARM926",
+  "cases": [
+    {
+      "sku": "0x10",
+      "initial_consumption": 0,
+      "counts": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "mode": 1,
+      "full_scan": true,
+      "consumption_commits": 4,
+      "individual_reregistrations": 4,
+      "repeat_full_scan": true,
+      "identities_stable": true,
+      "no_detail_errors": true,
+      "gpio_api_calls": 120
+    },
+    {
+      "sku": "0x10",
+      "initial_consumption": 1,
+      "counts": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "mode": 2,
+      "full_scan": true,
+      "consumption_commits": 4,
+      "individual_reregistrations": 4,
+      "repeat_full_scan": true,
+      "identities_stable": true,
+      "no_detail_errors": true,
+      "gpio_api_calls": 120
+    },
+    {
+      "sku": "0x10",
+      "initial_consumption": 100000,
+      "counts": [
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "mode": 3,
+      "full_scan": true,
+      "consumption_commits": 4,
+      "individual_reregistrations": 4,
+      "repeat_full_scan": true,
+      "identities_stable": true,
+      "no_detail_errors": true,
+      "gpio_api_calls": 120
+    },
+    {
+      "sku": "0x10",
+      "initial_consumption": 10000000,
+      "counts": [
+        [
+          99,
+          100
+        ],
+        [
+          172,
+          172
+        ],
+        [
+          172,
+          172
+        ],
+        [
+          172,
+          172
+        ]
+      ],
+      "mode": 4,
+      "full_scan": true,
+      "consumption_commits": 4,
+      "individual_reregistrations": 4,
+      "repeat_full_scan": true,
+      "identities_stable": true,
+      "no_detail_errors": true,
+      "gpio_api_calls": 120
+    },
+    {
+      "sku": "0x10",
+      "initial_consumption": 100000000,
+      "counts": [
+        [
+          990,
+          990
+        ],
+        [
+          1717,
+          1717
+        ],
+        [
+          1717,
+          1717
+        ],
+        [
+          1717,
+          1717
+        ]
+      ],
+      "mode": 1,
+      "full_scan": true,
+      "consumption_commits": 4,
+      "individual_reregistrations": 4,
+      "repeat_full_scan": true,
+      "identities_stable": true,
+      "no_detail_errors": true,
+      "gpio_api_calls": 120
+    },
+    {
+      "sku": "0x10",
+      "initial_consumption": 4000000000,
+      "counts": [
+        [
+          32767,
+          32767
+        ],
+        [
+          32767,
+          32767
+        ],
+        [
+          32767,
+          32767
+        ],
+        [
+          32767,
+          32767
+        ]
+      ],
+      "mode": 2,
+      "full_scan": true,
+      "consumption_commits": 4,
+      "individual_reregistrations": 4,
+      "repeat_full_scan": true,
+      "identities_stable": true,
+      "no_detail_errors": true,
+      "gpio_api_calls": 120
+    },
+    {
+      "sku": "0x20",
+      "initial_consumption": 0,
+      "counts": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "mode": 3,
+      "full_scan": true,
+      "consumption_commits": 4,
+      "individual_reregistrations": 4,
+      "repeat_full_scan": true,
+      "identities_stable": true,
+      "no_detail_errors": true,
+      "gpio_api_calls": 120
+    },
+    {
+      "sku": "0x20",
+      "initial_consumption": 1,
+      "counts": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "mode": 4,
+      "full_scan": true,
+      "consumption_commits": 4,
+      "individual_reregistrations": 4,
+      "repeat_full_scan": true,
+      "identities_stable": true,
+      "no_detail_errors": true,
+      "gpio_api_calls": 120
+    },
+    {
+      "sku": "0x20",
+      "initial_consumption": 100000,
+      "counts": [
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "mode": 1,
+      "full_scan": true,
+      "consumption_commits": 4,
+      "individual_reregistrations": 4,
+      "repeat_full_scan": true,
+      "identities_stable": true,
+      "no_detail_errors": true,
+      "gpio_api_calls": 120
+    },
+    {
+      "sku": "0x20",
+      "initial_consumption": 10000000,
+      "counts": [
+        [
+          99,
+          100
+        ],
+        [
+          172,
+          172
+        ],
+        [
+          172,
+          172
+        ],
+        [
+          172,
+          172
+        ]
+      ],
+      "mode": 2,
+      "full_scan": true,
+      "consumption_commits": 4,
+      "individual_reregistrations": 4,
+      "repeat_full_scan": true,
+      "identities_stable": true,
+      "no_detail_errors": true,
+      "gpio_api_calls": 120
+    },
+    {
+      "sku": "0x20",
+      "initial_consumption": 100000000,
+      "counts": [
+        [
+          990,
+          990
+        ],
+        [
+          1717,
+          1717
+        ],
+        [
+          1717,
+          1717
+        ],
+        [
+          1717,
+          1717
+        ]
+      ],
+      "mode": 3,
+      "full_scan": true,
+      "consumption_commits": 4,
+      "individual_reregistrations": 4,
+      "repeat_full_scan": true,
+      "identities_stable": true,
+      "no_detail_errors": true,
+      "gpio_api_calls": 120
+    },
+    {
+      "sku": "0x20",
+      "initial_consumption": 4000000000,
+      "counts": [
+        [
+          32767,
+          32767
+        ],
+        [
+          32767,
+          32767
+        ],
+        [
+          32767,
+          32767
+        ],
+        [
+          32767,
+          32767
+        ]
+      ],
+      "mode": 4,
+      "full_scan": true,
+      "consumption_commits": 4,
+      "individual_reregistrations": 4,
+      "repeat_full_scan": true,
+      "identities_stable": true,
+      "no_detail_errors": true,
+      "gpio_api_calls": 120
+    },
+    {
+      "sku": "0x21",
+      "initial_consumption": 0,
+      "counts": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "mode": 1,
+      "full_scan": true,
+      "consumption_commits": 4,
+      "individual_reregistrations": 4,
+      "repeat_full_scan": true,
+      "identities_stable": true,
+      "no_detail_errors": true,
+      "gpio_api_calls": 120
+    },
+    {
+      "sku": "0x21",
+      "initial_consumption": 1,
+      "counts": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "mode": 2,
+      "full_scan": true,
+      "consumption_commits": 4,
+      "individual_reregistrations": 4,
+      "repeat_full_scan": true,
+      "identities_stable": true,
+      "no_detail_errors": true,
+      "gpio_api_calls": 120
+    },
+    {
+      "sku": "0x21",
+      "initial_consumption": 100000,
+      "counts": [
+        [
+          3,
+          3
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          4
+        ]
+      ],
+      "mode": 3,
+      "full_scan": true,
+      "consumption_commits": 4,
+      "individual_reregistrations": 4,
+      "repeat_full_scan": true,
+      "identities_stable": true,
+      "no_detail_errors": true,
+      "gpio_api_calls": 120
+    },
+    {
+      "sku": "0x21",
+      "initial_consumption": 10000000,
+      "counts": [
+        [
+          221,
+          222
+        ],
+        [
+          342,
+          343
+        ],
+        [
+          342,
+          343
+        ],
+        [
+          342,
+          343
+        ]
+      ],
+      "mode": 4,
+      "full_scan": true,
+      "consumption_commits": 4,
+      "individual_reregistrations": 4,
+      "repeat_full_scan": true,
+      "identities_stable": true,
+      "no_detail_errors": true,
+      "gpio_api_calls": 120
+    },
+    {
+      "sku": "0x21",
+      "initial_consumption": 100000000,
+      "counts": [
+        [
+          2210,
+          2211
+        ],
+        [
+          3419,
+          3420
+        ],
+        [
+          3419,
+          3420
+        ],
+        [
+          3419,
+          3420
+        ]
+      ],
+      "mode": 1,
+      "full_scan": true,
+      "consumption_commits": 4,
+      "individual_reregistrations": 4,
+      "repeat_full_scan": true,
+      "identities_stable": true,
+      "no_detail_errors": true,
+      "gpio_api_calls": 120
+    },
+    {
+      "sku": "0x21",
+      "initial_consumption": 4000000000,
+      "counts": [
+        [
+          32767,
+          32767
+        ],
+        [
+          32767,
+          32767
+        ],
+        [
+          32767,
+          32767
+        ],
+        [
+          32767,
+          32767
+        ]
+      ],
+      "mode": 2,
+      "full_scan": true,
+      "consumption_commits": 4,
+      "individual_reregistrations": 4,
+      "repeat_full_scan": true,
+      "identities_stable": true,
+      "no_detail_errors": true,
+      "gpio_api_calls": 120
+    },
+    {
+      "sku": "0x22",
+      "initial_consumption": 0,
+      "counts": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "mode": 3,
+      "full_scan": true,
+      "consumption_commits": 4,
+      "individual_reregistrations": 4,
+      "repeat_full_scan": true,
+      "identities_stable": true,
+      "no_detail_errors": true,
+      "gpio_api_calls": 120
+    },
+    {
+      "sku": "0x22",
+      "initial_consumption": 1,
+      "counts": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "mode": 4,
+      "full_scan": true,
+      "consumption_commits": 4,
+      "individual_reregistrations": 4,
+      "repeat_full_scan": true,
+      "identities_stable": true,
+      "no_detail_errors": true,
+      "gpio_api_calls": 120
+    },
+    {
+      "sku": "0x22",
+      "initial_consumption": 100000,
+      "counts": [
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "mode": 1,
+      "full_scan": true,
+      "consumption_commits": 4,
+      "individual_reregistrations": 4,
+      "repeat_full_scan": true,
+      "identities_stable": true,
+      "no_detail_errors": true,
+      "gpio_api_calls": 120
+    },
+    {
+      "sku": "0x22",
+      "initial_consumption": 10000000,
+      "counts": [
+        [
+          99,
+          100
+        ],
+        [
+          172,
+          172
+        ],
+        [
+          172,
+          172
+        ],
+        [
+          172,
+          172
+        ]
+      ],
+      "mode": 2,
+      "full_scan": true,
+      "consumption_commits": 4,
+      "individual_reregistrations": 4,
+      "repeat_full_scan": true,
+      "identities_stable": true,
+      "no_detail_errors": true,
+      "gpio_api_calls": 120
+    },
+    {
+      "sku": "0x22",
+      "initial_consumption": 100000000,
+      "counts": [
+        [
+          990,
+          990
+        ],
+        [
+          1717,
+          1717
+        ],
+        [
+          1717,
+          1717
+        ],
+        [
+          1717,
+          1717
+        ]
+      ],
+      "mode": 3,
+      "full_scan": true,
+      "consumption_commits": 4,
+      "individual_reregistrations": 4,
+      "repeat_full_scan": true,
+      "identities_stable": true,
+      "no_detail_errors": true,
+      "gpio_api_calls": 120
+    },
+    {
+      "sku": "0x22",
+      "initial_consumption": 4000000000,
+      "counts": [
+        [
+          32767,
+          32767
+        ],
+        [
+          32767,
+          32767
+        ],
+        [
+          32767,
+          32767
+        ],
+        [
+          32767,
+          32767
+        ]
+      ],
+      "mode": 4,
+      "full_scan": true,
+      "consumption_commits": 4,
+      "individual_reregistrations": 4,
+      "repeat_full_scan": true,
+      "identities_stable": true,
+      "no_detail_errors": true,
+      "gpio_api_calls": 120
+    },
+    {
+      "sku": "0x40",
+      "initial_consumption": 0,
+      "counts": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "mode": 1,
+      "full_scan": true,
+      "consumption_commits": 4,
+      "individual_reregistrations": 4,
+      "repeat_full_scan": true,
+      "identities_stable": true,
+      "no_detail_errors": true,
+      "gpio_api_calls": 120
+    },
+    {
+      "sku": "0x40",
+      "initial_consumption": 1,
+      "counts": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "mode": 2,
+      "full_scan": true,
+      "consumption_commits": 4,
+      "individual_reregistrations": 4,
+      "repeat_full_scan": true,
+      "identities_stable": true,
+      "no_detail_errors": true,
+      "gpio_api_calls": 120
+    },
+    {
+      "sku": "0x40",
+      "initial_consumption": 100000,
+      "counts": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "mode": 3,
+      "full_scan": true,
+      "consumption_commits": 4,
+      "individual_reregistrations": 4,
+      "repeat_full_scan": true,
+      "identities_stable": true,
+      "no_detail_errors": true,
+      "gpio_api_calls": 120
+    },
+    {
+      "sku": "0x40",
+      "initial_consumption": 10000000,
+      "counts": [
+        [
+          69,
+          69
+        ],
+        [
+          172,
+          172
+        ],
+        [
+          172,
+          172
+        ],
+        [
+          172,
+          172
+        ]
+      ],
+      "mode": 4,
+      "full_scan": true,
+      "consumption_commits": 4,
+      "individual_reregistrations": 4,
+      "repeat_full_scan": true,
+      "identities_stable": true,
+      "no_detail_errors": true,
+      "gpio_api_calls": 120
+    },
+    {
+      "sku": "0x40",
+      "initial_consumption": 100000000,
+      "counts": [
+        [
+          690,
+          690
+        ],
+        [
+          1717,
+          1717
+        ],
+        [
+          1717,
+          1717
+        ],
+        [
+          1717,
+          1717
+        ]
+      ],
+      "mode": 1,
+      "full_scan": true,
+      "consumption_commits": 4,
+      "individual_reregistrations": 4,
+      "repeat_full_scan": true,
+      "identities_stable": true,
+      "no_detail_errors": true,
+      "gpio_api_calls": 120
+    },
+    {
+      "sku": "0x40",
+      "initial_consumption": 4000000000,
+      "counts": [
+        [
+          27568,
+          27568
+        ],
+        [
+          32767,
+          32767
+        ],
+        [
+          32767,
+          32767
+        ],
+        [
+          32767,
+          32767
+        ]
+      ],
+      "mode": 2,
+      "full_scan": true,
+      "consumption_commits": 4,
+      "individual_reregistrations": 4,
+      "repeat_full_scan": true,
+      "identities_stable": true,
+      "no_detail_errors": true,
+      "gpio_api_calls": 120
+    },
+    {
+      "sku": "0x50",
+      "initial_consumption": 0,
+      "counts": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "mode": 3,
+      "full_scan": true,
+      "consumption_commits": 4,
+      "individual_reregistrations": 4,
+      "repeat_full_scan": true,
+      "identities_stable": true,
+      "no_detail_errors": true,
+      "gpio_api_calls": 120
+    },
+    {
+      "sku": "0x50",
+      "initial_consumption": 1,
+      "counts": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "mode": 4,
+      "full_scan": true,
+      "consumption_commits": 4,
+      "individual_reregistrations": 4,
+      "repeat_full_scan": true,
+      "identities_stable": true,
+      "no_detail_errors": true,
+      "gpio_api_calls": 120
+    },
+    {
+      "sku": "0x50",
+      "initial_consumption": 100000,
+      "counts": [
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "mode": 1,
+      "full_scan": true,
+      "consumption_commits": 4,
+      "individual_reregistrations": 4,
+      "repeat_full_scan": true,
+      "identities_stable": true,
+      "no_detail_errors": true,
+      "gpio_api_calls": 120
+    },
+    {
+      "sku": "0x50",
+      "initial_consumption": 10000000,
+      "counts": [
+        [
+          99,
+          100
+        ],
+        [
+          172,
+          172
+        ],
+        [
+          172,
+          172
+        ],
+        [
+          172,
+          172
+        ]
+      ],
+      "mode": 2,
+      "full_scan": true,
+      "consumption_commits": 4,
+      "individual_reregistrations": 4,
+      "repeat_full_scan": true,
+      "identities_stable": true,
+      "no_detail_errors": true,
+      "gpio_api_calls": 120
+    },
+    {
+      "sku": "0x50",
+      "initial_consumption": 100000000,
+      "counts": [
+        [
+          990,
+          990
+        ],
+        [
+          1717,
+          1717
+        ],
+        [
+          1717,
+          1717
+        ],
+        [
+          1717,
+          1717
+        ]
+      ],
+      "mode": 3,
+      "full_scan": true,
+      "consumption_commits": 4,
+      "individual_reregistrations": 4,
+      "repeat_full_scan": true,
+      "identities_stable": true,
+      "no_detail_errors": true,
+      "gpio_api_calls": 120
+    },
+    {
+      "sku": "0x50",
+      "initial_consumption": 4000000000,
+      "counts": [
+        [
+          32767,
+          32767
+        ],
+        [
+          32767,
+          32767
+        ],
+        [
+          32767,
+          32767
+        ],
+        [
+          32767,
+          32767
+        ]
+      ],
+      "mode": 4,
+      "full_scan": true,
+      "consumption_commits": 4,
+      "individual_reregistrations": 4,
+      "repeat_full_scan": true,
+      "identities_stable": true,
+      "no_detail_errors": true,
+      "gpio_api_calls": 120
+    }
+  ],
+  "layout": {
+    "controller_sha256": "4e75ad9b22d56eb21eb116b3fb1b3c2fd980dab9e6db172b3b292bd4da204ea4",
+    "allocations": [
+      {
+        "label": "SKU identifiers",
+        "start": "0x47c57a08",
+        "bytes": 8
+      },
+      {
+        "label": "compact part/capacity table",
+        "start": "0x47c57a10",
+        "bytes": 96
+      },
+      {
+        "label": "stable virtual UIDs",
+        "start": "0x47c57a70",
+        "bytes": 88
+      },
+      {
+        "label": "fixed metadata fields",
+        "start": "0x47c57ac8",
+        "bytes": 24
+      },
+      {
+        "label": "helper from 0x47d70c00",
+        "start": "0x47c57ae0",
+        "bytes": 180
+      },
+      {
+        "label": "helper from 0x47d70400",
+        "start": "0x47c57b94",
+        "bytes": 176
+      },
+      {
+        "label": "helper from 0x47d70300",
+        "start": "0x47c57c44",
+        "bytes": 96
+      },
+      {
+        "label": "helper from 0x47d70500",
+        "start": "0x47c57cc0",
+        "bytes": 84
+      },
+      {
+        "label": "helper from 0x47d70700",
+        "start": "0x47c57d14",
+        "bytes": 80
+      },
+      {
+        "label": "helper from 0x47d70000",
+        "start": "0x47c57d64",
+        "bytes": 64
+      },
+      {
+        "label": "helper from 0x47d70040",
+        "start": "0x47c57da4",
+        "bytes": 64
+      },
+      {
+        "label": "helper from 0x47d70080",
+        "start": "0x47c57de4",
+        "bytes": 64
+      },
+      {
+        "label": "helper from 0x47d700c0",
+        "start": "0x47c57e50",
+        "bytes": 64
+      },
+      {
+        "label": "helper from 0x47d70100",
+        "start": "0x47c57e90",
+        "bytes": 64
+      },
+      {
+        "label": "helper from 0x47d70e00",
+        "start": "0x47c57ed0",
+        "bytes": 48
+      },
+      {
+        "label": "helper from 0x47d70180",
+        "start": "0x47c57f00",
+        "bytes": 44
+      },
+      {
+        "label": "helper from 0x47d701c0",
+        "start": "0x47c57f2c",
+        "bytes": 44
+      },
+      {
+        "label": "helper from 0x47d70200",
+        "start": "0x47c57f58",
+        "bytes": 44
+      },
+      {
+        "label": "helper from 0x47d70240",
+        "start": "0x47c57f84",
+        "bytes": 44
+      },
+      {
+        "label": "helper from 0x47d70f00",
+        "start": "0x47c57fb0",
+        "bytes": 44
+      },
+      {
+        "label": "helper from 0x47d70600",
+        "start": "0x47c57e24",
+        "bytes": 40
+      },
+      {
+        "label": "helper from 0x47d70d00",
+        "start": "0x47c57fdc",
+        "bytes": 24
+      },
+      {
+        "label": "compact metadata bootstrap",
+        "start": "0x47c57ff4",
+        "bytes": 400
+      }
+    ],
+    "retired_auth_code_ranges": [
+      [
+        "0x47c57a04",
+        "0x47c5824c"
+      ],
+      [
+        "0x47c8d8d8",
+        "0x47c8da00"
+      ]
+    ],
+    "protected_literal_bytes": 20,
+    "external_interior_branches": [],
+    "retired_invalid_input_fallbacks": [
+      "0x47c57e4c",
+      "0x47c57a04",
+      "0x47c8d8d8"
+    ],
+    "entry_hooks": [
+      {
+        "entry": "0x47c51b78",
+        "helper": "0x47c57d64"
+      },
+      {
+        "entry": "0x47c51c50",
+        "helper": "0x47c57da4"
+      },
+      {
+        "entry": "0x47c51cf4",
+        "helper": "0x47c57de4"
+      },
+      {
+        "entry": "0x47c51d84",
+        "helper": "0x47c57e50"
+      },
+      {
+        "entry": "0x47c51e28",
+        "helper": "0x47c57e90"
+      },
+      {
+        "entry": "0x47c51f78",
+        "helper": "0x47c57f58"
+      },
+      {
+        "entry": "0x47c520cc",
+        "helper": "0x47c57f84"
+      },
+      {
+        "entry": "0x47c52450",
+        "helper": "0x47c57f2c"
+      },
+      {
+        "entry": "0x47c52674",
+        "helper": "0x47c57ae0"
+      },
+      {
+        "entry": "0x47c52b74",
+        "helper": "0x47c57ed0"
+      },
+      {
+        "entry": "0x47c54c98",
+        "helper": "0x47c57fdc"
+      },
+      {
+        "entry": "0x47c553cc",
+        "helper": "0x47c57f00"
+      },
+      {
+        "entry": "0x47c57a04",
+        "helper": "0x47c57b94"
+      },
+      {
+        "entry": "0x47c57e4c",
+        "helper": "0x47c57c44"
+      },
+      {
+        "entry": "0x47c58508",
+        "helper": "0x47c57fb0"
+      },
+      {
+        "entry": "0x47c8d8d8",
+        "helper": "0x47c57cc0"
+      }
+    ],
+    "framebuffer_range": [
+      "0x47d69594",
+      "0x47de8d94"
+    ],
+    "framebuffer_bytes_restored_to_stock": true,
+    "compact_metadata_bytes": 214,
+    "stock_hardware_init_and_gpio_preserved": true,
+    "skus": [
+      16,
+      32,
+      33,
+      34,
+      64,
+      80
+    ],
+    "limitation": "Original display-memory collision removed; physical boot and complete OS still unverified."
+  },
+  "original_scan_calls": 72,
+  "original_consumption_commits": 144,
+  "original_reregistrations": 144,
+  "forbidden_hardware_or_fatal_calls": 0,
+  "unknown_sku_rejected": true,
+  "stock_positive_control_reaches_hardware": true,
+  "physical_history_object_write_or_format_calls": 0,
+  "cold_start_reconstruction_cases": [
+    {
+      "mode": 1,
+      "stable_identities": true,
+      "reconstructed_from_properties": true
+    },
+    {
+      "mode": 2,
+      "stable_identities": true,
+      "reconstructed_from_properties": true
+    },
+    {
+      "mode": 3,
+      "stable_identities": true,
+      "reconstructed_from_properties": true
+    },
+    {
+      "mode": 4,
+      "stable_identities": true,
+      "reconstructed_from_properties": true
+    }
+  ],
+  "mocks": [
+    "Runtime properties including cumulative ink use are synthetic in-memory values.",
+    "Event delivery, delay and OS status-publication callback 0x47C5451C are mocked.",
+    "Stock CSIC GPIO setup/teardown executes with mocked low-level 0x47C513E0, 0x47C51434 and 0x47C512B0 APIs.",
+    "No complete operating-system boot, actuator control, supply/IES or printing test."
+  ]
+}

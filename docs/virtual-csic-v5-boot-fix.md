@@ -1,3 +1,9 @@
+# WITHDRAWN — V5 repeats the boot-time shutdown
+
+The framebuffer/code overlap common to V4/V5 is now reproduced. See
+`virtual-csic-framebuffer-collision.md`. The following is historical test scope,
+not evidence that V5 is usable.
+
 # V5 startup-regression candidate
 
 V4 was withdrawn after the user reported logo/progress followed by power-off.

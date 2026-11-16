@@ -1,0 +1,621 @@
+{
+  "status": "STARTUP REGRESSIONS PASSED; physical boot unverified",
+  "controller_sha256": "4e75ad9b22d56eb21eb116b3fb1b3c2fd980dab9e6db172b3b292bd4da204ea4",
+  "early_setter_cases": [
+    {
+      "slot": 0,
+      "manager_ready": false,
+      "field": "0x1",
+      "stock_result_identical": true
+    },
+    {
+      "slot": 0,
+      "manager_ready": false,
+      "field": "0x3",
+      "stock_result_identical": true
+    },
+    {
+      "slot": 0,
+      "manager_ready": false,
+      "field": "0x16",
+      "stock_result_identical": true
+    },
+    {
+      "slot": 0,
+      "manager_ready": false,
+      "field": "0x17",
+      "stock_result_identical": true
+    },
+    {
+      "slot": 0,
+      "manager_ready": false,
+      "field": "0x18",
+      "stock_result_identical": true
+    },
+    {
+      "slot": 0,
+      "manager_ready": false,
+      "field": "0x52",
+      "stock_result_identical": true
+    },
+    {
+      "slot": 0,
+      "manager_ready": false,
+      "field": "0x53",
+      "stock_result_identical": true
+    },
+    {
+      "slot": 0,
+      "manager_ready": false,
+      "field": "0x59",
+      "stock_result_identical": true
+    },
+    {
+      "slot": 1,
+      "manager_ready": false,
+      "field": "0x1",
+      "stock_result_identical": true
+    },
+    {
+      "slot": 1,
+      "manager_ready": false,
+      "field": "0x3",
+      "stock_result_identical": true
+    },
+    {
+      "slot": 1,
+      "manager_ready": false,
+      "field": "0x16",
+      "stock_result_identical": true
+    },
+    {
+      "slot": 1,
+      "manager_ready": false,
+      "field": "0x17",
+      "stock_result_identical": true
+    },
+    {
+      "slot": 1,
+      "manager_ready": false,
+      "field": "0x18",
+      "stock_result_identical": true
+    },
+    {
+      "slot": 1,
+      "manager_ready": false,
+      "field": "0x52",
+      "stock_result_identical": true
+    },
+    {
+      "slot": 1,
+      "manager_ready": false,
+      "field": "0x53",
+      "stock_result_identical": true
+    },
+    {
+      "slot": 1,
+      "manager_ready": false,
+      "field": "0x59",
+      "stock_result_identical": true
+    },
+    {
+      "slot": 2,
+      "manager_ready": false,
+      "field": "0x1",
+      "stock_result_identical": true
+    },
+    {
+      "slot": 2,
+      "manager_ready": false,
+      "field": "0x3",
+      "stock_result_identical": true
+    },
+    {
+      "slot": 2,
+      "manager_ready": false,
+      "field": "0x16",
+      "stock_result_identical": true
+    },
+    {
+      "slot": 2,
+      "manager_ready": false,
+      "field": "0x17",
+      "stock_result_identical": true
+    },
+    {
+      "slot": 2,
+      "manager_ready": false,
+      "field": "0x18",
+      "stock_result_identical": true
+    },
+    {
+      "slot": 2,
+      "manager_ready": false,
+      "field": "0x52",
+      "stock_result_identical": true
+    },
+    {
+      "slot": 2,
+      "manager_ready": false,
+      "field": "0x53",
+      "stock_result_identical": true
+    },
+    {
+      "slot": 2,
+      "manager_ready": false,
+      "field": "0x59",
+      "stock_result_identical": true
+    },
+    {
+      "slot": 3,
+      "manager_ready": false,
+      "field": "0x1",
+      "stock_result_identical": true
+    },
+    {
+      "slot": 3,
+      "manager_ready": false,
+      "field": "0x3",
+      "stock_result_identical": true
+    },
+    {
+      "slot": 3,
+      "manager_ready": false,
+      "field": "0x16",
+      "stock_result_identical": true
+    },
+    {
+      "slot": 3,
+      "manager_ready": false,
+      "field": "0x17",
+      "stock_result_identical": true
+    },
+    {
+      "slot": 3,
+      "manager_ready": false,
+      "field": "0x18",
+      "stock_result_identical": true
+    },
+    {
+      "slot": 3,
+      "manager_ready": false,
+      "field": "0x52",
+      "stock_result_identical": true
+    },
+    {
+      "slot": 3,
+      "manager_ready": false,
+      "field": "0x53",
+      "stock_result_identical": true
+    },
+    {
+      "slot": 3,
+      "manager_ready": false,
+      "field": "0x59",
+      "stock_result_identical": true
+    },
+    {
+      "slot": 0,
+      "manager_ready": true,
+      "field": "0x1",
+      "stock_result_identical": true
+    },
+    {
+      "slot": 0,
+      "manager_ready": true,
+      "field": "0x3",
+      "stock_result_identical": true
+    },
+    {
+      "slot": 0,
+      "manager_ready": true,
+      "field": "0x16",
+      "stock_result_identical": true
+    },
+    {
+      "slot": 0,
+      "manager_ready": true,
+      "field": "0x17",
+      "stock_result_identical": true
+    },
+    {
+      "slot": 0,
+      "manager_ready": true,
+      "field": "0x18",
+      "stock_result_identical": true
+    },
+    {
+      "slot": 0,
+      "manager_ready": true,
+      "field": "0x52",
+      "stock_result_identical": true
+    },
+    {
+      "slot": 0,
+      "manager_ready": true,
+      "field": "0x53",
+      "stock_result_identical": true
+    },
+    {
+      "slot": 0,
+      "manager_ready": true,
+      "field": "0x59",
+      "stock_result_identical": true
+    },
+    {
+      "slot": 1,
+      "manager_ready": true,
+      "field": "0x1",
+      "stock_result_identical": true
+    },
+    {
+      "slot": 1,
+      "manager_ready": true,
+      "field": "0x3",
+      "stock_result_identical": true
+    },
+    {
+      "slot": 1,
+      "manager_ready": true,
+      "field": "0x16",
+      "stock_result_identical": true
+    },
+    {
+      "slot": 1,
+      "manager_ready": true,
+      "field": "0x17",
+      "stock_result_identical": true
+    },
+    {
+      "slot": 1,
+      "manager_ready": true,
+      "field": "0x18",
+      "stock_result_identical": true
+    },
+    {
+      "slot": 1,
+      "manager_ready": true,
+      "field": "0x52",
+      "stock_result_identical": true
+    },
+    {
+      "slot": 1,
+      "manager_ready": true,
+      "field": "0x53",
+      "stock_result_identical": true
+    },
+    {
+      "slot": 1,
+      "manager_ready": true,
+      "field": "0x59",
+      "stock_result_identical": true
+    },
+    {
+      "slot": 2,
+      "manager_ready": true,
+      "field": "0x1",
+      "stock_result_identical": true
+    },
+    {
+      "slot": 2,
+      "manager_ready": true,
+      "field": "0x3",
+      "stock_result_identical": true
+    },
+    {
+      "slot": 2,
+      "manager_ready": true,
+      "field": "0x16",
+      "stock_result_identical": true
+    },
+    {
+      "slot": 2,
+      "manager_ready": true,
+      "field": "0x17",
+      "stock_result_identical": true
+    },
+    {
+      "slot": 2,
+      "manager_ready": true,
+      "field": "0x18",
+      "stock_result_identical": true
+    },
+    {
+      "slot": 2,
+      "manager_ready": true,
+      "field": "0x52",
+      "stock_result_identical": true
+    },
+    {
+      "slot": 2,
+      "manager_ready": true,
+      "field": "0x53",
+      "stock_result_identical": true
+    },
+    {
+      "slot": 2,
+      "manager_ready": true,
+      "field": "0x59",
+      "stock_result_identical": true
+    },
+    {
+      "slot": 3,
+      "manager_ready": true,
+      "field": "0x1",
+      "stock_result_identical": true
+    },
+    {
+      "slot": 3,
+      "manager_ready": true,
+      "field": "0x3",
+      "stock_result_identical": true
+    },
+    {
+      "slot": 3,
+      "manager_ready": true,
+      "field": "0x16",
+      "stock_result_identical": true
+    },
+    {
+      "slot": 3,
+      "manager_ready": true,
+      "field": "0x17",
+      "stock_result_identical": true
+    },
+    {
+      "slot": 3,
+      "manager_ready": true,
+      "field": "0x18",
+      "stock_result_identical": true
+    },
+    {
+      "slot": 3,
+      "manager_ready": true,
+      "field": "0x52",
+      "stock_result_identical": true
+    },
+    {
+      "slot": 3,
+      "manager_ready": true,
+      "field": "0x53",
+      "stock_result_identical": true
+    },
+    {
+      "slot": 3,
+      "manager_ready": true,
+      "field": "0x59",
+      "stock_result_identical": true
+    }
+  ],
+  "protected_field_return_cases": [
+    {
+      "version": "v4",
+      "slot": 0,
+      "return_value": 0
+    },
+    {
+      "version": "fixed",
+      "slot": 0,
+      "return_value": 0
+    },
+    {
+      "version": "v4",
+      "slot": 1,
+      "return_value": 1
+    },
+    {
+      "version": "fixed",
+      "slot": 1,
+      "return_value": 0
+    },
+    {
+      "version": "v4",
+      "slot": 2,
+      "return_value": 2
+    },
+    {
+      "version": "fixed",
+      "slot": 2,
+      "return_value": 0
+    },
+    {
+      "version": "v4",
+      "slot": 3,
+      "return_value": 3
+    },
+    {
+      "version": "fixed",
+      "slot": 3,
+      "return_value": 0
+    }
+  ],
+  "preactivation_entry_cases": [
+    {
+      "entry": "0x47c51b78",
+      "slot": 0,
+      "original_entry_preserved_before_activation": true
+    },
+    {
+      "entry": "0x47c51b78",
+      "slot": 1,
+      "original_entry_preserved_before_activation": true
+    },
+    {
+      "entry": "0x47c51b78",
+      "slot": 2,
+      "original_entry_preserved_before_activation": true
+    },
+    {
+      "entry": "0x47c51b78",
+      "slot": 3,
+      "original_entry_preserved_before_activation": true
+    },
+    {
+      "entry": "0x47c51c50",
+      "slot": 0,
+      "original_entry_preserved_before_activation": true
+    },
+    {
+      "entry": "0x47c51c50",
+      "slot": 1,
+      "original_entry_preserved_before_activation": true
+    },
+    {
+      "entry": "0x47c51c50",
+      "slot": 2,
+      "original_entry_preserved_before_activation": true
+    },
+    {
+      "entry": "0x47c51c50",
+      "slot": 3,
+      "original_entry_preserved_before_activation": true
+    },
+    {
+      "entry": "0x47c51cf4",
+      "slot": 0,
+      "original_entry_preserved_before_activation": true
+    },
+    {
+      "entry": "0x47c51cf4",
+      "slot": 1,
+      "original_entry_preserved_before_activation": true
+    },
+    {
+      "entry": "0x47c51cf4",
+      "slot": 2,
+      "original_entry_preserved_before_activation": true
+    },
+    {
+      "entry": "0x47c51cf4",
+      "slot": 3,
+      "original_entry_preserved_before_activation": true
+    },
+    {
+      "entry": "0x47c51d84",
+      "slot": 0,
+      "original_entry_preserved_before_activation": true
+    },
+    {
+      "entry": "0x47c51d84",
+      "slot": 1,
+      "original_entry_preserved_before_activation": true
+    },
+    {
+      "entry": "0x47c51d84",
+      "slot": 2,
+      "original_entry_preserved_before_activation": true
+    },
+    {
+      "entry": "0x47c51d84",
+      "slot": 3,
+      "original_entry_preserved_before_activation": true
+    },
+    {
+      "entry": "0x47c51e28",
+      "slot": 0,
+      "original_entry_preserved_before_activation": true
+    },
+    {
+      "entry": "0x47c51e28",
+      "slot": 1,
+      "original_entry_preserved_before_activation": true
+    },
+    {
+      "entry": "0x47c51e28",
+      "slot": 2,
+      "original_entry_preserved_before_activation": true
+    },
+    {
+      "entry": "0x47c51e28",
+      "slot": 3,
+      "original_entry_preserved_before_activation": true
+    },
+    {
+      "entry": "0x47c553cc",
+      "slot": 0,
+      "original_entry_preserved_before_activation": true
+    },
+    {
+      "entry": "0x47c553cc",
+      "slot": 1,
+      "original_entry_preserved_before_activation": true
+    },
+    {
+      "entry": "0x47c553cc",
+      "slot": 2,
+      "original_entry_preserved_before_activation": true
+    },
+    {
+      "entry": "0x47c553cc",
+      "slot": 3,
+      "original_entry_preserved_before_activation": true
+    },
+    {
+      "entry": "0x47c52450",
+      "slot": 0,
+      "original_entry_preserved_before_activation": true
+    },
+    {
+      "entry": "0x47c52450",
+      "slot": 1,
+      "original_entry_preserved_before_activation": true
+    },
+    {
+      "entry": "0x47c52450",
+      "slot": 2,
+      "original_entry_preserved_before_activation": true
+    },
+    {
+      "entry": "0x47c52450",
+      "slot": 3,
+      "original_entry_preserved_before_activation": true
+    },
+    {
+      "entry": "0x47c51f78",
+      "slot": 0,
+      "original_entry_preserved_before_activation": true
+    },
+    {
+      "entry": "0x47c51f78",
+      "slot": 1,
+      "original_entry_preserved_before_activation": true
+    },
+    {
+      "entry": "0x47c51f78",
+      "slot": 2,
+      "original_entry_preserved_before_activation": true
+    },
+    {
+      "entry": "0x47c51f78",
+      "slot": 3,
+      "original_entry_preserved_before_activation": true
+    },
+    {
+      "entry": "0x47c520cc",
+      "slot": 0,
+      "original_entry_preserved_before_activation": true
+    },
+    {
+      "entry": "0x47c520cc",
+      "slot": 1,
+      "original_entry_preserved_before_activation": true
+    },
+    {
+      "entry": "0x47c520cc",
+      "slot": 2,
+      "original_entry_preserved_before_activation": true
+    },
+    {
+      "entry": "0x47c520cc",
+      "slot": 3,
+      "original_entry_preserved_before_activation": true
+    }
+  ],
+  "csic_hardware_initialization_restored": true,
+  "no_runtime_state_in_ff_padding": true,
+  "old_v4_new_property_dependency_reproduced": true,
+  "limitations": [
+    "Exact physical shutdown cause remains unconfirmed.",
+    "No complete OS boot, task synchronization, live peripherals or physical printer."
+  ]
+}

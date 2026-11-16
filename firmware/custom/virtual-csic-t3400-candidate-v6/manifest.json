@@ -1,0 +1,2368 @@
+{
+  "status": "V6 FRAMEBUFFER COLLISION FIX CANDIDATE; physical boot unverified",
+  "file": "FWE642TL_GR_VIRTUAL_CSIC_MB_T3400_CLUT_CANDIDATE_v6.EFU",
+  "bytes": 114856173,
+  "sha256": "290efca81c5a061c819a1bea03c11a676bd5eee1847e823393ae850ade008e26",
+  "parent_efu_sha256": "42e3630b8be35d8cd6dc469bff4c84528b27e7256b069cdb2e0e003fd5b2a62d",
+  "controller_sha256": "4e75ad9b22d56eb21eb116b3fb1b3c2fd980dab9e6db172b3b292bd4da204ea4",
+  "rcx_sha256": "9814414d427799e59e816e2080d5c7dd1d5cfcacb86800bbbc59575e78223fc6",
+  "layout": {
+    "controller_sha256": "4e75ad9b22d56eb21eb116b3fb1b3c2fd980dab9e6db172b3b292bd4da204ea4",
+    "allocations": [
+      {
+        "label": "SKU identifiers",
+        "start": "0x47c57a08",
+        "bytes": 8
+      },
+      {
+        "label": "compact part/capacity table",
+        "start": "0x47c57a10",
+        "bytes": 96
+      },
+      {
+        "label": "stable virtual UIDs",
+        "start": "0x47c57a70",
+        "bytes": 88
+      },
+      {
+        "label": "fixed metadata fields",
+        "start": "0x47c57ac8",
+        "bytes": 24
+      },
+      {
+        "label": "helper from 0x47d70c00",
+        "start": "0x47c57ae0",
+        "bytes": 180
+      },
+      {
+        "label": "helper from 0x47d70400",
+        "start": "0x47c57b94",
+        "bytes": 176
+      },
+      {
+        "label": "helper from 0x47d70300",
+        "start": "0x47c57c44",
+        "bytes": 96
+      },
+      {
+        "label": "helper from 0x47d70500",
+        "start": "0x47c57cc0",
+        "bytes": 84
+      },
+      {
+        "label": "helper from 0x47d70700",
+        "start": "0x47c57d14",
+        "bytes": 80
+      },
+      {
+        "label": "helper from 0x47d70000",
+        "start": "0x47c57d64",
+        "bytes": 64
+      },
+      {
+        "label": "helper from 0x47d70040",
+        "start": "0x47c57da4",
+        "bytes": 64
+      },
+      {
+        "label": "helper from 0x47d70080",
+        "start": "0x47c57de4",
+        "bytes": 64
+      },
+      {
+        "label": "helper from 0x47d700c0",
+        "start": "0x47c57e50",
+        "bytes": 64
+      },
+      {
+        "label": "helper from 0x47d70100",
+        "start": "0x47c57e90",
+        "bytes": 64
+      },
+      {
+        "label": "helper from 0x47d70e00",
+        "start": "0x47c57ed0",
+        "bytes": 48
+      },
+      {
+        "label": "helper from 0x47d70180",
+        "start": "0x47c57f00",
+        "bytes": 44
+      },
+      {
+        "label": "helper from 0x47d701c0",
+        "start": "0x47c57f2c",
+        "bytes": 44
+      },
+      {
+        "label": "helper from 0x47d70200",
+        "start": "0x47c57f58",
+        "bytes": 44
+      },
+      {
+        "label": "helper from 0x47d70240",
+        "start": "0x47c57f84",
+        "bytes": 44
+      },
+      {
+        "label": "helper from 0x47d70f00",
+        "start": "0x47c57fb0",
+        "bytes": 44
+      },
+      {
+        "label": "helper from 0x47d70600",
+        "start": "0x47c57e24",
+        "bytes": 40
+      },
+      {
+        "label": "helper from 0x47d70d00",
+        "start": "0x47c57fdc",
+        "bytes": 24
+      },
+      {
+        "label": "compact metadata bootstrap",
+        "start": "0x47c57ff4",
+        "bytes": 400
+      }
+    ],
+    "retired_auth_code_ranges": [
+      [
+        "0x47c57a04",
+        "0x47c5824c"
+      ],
+      [
+        "0x47c8d8d8",
+        "0x47c8da00"
+      ]
+    ],
+    "protected_literal_bytes": 20,
+    "external_interior_branches": [],
+    "retired_invalid_input_fallbacks": [
+      "0x47c57e4c",
+      "0x47c57a04",
+      "0x47c8d8d8"
+    ],
+    "entry_hooks": [
+      {
+        "entry": "0x47c51b78",
+        "helper": "0x47c57d64"
+      },
+      {
+        "entry": "0x47c51c50",
+        "helper": "0x47c57da4"
+      },
+      {
+        "entry": "0x47c51cf4",
+        "helper": "0x47c57de4"
+      },
+      {
+        "entry": "0x47c51d84",
+        "helper": "0x47c57e50"
+      },
+      {
+        "entry": "0x47c51e28",
+        "helper": "0x47c57e90"
+      },
+      {
+        "entry": "0x47c51f78",
+        "helper": "0x47c57f58"
+      },
+      {
+        "entry": "0x47c520cc",
+        "helper": "0x47c57f84"
+      },
+      {
+        "entry": "0x47c52450",
+        "helper": "0x47c57f2c"
+      },
+      {
+        "entry": "0x47c52674",
+        "helper": "0x47c57ae0"
+      },
+      {
+        "entry": "0x47c52b74",
+        "helper": "0x47c57ed0"
+      },
+      {
+        "entry": "0x47c54c98",
+        "helper": "0x47c57fdc"
+      },
+      {
+        "entry": "0x47c553cc",
+        "helper": "0x47c57f00"
+      },
+      {
+        "entry": "0x47c57a04",
+        "helper": "0x47c57b94"
+      },
+      {
+        "entry": "0x47c57e4c",
+        "helper": "0x47c57c44"
+      },
+      {
+        "entry": "0x47c58508",
+        "helper": "0x47c57fb0"
+      },
+      {
+        "entry": "0x47c8d8d8",
+        "helper": "0x47c57cc0"
+      }
+    ],
+    "framebuffer_range": [
+      "0x47d69594",
+      "0x47de8d94"
+    ],
+    "framebuffer_bytes_restored_to_stock": true,
+    "compact_metadata_bytes": 214,
+    "stock_hardware_init_and_gpio_preserved": true,
+    "skus": [
+      16,
+      32,
+      33,
+      34,
+      64,
+      80
+    ],
+    "limitation": "Original display-memory collision removed; physical boot and complete OS still unverified."
+  },
+  "native_crom": {
+    "segments": [
+      {
+        "slot": "0x40000",
+        "segment": 0,
+        "bytes": 519876,
+        "sha256": "1ab8d5541e272e82c0e18386f6e992a9ad4b1f66955e0b4824078fd21c230e14",
+        "native_arm_exact": true
+      },
+      {
+        "slot": "0x40000",
+        "segment": 1,
+        "bytes": 2995828,
+        "sha256": "43f7d5e97f1903f81dc53e5d80c1e614e53bb247638327838dfad49707e1f5ab",
+        "native_arm_exact": true
+      },
+      {
+        "slot": "0x440000",
+        "segment": 0,
+        "bytes": 1310720,
+        "sha256": "4e75ad9b22d56eb21eb116b3fb1b3c2fd980dab9e6db172b3b292bd4da204ea4",
+        "native_arm_exact": true
+      },
+      {
+        "slot": "0x440000",
+        "segment": 1,
+        "bytes": 65536,
+        "sha256": "8f58305746eb15d380db40271525d08d0a4f5aaa6c493de022689c1bc63f0071",
+        "native_arm_exact": true
+      },
+      {
+        "slot": "0x440000",
+        "segment": 2,
+        "bytes": 6824,
+        "sha256": "a5d376c29e6847bccd8a07d67fdb952caf77f055a47ebe0f139c16f87948a846",
+        "native_arm_exact": true
+      }
+    ],
+    "all_segment_header_checks": [
+      {
+        "slot": "0x40000",
+        "segment": 0,
+        "old_position": "0x40004",
+        "new_position": "0x40004",
+        "native_header_and_DHT_setup_pass": true
+      },
+      {
+        "slot": "0x40000",
+        "segment": 1,
+        "old_position": "0x7556b",
+        "new_position": "0x7556b",
+        "native_header_and_DHT_setup_pass": true
+      },
+      {
+        "slot": "0x440000",
+        "segment": 0,
+        "old_position": "0x440004",
+        "new_position": "0x440004",
+        "native_header_and_DHT_setup_pass": true
+      },
+      {
+        "slot": "0x440000",
+        "segment": 1,
+        "old_position": "0x4c3ac0",
+        "new_position": "0x4c438c",
+        "native_header_and_DHT_setup_pass": true
+      },
+      {
+        "slot": "0x440000",
+        "segment": 2,
+        "old_position": "0x4c86ce",
+        "new_position": "0x4c8f9a",
+        "native_header_and_DHT_setup_pass": true
+      }
+    ],
+    "stock_descriptor": [
+      "0x244000a",
+      "0x304",
+      "0x652e0",
+      "0xe",
+      "0x3e4a2",
+      "0x655ec",
+      "0x1e4d0"
+    ],
+    "modified_descriptor": [
+      "0x244000a",
+      "0x304",
+      "0x65060",
+      "0xe",
+      "0x3e4a2",
+      "0x6536c",
+      "0x1f01c"
+    ],
+    "original_arm_hardware_setup_passed": true,
+    "dht_bank_writes_byte_identical": true,
+    "limitation": "Original header/setup and LZ loop execute; peripheral Huffman decoding and full boot are not emulated"
+  },
+  "crom_repair": {
+    "stock_dht_byte_identical": true,
+    "original_tokens": 255138,
+    "new_tokens": 255138,
+    "invalidated_copies_replaced": 601,
+    "original_bytes": 539324,
+    "new_bytes": 541576
+  },
+  "all_14_records_verified": true,
+  "independent_6_IPL_correction_identical": true,
+  "zip_readback_identical": true,
+  "allowed_rcx_ranges": [
+    [
+      114606478,
+      114606480
+    ],
+    [
+      114606492,
+      114606512
+    ],
+    [
+      119075160,
+      119664984
+    ]
+  ],
+  "existing_T3400_CLUT_library_byte_identical": true,
+  "all_IC3_IC5_and_GH_records_byte_identical_to_parent": true,
+  "validation": {
+    "status": "RELOCATED INTEGRATION AND DISPLAY-CLEAR REGRESSIONS PASSED; physical boot unverified",
+    "retired_code_arenas_read_execute_only": true,
+    "stock_display_clears": 12,
+    "controller_sha256": "4e75ad9b22d56eb21eb116b3fb1b3c2fd980dab9e6db172b3b292bd4da204ea4",
+    "cpu_model": "ARM926",
+    "cases": [
+      {
+        "sku": "0x10",
+        "initial_consumption": 0,
+        "counts": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "mode": 1,
+        "full_scan": true,
+        "consumption_commits": 4,
+        "individual_reregistrations": 4,
+        "repeat_full_scan": true,
+        "identities_stable": true,
+        "no_detail_errors": true,
+        "gpio_api_calls": 120
+      },
+      {
+        "sku": "0x10",
+        "initial_consumption": 1,
+        "counts": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "mode": 2,
+        "full_scan": true,
+        "consumption_commits": 4,
+        "individual_reregistrations": 4,
+        "repeat_full_scan": true,
+        "identities_stable": true,
+        "no_detail_errors": true,
+        "gpio_api_calls": 120
+      },
+      {
+        "sku": "0x10",
+        "initial_consumption": 100000,
+        "counts": [
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            2,
+            2
+          ]
+        ],
+        "mode": 3,
+        "full_scan": true,
+        "consumption_commits": 4,
+        "individual_reregistrations": 4,
+        "repeat_full_scan": true,
+        "identities_stable": true,
+        "no_detail_errors": true,
+        "gpio_api_calls": 120
+      },
+      {
+        "sku": "0x10",
+        "initial_consumption": 10000000,
+        "counts": [
+          [
+            99,
+            100
+          ],
+          [
+            172,
+            172
+          ],
+          [
+            172,
+            172
+          ],
+          [
+            172,
+            172
+          ]
+        ],
+        "mode": 4,
+        "full_scan": true,
+        "consumption_commits": 4,
+        "individual_reregistrations": 4,
+        "repeat_full_scan": true,
+        "identities_stable": true,
+        "no_detail_errors": true,
+        "gpio_api_calls": 120
+      },
+      {
+        "sku": "0x10",
+        "initial_consumption": 100000000,
+        "counts": [
+          [
+            990,
+            990
+          ],
+          [
+            1717,
+            1717
+          ],
+          [
+            1717,
+            1717
+          ],
+          [
+            1717,
+            1717
+          ]
+        ],
+        "mode": 1,
+        "full_scan": true,
+        "consumption_commits": 4,
+        "individual_reregistrations": 4,
+        "repeat_full_scan": true,
+        "identities_stable": true,
+        "no_detail_errors": true,
+        "gpio_api_calls": 120
+      },
+      {
+        "sku": "0x10",
+        "initial_consumption": 4000000000,
+        "counts": [
+          [
+            32767,
+            32767
+          ],
+          [
+            32767,
+            32767
+          ],
+          [
+            32767,
+            32767
+          ],
+          [
+            32767,
+            32767
+          ]
+        ],
+        "mode": 2,
+        "full_scan": true,
+        "consumption_commits": 4,
+        "individual_reregistrations": 4,
+        "repeat_full_scan": true,
+        "identities_stable": true,
+        "no_detail_errors": true,
+        "gpio_api_calls": 120
+      },
+      {
+        "sku": "0x20",
+        "initial_consumption": 0,
+        "counts": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "mode": 3,
+        "full_scan": true,
+        "consumption_commits": 4,
+        "individual_reregistrations": 4,
+        "repeat_full_scan": true,
+        "identities_stable": true,
+        "no_detail_errors": true,
+        "gpio_api_calls": 120
+      },
+      {
+        "sku": "0x20",
+        "initial_consumption": 1,
+        "counts": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "mode": 4,
+        "full_scan": true,
+        "consumption_commits": 4,
+        "individual_reregistrations": 4,
+        "repeat_full_scan": true,
+        "identities_stable": true,
+        "no_detail_errors": true,
+        "gpio_api_calls": 120
+      },
+      {
+        "sku": "0x20",
+        "initial_consumption": 100000,
+        "counts": [
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            2,
+            2
+          ]
+        ],
+        "mode": 1,
+        "full_scan": true,
+        "consumption_commits": 4,
+        "individual_reregistrations": 4,
+        "repeat_full_scan": true,
+        "identities_stable": true,
+        "no_detail_errors": true,
+        "gpio_api_calls": 120
+      },
+      {
+        "sku": "0x20",
+        "initial_consumption": 10000000,
+        "counts": [
+          [
+            99,
+            100
+          ],
+          [
+            172,
+            172
+          ],
+          [
+            172,
+            172
+          ],
+          [
+            172,
+            172
+          ]
+        ],
+        "mode": 2,
+        "full_scan": true,
+        "consumption_commits": 4,
+        "individual_reregistrations": 4,
+        "repeat_full_scan": true,
+        "identities_stable": true,
+        "no_detail_errors": true,
+        "gpio_api_calls": 120
+      },
+      {
+        "sku": "0x20",
+        "initial_consumption": 100000000,
+        "counts": [
+          [
+            990,
+            990
+          ],
+          [
+            1717,
+            1717
+          ],
+          [
+            1717,
+            1717
+          ],
+          [
+            1717,
+            1717
+          ]
+        ],
+        "mode": 3,
+        "full_scan": true,
+        "consumption_commits": 4,
+        "individual_reregistrations": 4,
+        "repeat_full_scan": true,
+        "identities_stable": true,
+        "no_detail_errors": true,
+        "gpio_api_calls": 120
+      },
+      {
+        "sku": "0x20",
+        "initial_consumption": 4000000000,
+        "counts": [
+          [
+            32767,
+            32767
+          ],
+          [
+            32767,
+            32767
+          ],
+          [
+            32767,
+            32767
+          ],
+          [
+            32767,
+            32767
+          ]
+        ],
+        "mode": 4,
+        "full_scan": true,
+        "consumption_commits": 4,
+        "individual_reregistrations": 4,
+        "repeat_full_scan": true,
+        "identities_stable": true,
+        "no_detail_errors": true,
+        "gpio_api_calls": 120
+      },
+      {
+        "sku": "0x21",
+        "initial_consumption": 0,
+        "counts": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "mode": 1,
+        "full_scan": true,
+        "consumption_commits": 4,
+        "individual_reregistrations": 4,
+        "repeat_full_scan": true,
+        "identities_stable": true,
+        "no_detail_errors": true,
+        "gpio_api_calls": 120
+      },
+      {
+        "sku": "0x21",
+        "initial_consumption": 1,
+        "counts": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "mode": 2,
+        "full_scan": true,
+        "consumption_commits": 4,
+        "individual_reregistrations": 4,
+        "repeat_full_scan": true,
+        "identities_stable": true,
+        "no_detail_errors": true,
+        "gpio_api_calls": 120
+      },
+      {
+        "sku": "0x21",
+        "initial_consumption": 100000,
+        "counts": [
+          [
+            3,
+            3
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            4,
+            4
+          ]
+        ],
+        "mode": 3,
+        "full_scan": true,
+        "consumption_commits": 4,
+        "individual_reregistrations": 4,
+        "repeat_full_scan": true,
+        "identities_stable": true,
+        "no_detail_errors": true,
+        "gpio_api_calls": 120
+      },
+      {
+        "sku": "0x21",
+        "initial_consumption": 10000000,
+        "counts": [
+          [
+            221,
+            222
+          ],
+          [
+            342,
+            343
+          ],
+          [
+            342,
+            343
+          ],
+          [
+            342,
+            343
+          ]
+        ],
+        "mode": 4,
+        "full_scan": true,
+        "consumption_commits": 4,
+        "individual_reregistrations": 4,
+        "repeat_full_scan": true,
+        "identities_stable": true,
+        "no_detail_errors": true,
+        "gpio_api_calls": 120
+      },
+      {
+        "sku": "0x21",
+        "initial_consumption": 100000000,
+        "counts": [
+          [
+            2210,
+            2211
+          ],
+          [
+            3419,
+            3420
+          ],
+          [
+            3419,
+            3420
+          ],
+          [
+            3419,
+            3420
+          ]
+        ],
+        "mode": 1,
+        "full_scan": true,
+        "consumption_commits": 4,
+        "individual_reregistrations": 4,
+        "repeat_full_scan": true,
+        "identities_stable": true,
+        "no_detail_errors": true,
+        "gpio_api_calls": 120
+      },
+      {
+        "sku": "0x21",
+        "initial_consumption": 4000000000,
+        "counts": [
+          [
+            32767,
+            32767
+          ],
+          [
+            32767,
+            32767
+          ],
+          [
+            32767,
+            32767
+          ],
+          [
+            32767,
+            32767
+          ]
+        ],
+        "mode": 2,
+        "full_scan": true,
+        "consumption_commits": 4,
+        "individual_reregistrations": 4,
+        "repeat_full_scan": true,
+        "identities_stable": true,
+        "no_detail_errors": true,
+        "gpio_api_calls": 120
+      },
+      {
+        "sku": "0x22",
+        "initial_consumption": 0,
+        "counts": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "mode": 3,
+        "full_scan": true,
+        "consumption_commits": 4,
+        "individual_reregistrations": 4,
+        "repeat_full_scan": true,
+        "identities_stable": true,
+        "no_detail_errors": true,
+        "gpio_api_calls": 120
+      },
+      {
+        "sku": "0x22",
+        "initial_consumption": 1,
+        "counts": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "mode": 4,
+        "full_scan": true,
+        "consumption_commits": 4,
+        "individual_reregistrations": 4,
+        "repeat_full_scan": true,
+        "identities_stable": true,
+        "no_detail_errors": true,
+        "gpio_api_calls": 120
+      },
+      {
+        "sku": "0x22",
+        "initial_consumption": 100000,
+        "counts": [
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            2,
+            2
+          ]
+        ],
+        "mode": 1,
+        "full_scan": true,
+        "consumption_commits": 4,
+        "individual_reregistrations": 4,
+        "repeat_full_scan": true,
+        "identities_stable": true,
+        "no_detail_errors": true,
+        "gpio_api_calls": 120
+      },
+      {
+        "sku": "0x22",
+        "initial_consumption": 10000000,
+        "counts": [
+          [
+            99,
+            100
+          ],
+          [
+            172,
+            172
+          ],
+          [
+            172,
+            172
+          ],
+          [
+            172,
+            172
+          ]
+        ],
+        "mode": 2,
+        "full_scan": true,
+        "consumption_commits": 4,
+        "individual_reregistrations": 4,
+        "repeat_full_scan": true,
+        "identities_stable": true,
+        "no_detail_errors": true,
+        "gpio_api_calls": 120
+      },
+      {
+        "sku": "0x22",
+        "initial_consumption": 100000000,
+        "counts": [
+          [
+            990,
+            990
+          ],
+          [
+            1717,
+            1717
+          ],
+          [
+            1717,
+            1717
+          ],
+          [
+            1717,
+            1717
+          ]
+        ],
+        "mode": 3,
+        "full_scan": true,
+        "consumption_commits": 4,
+        "individual_reregistrations": 4,
+        "repeat_full_scan": true,
+        "identities_stable": true,
+        "no_detail_errors": true,
+        "gpio_api_calls": 120
+      },
+      {
+        "sku": "0x22",
+        "initial_consumption": 4000000000,
+        "counts": [
+          [
+            32767,
+            32767
+          ],
+          [
+            32767,
+            32767
+          ],
+          [
+            32767,
+            32767
+          ],
+          [
+            32767,
+            32767
+          ]
+        ],
+        "mode": 4,
+        "full_scan": true,
+        "consumption_commits": 4,
+        "individual_reregistrations": 4,
+        "repeat_full_scan": true,
+        "identities_stable": true,
+        "no_detail_errors": true,
+        "gpio_api_calls": 120
+      },
+      {
+        "sku": "0x40",
+        "initial_consumption": 0,
+        "counts": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "mode": 1,
+        "full_scan": true,
+        "consumption_commits": 4,
+        "individual_reregistrations": 4,
+        "repeat_full_scan": true,
+        "identities_stable": true,
+        "no_detail_errors": true,
+        "gpio_api_calls": 120
+      },
+      {
+        "sku": "0x40",
+        "initial_consumption": 1,
+        "counts": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "mode": 2,
+        "full_scan": true,
+        "consumption_commits": 4,
+        "individual_reregistrations": 4,
+        "repeat_full_scan": true,
+        "identities_stable": true,
+        "no_detail_errors": true,
+        "gpio_api_calls": 120
+      },
+      {
+        "sku": "0x40",
+        "initial_consumption": 100000,
+        "counts": [
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            2,
+            2
+          ]
+        ],
+        "mode": 3,
+        "full_scan": true,
+        "consumption_commits": 4,
+        "individual_reregistrations": 4,
+        "repeat_full_scan": true,
+        "identities_stable": true,
+        "no_detail_errors": true,
+        "gpio_api_calls": 120
+      },
+      {
+        "sku": "0x40",
+        "initial_consumption": 10000000,
+        "counts": [
+          [
+            69,
+            69
+          ],
+          [
+            172,
+            172
+          ],
+          [
+            172,
+            172
+          ],
+          [
+            172,
+            172
+          ]
+        ],
+        "mode": 4,
+        "full_scan": true,
+        "consumption_commits": 4,
+        "individual_reregistrations": 4,
+        "repeat_full_scan": true,
+        "identities_stable": true,
+        "no_detail_errors": true,
+        "gpio_api_calls": 120
+      },
+      {
+        "sku": "0x40",
+        "initial_consumption": 100000000,
+        "counts": [
+          [
+            690,
+            690
+          ],
+          [
+            1717,
+            1717
+          ],
+          [
+            1717,
+            1717
+          ],
+          [
+            1717,
+            1717
+          ]
+        ],
+        "mode": 1,
+        "full_scan": true,
+        "consumption_commits": 4,
+        "individual_reregistrations": 4,
+        "repeat_full_scan": true,
+        "identities_stable": true,
+        "no_detail_errors": true,
+        "gpio_api_calls": 120
+      },
+      {
+        "sku": "0x40",
+        "initial_consumption": 4000000000,
+        "counts": [
+          [
+            27568,
+            27568
+          ],
+          [
+            32767,
+            32767
+          ],
+          [
+            32767,
+            32767
+          ],
+          [
+            32767,
+            32767
+          ]
+        ],
+        "mode": 2,
+        "full_scan": true,
+        "consumption_commits": 4,
+        "individual_reregistrations": 4,
+        "repeat_full_scan": true,
+        "identities_stable": true,
+        "no_detail_errors": true,
+        "gpio_api_calls": 120
+      },
+      {
+        "sku": "0x50",
+        "initial_consumption": 0,
+        "counts": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "mode": 3,
+        "full_scan": true,
+        "consumption_commits": 4,
+        "individual_reregistrations": 4,
+        "repeat_full_scan": true,
+        "identities_stable": true,
+        "no_detail_errors": true,
+        "gpio_api_calls": 120
+      },
+      {
+        "sku": "0x50",
+        "initial_consumption": 1,
+        "counts": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "mode": 4,
+        "full_scan": true,
+        "consumption_commits": 4,
+        "individual_reregistrations": 4,
+        "repeat_full_scan": true,
+        "identities_stable": true,
+        "no_detail_errors": true,
+        "gpio_api_calls": 120
+      },
+      {
+        "sku": "0x50",
+        "initial_consumption": 100000,
+        "counts": [
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            2,
+            2
+          ]
+        ],
+        "mode": 1,
+        "full_scan": true,
+        "consumption_commits": 4,
+        "individual_reregistrations": 4,
+        "repeat_full_scan": true,
+        "identities_stable": true,
+        "no_detail_errors": true,
+        "gpio_api_calls": 120
+      },
+      {
+        "sku": "0x50",
+        "initial_consumption": 10000000,
+        "counts": [
+          [
+            99,
+            100
+          ],
+          [
+            172,
+            172
+          ],
+          [
+            172,
+            172
+          ],
+          [
+            172,
+            172
+          ]
+        ],
+        "mode": 2,
+        "full_scan": true,
+        "consumption_commits": 4,
+        "individual_reregistrations": 4,
+        "repeat_full_scan": true,
+        "identities_stable": true,
+        "no_detail_errors": true,
+        "gpio_api_calls": 120
+      },
+      {
+        "sku": "0x50",
+        "initial_consumption": 100000000,
+        "counts": [
+          [
+            990,
+            990
+          ],
+          [
+            1717,
+            1717
+          ],
+          [
+            1717,
+            1717
+          ],
+          [
+            1717,
+            1717
+          ]
+        ],
+        "mode": 3,
+        "full_scan": true,
+        "consumption_commits": 4,
+        "individual_reregistrations": 4,
+        "repeat_full_scan": true,
+        "identities_stable": true,
+        "no_detail_errors": true,
+        "gpio_api_calls": 120
+      },
+      {
+        "sku": "0x50",
+        "initial_consumption": 4000000000,
+        "counts": [
+          [
+            32767,
+            32767
+          ],
+          [
+            32767,
+            32767
+          ],
+          [
+            32767,
+            32767
+          ],
+          [
+            32767,
+            32767
+          ]
+        ],
+        "mode": 4,
+        "full_scan": true,
+        "consumption_commits": 4,
+        "individual_reregistrations": 4,
+        "repeat_full_scan": true,
+        "identities_stable": true,
+        "no_detail_errors": true,
+        "gpio_api_calls": 120
+      }
+    ],
+    "layout": {
+      "controller_sha256": "4e75ad9b22d56eb21eb116b3fb1b3c2fd980dab9e6db172b3b292bd4da204ea4",
+      "allocations": [
+        {
+          "label": "SKU identifiers",
+          "start": "0x47c57a08",
+          "bytes": 8
+        },
+        {
+          "label": "compact part/capacity table",
+          "start": "0x47c57a10",
+          "bytes": 96
+        },
+        {
+          "label": "stable virtual UIDs",
+          "start": "0x47c57a70",
+          "bytes": 88
+        },
+        {
+          "label": "fixed metadata fields",
+          "start": "0x47c57ac8",
+          "bytes": 24
+        },
+        {
+          "label": "helper from 0x47d70c00",
+          "start": "0x47c57ae0",
+          "bytes": 180
+        },
+        {
+          "label": "helper from 0x47d70400",
+          "start": "0x47c57b94",
+          "bytes": 176
+        },
+        {
+          "label": "helper from 0x47d70300",
+          "start": "0x47c57c44",
+          "bytes": 96
+        },
+        {
+          "label": "helper from 0x47d70500",
+          "start": "0x47c57cc0",
+          "bytes": 84
+        },
+        {
+          "label": "helper from 0x47d70700",
+          "start": "0x47c57d14",
+          "bytes": 80
+        },
+        {
+          "label": "helper from 0x47d70000",
+          "start": "0x47c57d64",
+          "bytes": 64
+        },
+        {
+          "label": "helper from 0x47d70040",
+          "start": "0x47c57da4",
+          "bytes": 64
+        },
+        {
+          "label": "helper from 0x47d70080",
+          "start": "0x47c57de4",
+          "bytes": 64
+        },
+        {
+          "label": "helper from 0x47d700c0",
+          "start": "0x47c57e50",
+          "bytes": 64
+        },
+        {
+          "label": "helper from 0x47d70100",
+          "start": "0x47c57e90",
+          "bytes": 64
+        },
+        {
+          "label": "helper from 0x47d70e00",
+          "start": "0x47c57ed0",
+          "bytes": 48
+        },
+        {
+          "label": "helper from 0x47d70180",
+          "start": "0x47c57f00",
+          "bytes": 44
+        },
+        {
+          "label": "helper from 0x47d701c0",
+          "start": "0x47c57f2c",
+          "bytes": 44
+        },
+        {
+          "label": "helper from 0x47d70200",
+          "start": "0x47c57f58",
+          "bytes": 44
+        },
+        {
+          "label": "helper from 0x47d70240",
+          "start": "0x47c57f84",
+          "bytes": 44
+        },
+        {
+          "label": "helper from 0x47d70f00",
+          "start": "0x47c57fb0",
+          "bytes": 44
+        },
+        {
+          "label": "helper from 0x47d70600",
+          "start": "0x47c57e24",
+          "bytes": 40
+        },
+        {
+          "label": "helper from 0x47d70d00",
+          "start": "0x47c57fdc",
+          "bytes": 24
+        },
+        {
+          "label": "compact metadata bootstrap",
+          "start": "0x47c57ff4",
+          "bytes": 400
+        }
+      ],
+      "retired_auth_code_ranges": [
+        [
+          "0x47c57a04",
+          "0x47c5824c"
+        ],
+        [
+          "0x47c8d8d8",
+          "0x47c8da00"
+        ]
+      ],
+      "protected_literal_bytes": 20,
+      "external_interior_branches": [],
+      "retired_invalid_input_fallbacks": [
+        "0x47c57e4c",
+        "0x47c57a04",
+        "0x47c8d8d8"
+      ],
+      "entry_hooks": [
+        {
+          "entry": "0x47c51b78",
+          "helper": "0x47c57d64"
+        },
+        {
+          "entry": "0x47c51c50",
+          "helper": "0x47c57da4"
+        },
+        {
+          "entry": "0x47c51cf4",
+          "helper": "0x47c57de4"
+        },
+        {
+          "entry": "0x47c51d84",
+          "helper": "0x47c57e50"
+        },
+        {
+          "entry": "0x47c51e28",
+          "helper": "0x47c57e90"
+        },
+        {
+          "entry": "0x47c51f78",
+          "helper": "0x47c57f58"
+        },
+        {
+          "entry": "0x47c520cc",
+          "helper": "0x47c57f84"
+        },
+        {
+          "entry": "0x47c52450",
+          "helper": "0x47c57f2c"
+        },
+        {
+          "entry": "0x47c52674",
+          "helper": "0x47c57ae0"
+        },
+        {
+          "entry": "0x47c52b74",
+          "helper": "0x47c57ed0"
+        },
+        {
+          "entry": "0x47c54c98",
+          "helper": "0x47c57fdc"
+        },
+        {
+          "entry": "0x47c553cc",
+          "helper": "0x47c57f00"
+        },
+        {
+          "entry": "0x47c57a04",
+          "helper": "0x47c57b94"
+        },
+        {
+          "entry": "0x47c57e4c",
+          "helper": "0x47c57c44"
+        },
+        {
+          "entry": "0x47c58508",
+          "helper": "0x47c57fb0"
+        },
+        {
+          "entry": "0x47c8d8d8",
+          "helper": "0x47c57cc0"
+        }
+      ],
+      "framebuffer_range": [
+        "0x47d69594",
+        "0x47de8d94"
+      ],
+      "framebuffer_bytes_restored_to_stock": true,
+      "compact_metadata_bytes": 214,
+      "stock_hardware_init_and_gpio_preserved": true,
+      "skus": [
+        16,
+        32,
+        33,
+        34,
+        64,
+        80
+      ],
+      "limitation": "Original display-memory collision removed; physical boot and complete OS still unverified."
+    },
+    "original_scan_calls": 72,
+    "original_consumption_commits": 144,
+    "original_reregistrations": 144,
+    "forbidden_hardware_or_fatal_calls": 0,
+    "unknown_sku_rejected": true,
+    "stock_positive_control_reaches_hardware": true,
+    "physical_history_object_write_or_format_calls": 0,
+    "cold_start_reconstruction_cases": [
+      {
+        "mode": 1,
+        "stable_identities": true,
+        "reconstructed_from_properties": true
+      },
+      {
+        "mode": 2,
+        "stable_identities": true,
+        "reconstructed_from_properties": true
+      },
+      {
+        "mode": 3,
+        "stable_identities": true,
+        "reconstructed_from_properties": true
+      },
+      {
+        "mode": 4,
+        "stable_identities": true,
+        "reconstructed_from_properties": true
+      }
+    ],
+    "mocks": [
+      "Runtime properties including cumulative ink use are synthetic in-memory values.",
+      "Event delivery, delay and OS status-publication callback 0x47C5451C are mocked.",
+      "Stock CSIC GPIO setup/teardown executes with mocked low-level 0x47C513E0, 0x47C51434 and 0x47C512B0 APIs.",
+      "No complete operating-system boot, actuator control, supply/IES or printing test."
+    ]
+  },
+  "interfaces": {
+    "status": "PASS; native API with event/property transport mocks",
+    "controller_sha256": "4e75ad9b22d56eb21eb116b3fb1b3c2fd980dab9e6db172b3b292bd4da204ea4",
+    "cpu_model": "ARM926",
+    "scalar_cases": 126,
+    "error_api_cases_unchanged": 232,
+    "snapshot_cases": 45,
+    "raw_state_and_type_preserved": true,
+    "general_errors_not_suppressed": true
+  },
+  "startup_regressions": {
+    "status": "STARTUP REGRESSIONS PASSED; physical boot unverified",
+    "controller_sha256": "4e75ad9b22d56eb21eb116b3fb1b3c2fd980dab9e6db172b3b292bd4da204ea4",
+    "early_setter_cases": [
+      {
+        "slot": 0,
+        "manager_ready": false,
+        "field": "0x1",
+        "stock_result_identical": true
+      },
+      {
+        "slot": 0,
+        "manager_ready": false,
+        "field": "0x3",
+        "stock_result_identical": true
+      },
+      {
+        "slot": 0,
+        "manager_ready": false,
+        "field": "0x16",
+        "stock_result_identical": true
+      },
+      {
+        "slot": 0,
+        "manager_ready": false,
+        "field": "0x17",
+        "stock_result_identical": true
+      },
+      {
+        "slot": 0,
+        "manager_ready": false,
+        "field": "0x18",
+        "stock_result_identical": true
+      },
+      {
+        "slot": 0,
+        "manager_ready": false,
+        "field": "0x52",
+        "stock_result_identical": true
+      },
+      {
+        "slot": 0,
+        "manager_ready": false,
+        "field": "0x53",
+        "stock_result_identical": true
+      },
+      {
+        "slot": 0,
+        "manager_ready": false,
+        "field": "0x59",
+        "stock_result_identical": true
+      },
+      {
+        "slot": 1,
+        "manager_ready": false,
+        "field": "0x1",
+        "stock_result_identical": true
+      },
+      {
+        "slot": 1,
+        "manager_ready": false,
+        "field": "0x3",
+        "stock_result_identical": true
+      },
+      {
+        "slot": 1,
+        "manager_ready": false,
+        "field": "0x16",
+        "stock_result_identical": true
+      },
+      {
+        "slot": 1,
+        "manager_ready": false,
+        "field": "0x17",
+        "stock_result_identical": true
+      },
+      {
+        "slot": 1,
+        "manager_ready": false,
+        "field": "0x18",
+        "stock_result_identical": true
+      },
+      {
+        "slot": 1,
+        "manager_ready": false,
+        "field": "0x52",
+        "stock_result_identical": true
+      },
+      {
+        "slot": 1,
+        "manager_ready": false,
+        "field": "0x53",
+        "stock_result_identical": true
+      },
+      {
+        "slot": 1,
+        "manager_ready": false,
+        "field": "0x59",
+        "stock_result_identical": true
+      },
+      {
+        "slot": 2,
+        "manager_ready": false,
+        "field": "0x1",
+        "stock_result_identical": true
+      },
+      {
+        "slot": 2,
+        "manager_ready": false,
+        "field": "0x3",
+        "stock_result_identical": true
+      },
+      {
+        "slot": 2,
+        "manager_ready": false,
+        "field": "0x16",
+        "stock_result_identical": true
+      },
+      {
+        "slot": 2,
+        "manager_ready": false,
+        "field": "0x17",
+        "stock_result_identical": true
+      },
+      {
+        "slot": 2,
+        "manager_ready": false,
+        "field": "0x18",
+        "stock_result_identical": true
+      },
+      {
+        "slot": 2,
+        "manager_ready": false,
+        "field": "0x52",
+        "stock_result_identical": true
+      },
+      {
+        "slot": 2,
+        "manager_ready": false,
+        "field": "0x53",
+        "stock_result_identical": true
+      },
+      {
+        "slot": 2,
+        "manager_ready": false,
+        "field": "0x59",
+        "stock_result_identical": true
+      },
+      {
+        "slot": 3,
+        "manager_ready": false,
+        "field": "0x1",
+        "stock_result_identical": true
+      },
+      {
+        "slot": 3,
+        "manager_ready": false,
+        "field": "0x3",
+        "stock_result_identical": true
+      },
+      {
+        "slot": 3,
+        "manager_ready": false,
+        "field": "0x16",
+        "stock_result_identical": true
+      },
+      {
+        "slot": 3,
+        "manager_ready": false,
+        "field": "0x17",
+        "stock_result_identical": true
+      },
+      {
+        "slot": 3,
+        "manager_ready": false,
+        "field": "0x18",
+        "stock_result_identical": true
+      },
+      {
+        "slot": 3,
+        "manager_ready": false,
+        "field": "0x52",
+        "stock_result_identical": true
+      },
+      {
+        "slot": 3,
+        "manager_ready": false,
+        "field": "0x53",
+        "stock_result_identical": true
+      },
+      {
+        "slot": 3,
+        "manager_ready": false,
+        "field": "0x59",
+        "stock_result_identical": true
+      },
+      {
+        "slot": 0,
+        "manager_ready": true,
+        "field": "0x1",
+        "stock_result_identical": true
+      },
+      {
+        "slot": 0,
+        "manager_ready": true,
+        "field": "0x3",
+        "stock_result_identical": true
+      },
+      {
+        "slot": 0,
+        "manager_ready": true,
+        "field": "0x16",
+        "stock_result_identical": true
+      },
+      {
+        "slot": 0,
+        "manager_ready": true,
+        "field": "0x17",
+        "stock_result_identical": true
+      },
+      {
+        "slot": 0,
+        "manager_ready": true,
+        "field": "0x18",
+        "stock_result_identical": true
+      },
+      {
+        "slot": 0,
+        "manager_ready": true,
+        "field": "0x52",
+        "stock_result_identical": true
+      },
+      {
+        "slot": 0,
+        "manager_ready": true,
+        "field": "0x53",
+        "stock_result_identical": true
+      },
+      {
+        "slot": 0,
+        "manager_ready": true,
+        "field": "0x59",
+        "stock_result_identical": true
+      },
+      {
+        "slot": 1,
+        "manager_ready": true,
+        "field": "0x1",
+        "stock_result_identical": true
+      },
+      {
+        "slot": 1,
+        "manager_ready": true,
+        "field": "0x3",
+        "stock_result_identical": true
+      },
+      {
+        "slot": 1,
+        "manager_ready": true,
+        "field": "0x16",
+        "stock_result_identical": true
+      },
+      {
+        "slot": 1,
+        "manager_ready": true,
+        "field": "0x17",
+        "stock_result_identical": true
+      },
+      {
+        "slot": 1,
+        "manager_ready": true,
+        "field": "0x18",
+        "stock_result_identical": true
+      },
+      {
+        "slot": 1,
+        "manager_ready": true,
+        "field": "0x52",
+        "stock_result_identical": true
+      },
+      {
+        "slot": 1,
+        "manager_ready": true,
+        "field": "0x53",
+        "stock_result_identical": true
+      },
+      {
+        "slot": 1,
+        "manager_ready": true,
+        "field": "0x59",
+        "stock_result_identical": true
+      },
+      {
+        "slot": 2,
+        "manager_ready": true,
+        "field": "0x1",
+        "stock_result_identical": true
+      },
+      {
+        "slot": 2,
+        "manager_ready": true,
+        "field": "0x3",
+        "stock_result_identical": true
+      },
+      {
+        "slot": 2,
+        "manager_ready": true,
+        "field": "0x16",
+        "stock_result_identical": true
+      },
+      {
+        "slot": 2,
+        "manager_ready": true,
+        "field": "0x17",
+        "stock_result_identical": true
+      },
+      {
+        "slot": 2,
+        "manager_ready": true,
+        "field": "0x18",
+        "stock_result_identical": true
+      },
+      {
+        "slot": 2,
+        "manager_ready": true,
+        "field": "0x52",
+        "stock_result_identical": true
+      },
+      {
+        "slot": 2,
+        "manager_ready": true,
+        "field": "0x53",
+        "stock_result_identical": true
+      },
+      {
+        "slot": 2,
+        "manager_ready": true,
+        "field": "0x59",
+        "stock_result_identical": true
+      },
+      {
+        "slot": 3,
+        "manager_ready": true,
+        "field": "0x1",
+        "stock_result_identical": true
+      },
+      {
+        "slot": 3,
+        "manager_ready": true,
+        "field": "0x3",
+        "stock_result_identical": true
+      },
+      {
+        "slot": 3,
+        "manager_ready": true,
+        "field": "0x16",
+        "stock_result_identical": true
+      },
+      {
+        "slot": 3,
+        "manager_ready": true,
+        "field": "0x17",
+        "stock_result_identical": true
+      },
+      {
+        "slot": 3,
+        "manager_ready": true,
+        "field": "0x18",
+        "stock_result_identical": true
+      },
+      {
+        "slot": 3,
+        "manager_ready": true,
+        "field": "0x52",
+        "stock_result_identical": true
+      },
+      {
+        "slot": 3,
+        "manager_ready": true,
+        "field": "0x53",
+        "stock_result_identical": true
+      },
+      {
+        "slot": 3,
+        "manager_ready": true,
+        "field": "0x59",
+        "stock_result_identical": true
+      }
+    ],
+    "protected_field_return_cases": [
+      {
+        "version": "v4",
+        "slot": 0,
+        "return_value": 0
+      },
+      {
+        "version": "fixed",
+        "slot": 0,
+        "return_value": 0
+      },
+      {
+        "version": "v4",
+        "slot": 1,
+        "return_value": 1
+      },
+      {
+        "version": "fixed",
+        "slot": 1,
+        "return_value": 0
+      },
+      {
+        "version": "v4",
+        "slot": 2,
+        "return_value": 2
+      },
+      {
+        "version": "fixed",
+        "slot": 2,
+        "return_value": 0
+      },
+      {
+        "version": "v4",
+        "slot": 3,
+        "return_value": 3
+      },
+      {
+        "version": "fixed",
+        "slot": 3,
+        "return_value": 0
+      }
+    ],
+    "preactivation_entry_cases": [
+      {
+        "entry": "0x47c51b78",
+        "slot": 0,
+        "original_entry_preserved_before_activation": true
+      },
+      {
+        "entry": "0x47c51b78",
+        "slot": 1,
+        "original_entry_preserved_before_activation": true
+      },
+      {
+        "entry": "0x47c51b78",
+        "slot": 2,
+        "original_entry_preserved_before_activation": true
+      },
+      {
+        "entry": "0x47c51b78",
+        "slot": 3,
+        "original_entry_preserved_before_activation": true
+      },
+      {
+        "entry": "0x47c51c50",
+        "slot": 0,
+        "original_entry_preserved_before_activation": true
+      },
+      {
+        "entry": "0x47c51c50",
+        "slot": 1,
+        "original_entry_preserved_before_activation": true
+      },
+      {
+        "entry": "0x47c51c50",
+        "slot": 2,
+        "original_entry_preserved_before_activation": true
+      },
+      {
+        "entry": "0x47c51c50",
+        "slot": 3,
+        "original_entry_preserved_before_activation": true
+      },
+      {
+        "entry": "0x47c51cf4",
+        "slot": 0,
+        "original_entry_preserved_before_activation": true
+      },
+      {
+        "entry": "0x47c51cf4",
+        "slot": 1,
+        "original_entry_preserved_before_activation": true
+      },
+      {
+        "entry": "0x47c51cf4",
+        "slot": 2,
+        "original_entry_preserved_before_activation": true
+      },
+      {
+        "entry": "0x47c51cf4",
+        "slot": 3,
+        "original_entry_preserved_before_activation": true
+      },
+      {
+        "entry": "0x47c51d84",
+        "slot": 0,
+        "original_entry_preserved_before_activation": true
+      },
+      {
+        "entry": "0x47c51d84",
+        "slot": 1,
+        "original_entry_preserved_before_activation": true
+      },
+      {
+        "entry": "0x47c51d84",
+        "slot": 2,
+        "original_entry_preserved_before_activation": true
+      },
+      {
+        "entry": "0x47c51d84",
+        "slot": 3,
+        "original_entry_preserved_before_activation": true
+      },
+      {
+        "entry": "0x47c51e28",
+        "slot": 0,
+        "original_entry_preserved_before_activation": true
+      },
+      {
+        "entry": "0x47c51e28",
+        "slot": 1,
+        "original_entry_preserved_before_activation": true
+      },
+      {
+        "entry": "0x47c51e28",
+        "slot": 2,
+        "original_entry_preserved_before_activation": true
+      },
+      {
+        "entry": "0x47c51e28",
+        "slot": 3,
+        "original_entry_preserved_before_activation": true
+      },
+      {
+        "entry": "0x47c553cc",
+        "slot": 0,
+        "original_entry_preserved_before_activation": true
+      },
+      {
+        "entry": "0x47c553cc",
+        "slot": 1,
+        "original_entry_preserved_before_activation": true
+      },
+      {
+        "entry": "0x47c553cc",
+        "slot": 2,
+        "original_entry_preserved_before_activation": true
+      },
+      {
+        "entry": "0x47c553cc",
+        "slot": 3,
+        "original_entry_preserved_before_activation": true
+      },
+      {
+        "entry": "0x47c52450",
+        "slot": 0,
+        "original_entry_preserved_before_activation": true
+      },
+      {
+        "entry": "0x47c52450",
+        "slot": 1,
+        "original_entry_preserved_before_activation": true
+      },
+      {
+        "entry": "0x47c52450",
+        "slot": 2,
+        "original_entry_preserved_before_activation": true
+      },
+      {
+        "entry": "0x47c52450",
+        "slot": 3,
+        "original_entry_preserved_before_activation": true
+      },
+      {
+        "entry": "0x47c51f78",
+        "slot": 0,
+        "original_entry_preserved_before_activation": true
+      },
+      {
+        "entry": "0x47c51f78",
+        "slot": 1,
+        "original_entry_preserved_before_activation": true
+      },
+      {
+        "entry": "0x47c51f78",
+        "slot": 2,
+        "original_entry_preserved_before_activation": true
+      },
+      {
+        "entry": "0x47c51f78",
+        "slot": 3,
+        "original_entry_preserved_before_activation": true
+      },
+      {
+        "entry": "0x47c520cc",
+        "slot": 0,
+        "original_entry_preserved_before_activation": true
+      },
+      {
+        "entry": "0x47c520cc",
+        "slot": 1,
+        "original_entry_preserved_before_activation": true
+      },
+      {
+        "entry": "0x47c520cc",
+        "slot": 2,
+        "original_entry_preserved_before_activation": true
+      },
+      {
+        "entry": "0x47c520cc",
+        "slot": 3,
+        "original_entry_preserved_before_activation": true
+      }
+    ],
+    "csic_hardware_initialization_restored": true,
+    "no_runtime_state_in_ff_padding": true,
+    "old_v4_new_property_dependency_reproduced": true,
+    "limitations": [
+      "Exact physical shutdown cause remains unconfirmed.",
+      "No complete OS boot, task synchronization, live peripherals or physical printer."
+    ]
+  },
+  "display_regressions": {
+    "status": "DISPLAY COLLISION REGRESSION PASSED",
+    "controller_sha256": "4e75ad9b22d56eb21eb116b3fb1b3c2fd980dab9e6db172b3b292bd4da204ea4",
+    "cases": [
+      {
+        "version": "v4",
+        "after_stock_display_clear": {
+          "pc": "0x47d72b3c",
+          "returned": false,
+          "return_value": 0
+        }
+      },
+      {
+        "version": "v5",
+        "after_stock_display_clear": {
+          "pc": "0x47d72b3c",
+          "returned": false,
+          "return_value": 0
+        }
+      },
+      {
+        "version": "relocated",
+        "after_stock_display_clear": {
+          "pc": "0x20000100",
+          "returned": true,
+          "return_value": 0
+        },
+        "all_helpers_and_metadata_preserved": true
+      }
+    ],
+    "mechanism": "Stock display clear erases V4/V5 hook targets; the hooked setter then fails to return within the instruction limit. Relocated helpers remain intact and the setter returns normally.",
+    "limitation": "No physical watchdog trace or full OS boot; this directly reproduces the corrupt-code execution mechanism."
+  },
+  "limits": [
+    "V4/V5 injected code was in the stock LCD framebuffer; original display clear destroys their hook targets and reproduces a non-returning call.",
+    "Relocated helpers survive stock display clear and the call returns; actual printer watchdog timing and physical boot success are not observed.",
+    "Synthetic runtime properties, GPIO APIs and OS event/publication mocks; no complete boot.",
+    "Physical printer update acceptance, no-chip operation, automatic supply and print output have not been tested.",
+    "No IES/leak sensor, pump branch, Initial Charge flag or NVRAM history erasure patch.",
+    "Original hardware Huffman tables retained; hardware peripheral decoding untested.",
+    "Only existing common-mode T3400 CLUTs retained; no new halftone, total-ink, waveform or resolution transplant."
+  ]
+}

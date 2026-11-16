@@ -1,0 +1,33 @@
+{
+  "status": "DISPLAY COLLISION REGRESSION PASSED",
+  "controller_sha256": "4e75ad9b22d56eb21eb116b3fb1b3c2fd980dab9e6db172b3b292bd4da204ea4",
+  "cases": [
+    {
+      "version": "v4",
+      "after_stock_display_clear": {
+        "pc": "0x47d72b3c",
+        "returned": false,
+        "return_value": 0
+      }
+    },
+    {
+      "version": "v5",
+      "after_stock_display_clear": {
+        "pc": "0x47d72b3c",
+        "returned": false,
+        "return_value": 0
+      }
+    },
+    {
+      "version": "relocated",
+      "after_stock_display_clear": {
+        "pc": "0x20000100",
+        "returned": true,
+        "return_value": 0
+      },
+      "all_helpers_and_metadata_preserved": true
+    }
+  ],
+  "mechanism": "Stock display clear erases V4/V5 hook targets; the hooked setter then fails to return within the instruction limit. Relocated helpers remain intact and the setter returns normally.",
+  "limitation": "No physical watchdog trace or full OS boot; this directly reproduces the corrupt-code execution mechanism."
+}
