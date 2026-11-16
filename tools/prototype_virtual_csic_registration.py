@@ -11,7 +11,7 @@ import struct
 from keystone import Ks,KS_ARCH_ARM,KS_MODE_ARM
 from unicorn import UC_HOOK_CODE
 from unicorn.arm_const import *
-from prototype_virtual_csic_bootstrap import build as bootstrap,CAVE,SEED,STATES
+from prototype_virtual_csic_bootstrap import build as bootstrap,CAVE,SEED,IS_READY,UID_CACHE,UIDS,PROPERTY_READY
 from prototype_virtual_csic_transport import ROOT,BASE,machine,branch,BUFFERS
 
 def build(stock):
@@ -32,9 +32,13 @@ def build(stock):
             cmp r0, #4
             bhs fallback
             push {{{{r0-r4,lr}}}}
-            bl {SEED}
+            bl {IS_READY}
+            cmp r0, #2
+            beq deferred
             str r0, [sp]
             pop {{{{r0-r4,pc}}}}
+        deferred:
+            pop {{{{r0-r4,lr}}}}
         fallback:
             .word {{prologue}}
             b {{continuation}}
@@ -98,15 +102,27 @@ def build(stock):
         cmp r0, #4
         bhs fallback
         push {{{{r0-r4,lr}}}}
-        bl {SEED}
-        cmp r0, #0
-        bne done
+        mov r1, #22
+        mul r1, r0, r1
+        ldr r2, ={UID_CACHE}
+        add r2, r2, r1
+        ldr r3, ={UIDS}
+        add r3, r3, r1
+        mov r4, #0
+    check_identity:
+        ldrb r0, [r2, r4]
+        ldrb r1, [r3, r4]
+        cmp r0, r1
+        bne proceed
+        add r4, r4, #1
+        cmp r4, #22
+        blo check_identity
         ldr r0, [sp]
         ldr r1, [sp, #4]
         cmp r1, #0x17
-        beq done
+        beq ignore
         cmp r1, #0x18
-        beq done
+        beq ignore
         cmp r1, #1
         beq monotonic
         cmp r1, #3
@@ -147,29 +163,45 @@ def build(stock):
     image[helper-BASE:helper-BASE+len(payload)]=payload
     struct.pack_into('<I',image,entry-BASE,branch(entry,helper))
     edits.append(dict(entry=hex(entry),helper=hex(helper),bytes=len(payload),role='virtual history sentinel'))
-    # These are ink CSIC GPIO selection/probing interfaces, not the pump,
-    # IES or maintenance-box driver. With all four slots virtual there is
-    # no physical CSIC transaction to prepare or finish.
-    for entry in [0x47c53618,0x47c537f4,0x47c536e8,0x47c53870,
-                  0x47c52c28,0x47c58778]:
+    # Report virtual slot presence, while preserving all stock CSIC GPIO
+    # setup/teardown and controller hardware initialization.
+    for entry in [0x47c58778]:
         before=bytes(image[entry-BASE:entry-BASE+8])
         image[entry-BASE:entry-BASE+8]=struct.pack('<II',0xe3a00000,0xe12fff1e)
-        edits.append(dict(entry=hex(entry),role='virtual CSIC bus lifecycle / zero missing-slot mask',before=before.hex()))
-    # Stock rescan clears every chip bank. Invalidate the per-slot seed
-    # markers before executing the original clear, so data is restored on
-    # the next virtual read instead of falsely treating empty RAM as valid.
+        edits.append(dict(entry=hex(entry),role='zero missing-slot mask for virtual presence',before=before.hex()))
+    # Stock rescan clears every chip bank. Invalidate cached virtual UIDs
+    # before the native clear, so the registration boundary reconstructs
+    # the data. No writable marker is stored in the image padding.
     entry=0x47c52b74;helper=CAVE+0xe00
     place(entry,helper,f'''push {{{{r0-r3,lr}}}}
-        ldr r0,={STATES}
+        ldr r0,={UID_CACHE}
         mov r1,#0
-        mov r2,#8
+        mov r2,#4
     clear_marker:
-        str r1,[r0],#4
+        strb r1,[r0]
+        add r0,r0,#22
         subs r2,r2,#1
         bne clear_marker
         pop {{{{r0-r3,lr}}}}
         .word {{prologue}}
         b {{continuation}}
+    ''')
+    # Activate only at the original per-slot registration boundary. Earlier
+    # transport/setter calls retain native behavior and make no new property
+    # request. This avoids eager initialization during the OS/property startup.
+    entry=0x47c58508;helper=CAVE+0xf00
+    place(entry,helper,f'''push {{{{r0-r4,lr}}}}
+        bl 0x47c54624
+        bl {SEED}
+        cmp r0,#1
+        beq rejected
+        pop {{{{r0-r4,lr}}}}
+        .word {{prologue}}
+        b {{continuation}}
+    rejected:
+        mov r0,#1
+        str r0,[sp]
+        pop {{{{r0-r4,pc}}}}
     ''')
     layout['virtual_acceptance_adapters']=edits
     return bytes(image),layout
@@ -179,6 +211,7 @@ def main():
     image,layout=build(stock);cases=[]
     for sku in layout['skus']:
         cpu=machine(image);properties=[];notifications=[];details=[]
+        cpu.mem_write(PROPERTY_READY,struct.pack("<I",1))
         # Shared flag read by 47C606F0/47C60190: synthetic clear state.
         # Map the data and execute both original accessors unchanged.
         cpu.mem_map(0x3fffc000,0x4000)
@@ -203,6 +236,7 @@ def main():
                 cpu.emu_start(address,0x20000100,count=500000)
                 assert cpu.reg_read(UC_ARM_REG_PC)==0x20000100,hex(cpu.reg_read(UC_ARM_REG_PC))
                 return cpu.reg_read(UC_ARM_REG_R0)
+            assert run(SEED,[slot])==0
             assert run(0x47c51b78,[slot,12])==0
             try:result=run(0x47c582b4,[1<<slot])
             except Exception as error:

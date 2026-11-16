@@ -63,7 +63,7 @@ def snapshot(image,records):
  assert actual[:0x14]==initial[:0x14] and actual[0x20:]==initial[0x20:]
  return dict(events=events,records=actual[0x14:0x20].hex(),cache=bytes(c.mem_read(0x47e18688,0x40)).hex(),abi_preserved=True)
 
-def main():
+def main(output_folder="virtual-csic-candidate"):
     stock=(ROOT/'artifacts/maintenance-virtualization/decoded/119075160.crom.0.bin').read_bytes()
     old,_=mb_patch(stock);new,_=patch(stock)
     scalar=0;errors=0;snapshots=0
@@ -91,7 +91,7 @@ def main():
     report=dict(status='PASS; native API with event/property transport mocks',controller_sha256=hashlib.sha256(new).hexdigest(),cpu_model='ARM926',scalar_cases=scalar,
         error_api_cases_unchanged=errors,snapshot_cases=snapshots,
         raw_state_and_type_preserved=True,general_errors_not_suppressed=True)
-    out=ROOT/'artifacts/virtual-csic-candidate/INTERFACES.json';out.write_text(json.dumps(report,indent=2)+'\n')
+    out=ROOT/'artifacts'/output_folder/'INTERFACES.json';out.write_text(json.dumps(report,indent=2)+'\n')
     print(report)
 
 if __name__=='__main__':main()

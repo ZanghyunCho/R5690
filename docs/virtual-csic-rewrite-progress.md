@@ -106,3 +106,10 @@ Neither finding proves the physical shutdown cause. Actual startup ordering,
 FF-padding execution/write ownership, omitted CSIC initialization, and OS
 watchdog behavior remain unverified. The v4 builder is disabled and no revised
 EFU has been built. Results are in `virtual-csic-v4-boot-regression.json`.
+
+## V5 follow-up
+
+A separate V5 offline startup-regression candidate corrects the reproduced
+setter/dependency defects and restores stock CSIC initialization. Physical boot
+and the exact V4 shutdown cause remain unconfirmed. See `virtual-csic-v5-boot-fix.md`.
+V4 remains withdrawn and its builder remains disabled.

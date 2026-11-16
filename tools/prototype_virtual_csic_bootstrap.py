@@ -15,11 +15,12 @@ from prototype_virtual_csic_transport import ROOT,BASE,ENTRIES,BUFFERS,machine,c
 
 CAVE=0x47d70000
 SEED=CAVE+0x800
+IS_READY=CAVE+0x700
 SKUS=CAVE+0x1000
 TEMPLATES=CAVE+0x2000
 UIDS=CAVE+0x3000
-STATES=CAVE+0x4000
-MAGIC=0x56435349
+UID_CACHE=0x47e032b8
+PROPERTY_READY=0x47d5eb9c
 
 def build(stock):
     assert hashlib.sha256(stock).hexdigest()=='73e74252536d2880799c66b5dbf186b06848bf51d1a5763e0b5e708f9e4b018b'
@@ -43,12 +44,28 @@ def build(stock):
         push {{r1-r9, lr}}
         sub sp, sp, #8
         mov r4, r0
-        ldr r5, ={STATES}
-        add r5, r5, r4, lsl #3
-        ldr r6, [r5]
-        ldr r7, ={MAGIC}
-        cmp r6, r7
-        beq ready
+        mov r6, #22
+        mul r6, r4, r6
+        ldr r5, ={UID_CACHE}
+        add r5, r5, r6
+        ldr r7, ={UIDS}
+        add r7, r7, r6
+        mov r8, #0
+    check_uid:
+        ldrb r6, [r5, r8]
+        ldrb r9, [r7, r8]
+        cmp r6, r9
+        bne needs_seed
+        add r8, r8, #1
+        cmp r8, #22
+        blo check_uid
+        b ready
+    needs_seed:
+        ldr r6, ={PROPERTY_READY}
+        ldr r6, [r6]
+        cmp r6, #0
+        moveq r0, #2
+        beq exit
         mov r0, #255
         strb r0, [sp]
         ldr r0, =0x2e6
@@ -93,10 +110,6 @@ def build(stock):
         strb r9, [r8], #1
         subs r6, r6, #1
         bne copy_uid
-        mov r6, #0
-        str r6, [r5, #4]
-        ldr r6, ={MAGIC}
-        str r6, [r5]
     ready:
         mov r0, #0
     exit:
@@ -123,6 +136,29 @@ def build(stock):
         pop {{r0-r4,pc}}
     ''',CAVE+0x600)
     place(CAVE+0x600,clean)
+    ready=asm(f'''
+        push {{r1-r4,lr}}
+        mov r1,#22
+        mul r1,r0,r1
+        ldr r2,={UID_CACHE}
+        add r2,r2,r1
+        ldr r3,={UIDS}
+        add r3,r3,r1
+        mov r4,#0
+    compare_uid:
+        ldrb r0,[r2,r4]
+        ldrb r1,[r3,r4]
+        cmp r0,r1
+        movne r0,#2
+        bne ready_exit
+        add r4,r4,#1
+        cmp r4,#22
+        blo compare_uid
+        mov r0,#0
+    ready_exit:
+        pop {{r1-r4,pc}}
+    ''',IS_READY)
+    place(IS_READY,ready)
     changes=[]
     for i,(entry,name) in enumerate(ENTRIES.items()):
         helper=CAVE+64*i;prologue=struct.unpack_from('<I',stock,entry-BASE)[0]
@@ -131,7 +167,9 @@ def build(stock):
             cmp r0, #4
             bhs fallback
             push {{r0-r4, lr}}
-            bl {SEED}
+            bl {IS_READY}
+            cmp r0, #2
+            beq deferred
             cmp r0, #0
             bne complete
             ldr r0, [sp]
@@ -140,6 +178,8 @@ def build(stock):
         complete:
             str r0, [sp]
             pop {{r0-r4, pc}}
+        deferred:
+            pop {{r0-r4, lr}}
         fallback:
             .word {prologue}
             b {entry+4}
@@ -155,6 +195,7 @@ def main():
     def trap(uc,address,size,context):raise AssertionError('Physical CSIC transport executed')
     for sku in layout['skus']:
         cpu=machine(image);reads=[]
+        cpu.mem_write(PROPERTY_READY,struct.pack("<I",1))
         def prop(uc,address,size,context):
             assert uc.reg_read(UC_ARM_REG_R0)==0x2e6 and uc.reg_read(UC_ARM_REG_R2)==1
             reads.append(sku);uc.mem_write(uc.reg_read(UC_ARM_REG_R1),bytes([sku]));uc.reg_write(UC_ARM_REG_R0,0)
@@ -163,6 +204,7 @@ def main():
         for address in [0x47c554f4,0x47c555a0,0x47c55b28,0x47c55bec,0x47c55c98]:cpu.hook_add(UC_HOOK_CODE,trap,begin=address,end=address)
         identities=[]
         for slot in range(4):
+            assert call(cpu,SEED,[slot])==0
             assert call(cpu,0x47c51b78,[slot,12])==0
             identity=bytes(cpu.mem_read(0x47e032b8+slot*22,22));assert len(identity)==22
             identities.append(identity)

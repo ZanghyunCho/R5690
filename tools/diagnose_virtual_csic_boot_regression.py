@@ -7,11 +7,11 @@ import json
 from unicorn import UC_HOOK_CODE
 from unicorn.arm_const import *
 from prototype_virtual_csic_transport import ROOT,machine,call
-from virtual_csic_patch import patch
+from validate_virtual_csic_startup_regression import old_image
 
 def main():
     stock=(ROOT/'artifacts/maintenance-virtualization/decoded/119075160.crom.0.bin').read_bytes()
-    image,_=patch(stock)
+    image=old_image()
     returns=[]
     for slot in range(4):
         cpu=machine(image,cpu_model=UC_CPU_ARM_926)

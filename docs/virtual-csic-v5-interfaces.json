@@ -1,0 +1,10 @@
+{
+  "status": "PASS; native API with event/property transport mocks",
+  "controller_sha256": "e50027a788ef2e47a3294327c4d5bc37e5e4c02a40c9ac26121e89b9e9b926f9",
+  "cpu_model": "ARM926",
+  "scalar_cases": 126,
+  "error_api_cases_unchanged": 232,
+  "snapshot_cases": 45,
+  "raw_state_and_type_preserved": true,
+  "general_errors_not_suppressed": true
+}

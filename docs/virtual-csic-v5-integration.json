@@ -1,0 +1,1314 @@
+{
+  "status": "BOOT-FIX INTEGRATION ONLY; physical boot/supply/printing unverified",
+  "controller_sha256": "e50027a788ef2e47a3294327c4d5bc37e5e4c02a40c9ac26121e89b9e9b926f9",
+  "cpu_model": "ARM926",
+  "cases": [
+    {
+      "sku": "0x10",
+      "initial_consumption": 0,
+      "counts": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "mode": 1,
+      "full_scan": true,
+      "consumption_commits": 4,
+      "individual_reregistrations": 4,
+      "repeat_full_scan": true,
+      "identities_stable": true,
+      "no_detail_errors": true,
+      "gpio_api_calls": 120
+    },
+    {
+      "sku": "0x10",
+      "initial_consumption": 1,
+      "counts": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "mode": 2,
+      "full_scan": true,
+      "consumption_commits": 4,
+      "individual_reregistrations": 4,
+      "repeat_full_scan": true,
+      "identities_stable": true,
+      "no_detail_errors": true,
+      "gpio_api_calls": 120
+    },
+    {
+      "sku": "0x10",
+      "initial_consumption": 100000,
+      "counts": [
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "mode": 3,
+      "full_scan": true,
+      "consumption_commits": 4,
+      "individual_reregistrations": 4,
+      "repeat_full_scan": true,
+      "identities_stable": true,
+      "no_detail_errors": true,
+      "gpio_api_calls": 120
+    },
+    {
+      "sku": "0x10",
+      "initial_consumption": 10000000,
+      "counts": [
+        [
+          99,
+          100
+        ],
+        [
+          172,
+          172
+        ],
+        [
+          172,
+          172
+        ],
+        [
+          172,
+          172
+        ]
+      ],
+      "mode": 4,
+      "full_scan": true,
+      "consumption_commits": 4,
+      "individual_reregistrations": 4,
+      "repeat_full_scan": true,
+      "identities_stable": true,
+      "no_detail_errors": true,
+      "gpio_api_calls": 120
+    },
+    {
+      "sku": "0x10",
+      "initial_consumption": 100000000,
+      "counts": [
+        [
+          990,
+          990
+        ],
+        [
+          1717,
+          1717
+        ],
+        [
+          1717,
+          1717
+        ],
+        [
+          1717,
+          1717
+        ]
+      ],
+      "mode": 1,
+      "full_scan": true,
+      "consumption_commits": 4,
+      "individual_reregistrations": 4,
+      "repeat_full_scan": true,
+      "identities_stable": true,
+      "no_detail_errors": true,
+      "gpio_api_calls": 120
+    },
+    {
+      "sku": "0x10",
+      "initial_consumption": 4000000000,
+      "counts": [
+        [
+          32767,
+          32767
+        ],
+        [
+          32767,
+          32767
+        ],
+        [
+          32767,
+          32767
+        ],
+        [
+          32767,
+          32767
+        ]
+      ],
+      "mode": 2,
+      "full_scan": true,
+      "consumption_commits": 4,
+      "individual_reregistrations": 4,
+      "repeat_full_scan": true,
+      "identities_stable": true,
+      "no_detail_errors": true,
+      "gpio_api_calls": 120
+    },
+    {
+      "sku": "0x20",
+      "initial_consumption": 0,
+      "counts": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "mode": 3,
+      "full_scan": true,
+      "consumption_commits": 4,
+      "individual_reregistrations": 4,
+      "repeat_full_scan": true,
+      "identities_stable": true,
+      "no_detail_errors": true,
+      "gpio_api_calls": 120
+    },
+    {
+      "sku": "0x20",
+      "initial_consumption": 1,
+      "counts": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "mode": 4,
+      "full_scan": true,
+      "consumption_commits": 4,
+      "individual_reregistrations": 4,
+      "repeat_full_scan": true,
+      "identities_stable": true,
+      "no_detail_errors": true,
+      "gpio_api_calls": 120
+    },
+    {
+      "sku": "0x20",
+      "initial_consumption": 100000,
+      "counts": [
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "mode": 1,
+      "full_scan": true,
+      "consumption_commits": 4,
+      "individual_reregistrations": 4,
+      "repeat_full_scan": true,
+      "identities_stable": true,
+      "no_detail_errors": true,
+      "gpio_api_calls": 120
+    },
+    {
+      "sku": "0x20",
+      "initial_consumption": 10000000,
+      "counts": [
+        [
+          99,
+          100
+        ],
+        [
+          172,
+          172
+        ],
+        [
+          172,
+          172
+        ],
+        [
+          172,
+          172
+        ]
+      ],
+      "mode": 2,
+      "full_scan": true,
+      "consumption_commits": 4,
+      "individual_reregistrations": 4,
+      "repeat_full_scan": true,
+      "identities_stable": true,
+      "no_detail_errors": true,
+      "gpio_api_calls": 120
+    },
+    {
+      "sku": "0x20",
+      "initial_consumption": 100000000,
+      "counts": [
+        [
+          990,
+          990
+        ],
+        [
+          1717,
+          1717
+        ],
+        [
+          1717,
+          1717
+        ],
+        [
+          1717,
+          1717
+        ]
+      ],
+      "mode": 3,
+      "full_scan": true,
+      "consumption_commits": 4,
+      "individual_reregistrations": 4,
+      "repeat_full_scan": true,
+      "identities_stable": true,
+      "no_detail_errors": true,
+      "gpio_api_calls": 120
+    },
+    {
+      "sku": "0x20",
+      "initial_consumption": 4000000000,
+      "counts": [
+        [
+          32767,
+          32767
+        ],
+        [
+          32767,
+          32767
+        ],
+        [
+          32767,
+          32767
+        ],
+        [
+          32767,
+          32767
+        ]
+      ],
+      "mode": 4,
+      "full_scan": true,
+      "consumption_commits": 4,
+      "individual_reregistrations": 4,
+      "repeat_full_scan": true,
+      "identities_stable": true,
+      "no_detail_errors": true,
+      "gpio_api_calls": 120
+    },
+    {
+      "sku": "0x21",
+      "initial_consumption": 0,
+      "counts": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "mode": 1,
+      "full_scan": true,
+      "consumption_commits": 4,
+      "individual_reregistrations": 4,
+      "repeat_full_scan": true,
+      "identities_stable": true,
+      "no_detail_errors": true,
+      "gpio_api_calls": 120
+    },
+    {
+      "sku": "0x21",
+      "initial_consumption": 1,
+      "counts": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "mode": 2,
+      "full_scan": true,
+      "consumption_commits": 4,
+      "individual_reregistrations": 4,
+      "repeat_full_scan": true,
+      "identities_stable": true,
+      "no_detail_errors": true,
+      "gpio_api_calls": 120
+    },
+    {
+      "sku": "0x21",
+      "initial_consumption": 100000,
+      "counts": [
+        [
+          3,
+          3
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          4
+        ]
+      ],
+      "mode": 3,
+      "full_scan": true,
+      "consumption_commits": 4,
+      "individual_reregistrations": 4,
+      "repeat_full_scan": true,
+      "identities_stable": true,
+      "no_detail_errors": true,
+      "gpio_api_calls": 120
+    },
+    {
+      "sku": "0x21",
+      "initial_consumption": 10000000,
+      "counts": [
+        [
+          221,
+          222
+        ],
+        [
+          342,
+          343
+        ],
+        [
+          342,
+          343
+        ],
+        [
+          342,
+          343
+        ]
+      ],
+      "mode": 4,
+      "full_scan": true,
+      "consumption_commits": 4,
+      "individual_reregistrations": 4,
+      "repeat_full_scan": true,
+      "identities_stable": true,
+      "no_detail_errors": true,
+      "gpio_api_calls": 120
+    },
+    {
+      "sku": "0x21",
+      "initial_consumption": 100000000,
+      "counts": [
+        [
+          2210,
+          2211
+        ],
+        [
+          3419,
+          3420
+        ],
+        [
+          3419,
+          3420
+        ],
+        [
+          3419,
+          3420
+        ]
+      ],
+      "mode": 1,
+      "full_scan": true,
+      "consumption_commits": 4,
+      "individual_reregistrations": 4,
+      "repeat_full_scan": true,
+      "identities_stable": true,
+      "no_detail_errors": true,
+      "gpio_api_calls": 120
+    },
+    {
+      "sku": "0x21",
+      "initial_consumption": 4000000000,
+      "counts": [
+        [
+          32767,
+          32767
+        ],
+        [
+          32767,
+          32767
+        ],
+        [
+          32767,
+          32767
+        ],
+        [
+          32767,
+          32767
+        ]
+      ],
+      "mode": 2,
+      "full_scan": true,
+      "consumption_commits": 4,
+      "individual_reregistrations": 4,
+      "repeat_full_scan": true,
+      "identities_stable": true,
+      "no_detail_errors": true,
+      "gpio_api_calls": 120
+    },
+    {
+      "sku": "0x22",
+      "initial_consumption": 0,
+      "counts": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "mode": 3,
+      "full_scan": true,
+      "consumption_commits": 4,
+      "individual_reregistrations": 4,
+      "repeat_full_scan": true,
+      "identities_stable": true,
+      "no_detail_errors": true,
+      "gpio_api_calls": 120
+    },
+    {
+      "sku": "0x22",
+      "initial_consumption": 1,
+      "counts": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "mode": 4,
+      "full_scan": true,
+      "consumption_commits": 4,
+      "individual_reregistrations": 4,
+      "repeat_full_scan": true,
+      "identities_stable": true,
+      "no_detail_errors": true,
+      "gpio_api_calls": 120
+    },
+    {
+      "sku": "0x22",
+      "initial_consumption": 100000,
+      "counts": [
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "mode": 1,
+      "full_scan": true,
+      "consumption_commits": 4,
+      "individual_reregistrations": 4,
+      "repeat_full_scan": true,
+      "identities_stable": true,
+      "no_detail_errors": true,
+      "gpio_api_calls": 120
+    },
+    {
+      "sku": "0x22",
+      "initial_consumption": 10000000,
+      "counts": [
+        [
+          99,
+          100
+        ],
+        [
+          172,
+          172
+        ],
+        [
+          172,
+          172
+        ],
+        [
+          172,
+          172
+        ]
+      ],
+      "mode": 2,
+      "full_scan": true,
+      "consumption_commits": 4,
+      "individual_reregistrations": 4,
+      "repeat_full_scan": true,
+      "identities_stable": true,
+      "no_detail_errors": true,
+      "gpio_api_calls": 120
+    },
+    {
+      "sku": "0x22",
+      "initial_consumption": 100000000,
+      "counts": [
+        [
+          990,
+          990
+        ],
+        [
+          1717,
+          1717
+        ],
+        [
+          1717,
+          1717
+        ],
+        [
+          1717,
+          1717
+        ]
+      ],
+      "mode": 3,
+      "full_scan": true,
+      "consumption_commits": 4,
+      "individual_reregistrations": 4,
+      "repeat_full_scan": true,
+      "identities_stable": true,
+      "no_detail_errors": true,
+      "gpio_api_calls": 120
+    },
+    {
+      "sku": "0x22",
+      "initial_consumption": 4000000000,
+      "counts": [
+        [
+          32767,
+          32767
+        ],
+        [
+          32767,
+          32767
+        ],
+        [
+          32767,
+          32767
+        ],
+        [
+          32767,
+          32767
+        ]
+      ],
+      "mode": 4,
+      "full_scan": true,
+      "consumption_commits": 4,
+      "individual_reregistrations": 4,
+      "repeat_full_scan": true,
+      "identities_stable": true,
+      "no_detail_errors": true,
+      "gpio_api_calls": 120
+    },
+    {
+      "sku": "0x40",
+      "initial_consumption": 0,
+      "counts": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "mode": 1,
+      "full_scan": true,
+      "consumption_commits": 4,
+      "individual_reregistrations": 4,
+      "repeat_full_scan": true,
+      "identities_stable": true,
+      "no_detail_errors": true,
+      "gpio_api_calls": 120
+    },
+    {
+      "sku": "0x40",
+      "initial_consumption": 1,
+      "counts": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "mode": 2,
+      "full_scan": true,
+      "consumption_commits": 4,
+      "individual_reregistrations": 4,
+      "repeat_full_scan": true,
+      "identities_stable": true,
+      "no_detail_errors": true,
+      "gpio_api_calls": 120
+    },
+    {
+      "sku": "0x40",
+      "initial_consumption": 100000,
+      "counts": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "mode": 3,
+      "full_scan": true,
+      "consumption_commits": 4,
+      "individual_reregistrations": 4,
+      "repeat_full_scan": true,
+      "identities_stable": true,
+      "no_detail_errors": true,
+      "gpio_api_calls": 120
+    },
+    {
+      "sku": "0x40",
+      "initial_consumption": 10000000,
+      "counts": [
+        [
+          69,
+          69
+        ],
+        [
+          172,
+          172
+        ],
+        [
+          172,
+          172
+        ],
+        [
+          172,
+          172
+        ]
+      ],
+      "mode": 4,
+      "full_scan": true,
+      "consumption_commits": 4,
+      "individual_reregistrations": 4,
+      "repeat_full_scan": true,
+      "identities_stable": true,
+      "no_detail_errors": true,
+      "gpio_api_calls": 120
+    },
+    {
+      "sku": "0x40",
+      "initial_consumption": 100000000,
+      "counts": [
+        [
+          690,
+          690
+        ],
+        [
+          1717,
+          1717
+        ],
+        [
+          1717,
+          1717
+        ],
+        [
+          1717,
+          1717
+        ]
+      ],
+      "mode": 1,
+      "full_scan": true,
+      "consumption_commits": 4,
+      "individual_reregistrations": 4,
+      "repeat_full_scan": true,
+      "identities_stable": true,
+      "no_detail_errors": true,
+      "gpio_api_calls": 120
+    },
+    {
+      "sku": "0x40",
+      "initial_consumption": 4000000000,
+      "counts": [
+        [
+          27568,
+          27568
+        ],
+        [
+          32767,
+          32767
+        ],
+        [
+          32767,
+          32767
+        ],
+        [
+          32767,
+          32767
+        ]
+      ],
+      "mode": 2,
+      "full_scan": true,
+      "consumption_commits": 4,
+      "individual_reregistrations": 4,
+      "repeat_full_scan": true,
+      "identities_stable": true,
+      "no_detail_errors": true,
+      "gpio_api_calls": 120
+    },
+    {
+      "sku": "0x50",
+      "initial_consumption": 0,
+      "counts": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "mode": 3,
+      "full_scan": true,
+      "consumption_commits": 4,
+      "individual_reregistrations": 4,
+      "repeat_full_scan": true,
+      "identities_stable": true,
+      "no_detail_errors": true,
+      "gpio_api_calls": 120
+    },
+    {
+      "sku": "0x50",
+      "initial_consumption": 1,
+      "counts": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "mode": 4,
+      "full_scan": true,
+      "consumption_commits": 4,
+      "individual_reregistrations": 4,
+      "repeat_full_scan": true,
+      "identities_stable": true,
+      "no_detail_errors": true,
+      "gpio_api_calls": 120
+    },
+    {
+      "sku": "0x50",
+      "initial_consumption": 100000,
+      "counts": [
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "mode": 1,
+      "full_scan": true,
+      "consumption_commits": 4,
+      "individual_reregistrations": 4,
+      "repeat_full_scan": true,
+      "identities_stable": true,
+      "no_detail_errors": true,
+      "gpio_api_calls": 120
+    },
+    {
+      "sku": "0x50",
+      "initial_consumption": 10000000,
+      "counts": [
+        [
+          99,
+          100
+        ],
+        [
+          172,
+          172
+        ],
+        [
+          172,
+          172
+        ],
+        [
+          172,
+          172
+        ]
+      ],
+      "mode": 2,
+      "full_scan": true,
+      "consumption_commits": 4,
+      "individual_reregistrations": 4,
+      "repeat_full_scan": true,
+      "identities_stable": true,
+      "no_detail_errors": true,
+      "gpio_api_calls": 120
+    },
+    {
+      "sku": "0x50",
+      "initial_consumption": 100000000,
+      "counts": [
+        [
+          990,
+          990
+        ],
+        [
+          1717,
+          1717
+        ],
+        [
+          1717,
+          1717
+        ],
+        [
+          1717,
+          1717
+        ]
+      ],
+      "mode": 3,
+      "full_scan": true,
+      "consumption_commits": 4,
+      "individual_reregistrations": 4,
+      "repeat_full_scan": true,
+      "identities_stable": true,
+      "no_detail_errors": true,
+      "gpio_api_calls": 120
+    },
+    {
+      "sku": "0x50",
+      "initial_consumption": 4000000000,
+      "counts": [
+        [
+          32767,
+          32767
+        ],
+        [
+          32767,
+          32767
+        ],
+        [
+          32767,
+          32767
+        ],
+        [
+          32767,
+          32767
+        ]
+      ],
+      "mode": 4,
+      "full_scan": true,
+      "consumption_commits": 4,
+      "individual_reregistrations": 4,
+      "repeat_full_scan": true,
+      "identities_stable": true,
+      "no_detail_errors": true,
+      "gpio_api_calls": 120
+    }
+  ],
+  "layout": {
+    "entries": [
+      {
+        "entry": "0x47c51b78",
+        "helper": "0x47d70000",
+        "operation": "read"
+      },
+      {
+        "entry": "0x47c51c50",
+        "helper": "0x47d70040",
+        "operation": "alternate_read"
+      },
+      {
+        "entry": "0x47c51cf4",
+        "helper": "0x47d70080",
+        "operation": "readback"
+      },
+      {
+        "entry": "0x47c51d84",
+        "helper": "0x47d700c0",
+        "operation": "write"
+      },
+      {
+        "entry": "0x47c51e28",
+        "helper": "0x47d70100",
+        "operation": "alternate_write"
+      }
+    ],
+    "cave_spans": [
+      [
+        "0x47d71000",
+        "0x47d71006"
+      ],
+      [
+        "0x47d72000",
+        "0x47d72fc0"
+      ],
+      [
+        "0x47d73000",
+        "0x47d73058"
+      ],
+      [
+        "0x47d70800",
+        "0x47d7093c"
+      ],
+      [
+        "0x47d70600",
+        "0x47d70628"
+      ],
+      [
+        "0x47d70700",
+        "0x47d70750"
+      ],
+      [
+        "0x47d70000",
+        "0x47d70040"
+      ],
+      [
+        "0x47d70040",
+        "0x47d70080"
+      ],
+      [
+        "0x47d70080",
+        "0x47d700c0"
+      ],
+      [
+        "0x47d700c0",
+        "0x47d70100"
+      ],
+      [
+        "0x47d70100",
+        "0x47d70140"
+      ]
+    ],
+    "seed": "0x47d70800",
+    "skus": [
+      16,
+      32,
+      33,
+      34,
+      64,
+      80
+    ],
+    "virtual_acceptance_adapters": [
+      {
+        "entry": "0x47c553cc",
+        "helper": "0x47d70180",
+        "bytes": 44
+      },
+      {
+        "entry": "0x47c52450",
+        "helper": "0x47d701c0",
+        "bytes": 44
+      },
+      {
+        "entry": "0x47c51f78",
+        "helper": "0x47d70200",
+        "bytes": 44
+      },
+      {
+        "entry": "0x47c520cc",
+        "helper": "0x47d70240",
+        "bytes": 44
+      },
+      {
+        "entry": "0x47c57e4c",
+        "helper": "0x47d70300",
+        "bytes": 96
+      },
+      {
+        "entry": "0x47c57a04",
+        "helper": "0x47d70400",
+        "bytes": 176
+      },
+      {
+        "entry": "0x47c8d8d8",
+        "helper": "0x47d70500",
+        "bytes": 84
+      },
+      {
+        "entry": "0x47c52674",
+        "helper": "0x47d70c00",
+        "bytes": 180
+      },
+      {
+        "entry": "0x47c54c98",
+        "helper": "0x47d70d00",
+        "bytes": 24,
+        "role": "virtual history sentinel"
+      },
+      {
+        "entry": "0x47c58778",
+        "role": "zero missing-slot mask for virtual presence",
+        "before": "f0402de914d04de2"
+      },
+      {
+        "entry": "0x47c52b74",
+        "helper": "0x47d70e00",
+        "bytes": 48
+      },
+      {
+        "entry": "0x47c58508",
+        "helper": "0x47d70f00",
+        "bytes": 44
+      }
+    ],
+    "maintenance_changes": [
+      {
+        "address": "0x47c63e0c",
+        "before": "0xe92d4038",
+        "after": "0xe92d4010",
+        "purpose": "Counter gate publishes stock normal/100% response and returns non-full"
+      },
+      {
+        "address": "0x47c63e10",
+        "before": "0xe59f046c",
+        "after": "0xeb0013e4",
+        "purpose": "Counter gate publishes stock normal/100% response and returns non-full"
+      },
+      {
+        "address": "0x47c63e14",
+        "before": "0xe3a02002",
+        "after": "0xe3a00000",
+        "purpose": "Counter gate publishes stock normal/100% response and returns non-full"
+      },
+      {
+        "address": "0x47c63e18",
+        "before": "0xe1a0100d",
+        "after": "0xe8bd8010",
+        "purpose": "Counter gate publishes stock normal/100% response and returns non-full"
+      },
+      {
+        "address": "0x47ca8080",
+        "before": "0xe5d0001e",
+        "after": "0xe3a00000",
+        "purpose": "Maintenance status getter reports normal=0"
+      },
+      {
+        "address": "0x47ca9608",
+        "before": "0x5c5401e",
+        "after": "0x5c5801e",
+        "purpose": "Only status API opcode 0x30 stores normal=0"
+      }
+    ],
+    "remaining_only_interfaces": [
+      "0x47CAB5A4 snapshot level bytes",
+      "0x47CA99DC bounded scalar level setter"
+    ],
+    "old_v1_raw_state_and_error_overrides_absent": true,
+    "controller_sha256": "e50027a788ef2e47a3294327c4d5bc37e5e4c02a40c9ac26121e89b9e9b926f9"
+  },
+  "original_scan_calls": 72,
+  "original_consumption_commits": 144,
+  "original_reregistrations": 144,
+  "forbidden_hardware_or_fatal_calls": 0,
+  "unknown_sku_rejected": true,
+  "stock_positive_control_reaches_hardware": true,
+  "physical_history_object_write_or_format_calls": 0,
+  "cold_start_reconstruction_cases": [
+    {
+      "mode": 1,
+      "stable_identities": true,
+      "reconstructed_from_properties": true
+    },
+    {
+      "mode": 2,
+      "stable_identities": true,
+      "reconstructed_from_properties": true
+    },
+    {
+      "mode": 3,
+      "stable_identities": true,
+      "reconstructed_from_properties": true
+    },
+    {
+      "mode": 4,
+      "stable_identities": true,
+      "reconstructed_from_properties": true
+    }
+  ],
+  "mocks": [
+    "Runtime properties including cumulative ink use are synthetic in-memory values.",
+    "Event delivery, delay and OS status-publication callback 0x47C5451C are mocked.",
+    "Stock CSIC GPIO setup/teardown executes with mocked low-level 0x47C513E0, 0x47C51434 and 0x47C512B0 APIs.",
+    "No complete operating-system boot, actuator control, supply/IES or printing test."
+  ],
+  "ff_padding_mapped_read_execute_only_during_tests": true
+}
