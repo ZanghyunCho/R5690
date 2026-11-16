@@ -1,0 +1,616 @@
+{
+  "status": "EXPERIMENTAL, physical boot/update/printing without cartridge unverified",
+  "build": {
+    "status": "OFFLINE PROTOTYPE: physical boot, update acceptance and operation without a chip UNVERIFIED",
+    "file": "FWE642TL_GR_VIRTUAL_MAINTENANCE_BOX_PROTOTYPE_v1.EFU",
+    "bytes": 114841230,
+    "sha256": "2d7909a02b2a2520ca8374122a9cb80512e998beb3a7e244790633286fd01561",
+    "source_rcx_sha256": "17587763f863f4b2e145eb9d25902d69a8161feb6f3ec1de206c67474d8dcb8d",
+    "modified_rcx_sha256": "1efdcdb900f1fd968663a6563266e606b141b2cd9152e54cf4bba0705d556922",
+    "patched_controller_sha256": "fc992e25ff3baf88bf95c8bc2384ce01dd5558ab51b5f8a7571d154301be5194",
+    "changes": [
+      {
+        "address": "0x47c63e0c",
+        "before": "0xe92d4038",
+        "after": "0xe92d4010",
+        "purpose": "Counter gate publishes stock normal/100% response and returns non-full"
+      },
+      {
+        "address": "0x47c63e10",
+        "before": "0xe59f046c",
+        "after": "0xeb0013e4",
+        "purpose": "Counter gate publishes stock normal/100% response and returns non-full"
+      },
+      {
+        "address": "0x47c63e14",
+        "before": "0xe3a02002",
+        "after": "0xe3a00000",
+        "purpose": "Counter gate publishes stock normal/100% response and returns non-full"
+      },
+      {
+        "address": "0x47c63e18",
+        "before": "0xe1a0100d",
+        "after": "0xe8bd8010",
+        "purpose": "Counter gate publishes stock normal/100% response and returns non-full"
+      },
+      {
+        "address": "0x47ca8080",
+        "before": "0xe5d0001e",
+        "after": "0xe3a00000",
+        "purpose": "Maintenance status getter reports normal=0"
+      },
+      {
+        "address": "0x47ca9608",
+        "before": "0x5c5401e",
+        "after": "0x5c5801e",
+        "purpose": "Only status API opcode 0x30 stores normal=0"
+      }
+    ],
+    "codec": {
+      "stock_dht_byte_identical": true,
+      "original_tokens": 255138,
+      "new_tokens": 255138,
+      "invalidated_copies_replaced": 9,
+      "original_bytes": 539097,
+      "new_bytes": 539166
+    },
+    "native": {
+      "segments": [
+        {
+          "slot": "0x40000",
+          "segment": 0,
+          "bytes": 519876,
+          "sha256": "1ab8d5541e272e82c0e18386f6e992a9ad4b1f66955e0b4824078fd21c230e14",
+          "native_arm_exact": true
+        },
+        {
+          "slot": "0x40000",
+          "segment": 1,
+          "bytes": 2995828,
+          "sha256": "e7216c5115bf14a530477b970a5291b627f49284bed64155702003b4b4e6aac1",
+          "native_arm_exact": true
+        },
+        {
+          "slot": "0x440000",
+          "segment": 0,
+          "bytes": 1310720,
+          "sha256": "fc992e25ff3baf88bf95c8bc2384ce01dd5558ab51b5f8a7571d154301be5194",
+          "native_arm_exact": true
+        },
+        {
+          "slot": "0x440000",
+          "segment": 1,
+          "bytes": 65536,
+          "sha256": "8f58305746eb15d380db40271525d08d0a4f5aaa6c493de022689c1bc63f0071",
+          "native_arm_exact": true
+        },
+        {
+          "slot": "0x440000",
+          "segment": 2,
+          "bytes": 6824,
+          "sha256": "a5d376c29e6847bccd8a07d67fdb952caf77f055a47ebe0f139c16f87948a846",
+          "native_arm_exact": true
+        }
+      ],
+      "stock_descriptor": [
+        "0x244000a",
+        "0x304",
+        "0x65310",
+        "0xe",
+        "0x3e4a2",
+        "0x6561c",
+        "0x1e3bd"
+      ],
+      "modified_descriptor": [
+        "0x244000a",
+        "0x304",
+        "0x65320",
+        "0xe",
+        "0x3e4a2",
+        "0x6562c",
+        "0x1e3f2"
+      ],
+      "original_arm_hardware_setup_passed": true,
+      "dht_bank_writes_byte_identical": true,
+      "limitation": "Original header/setup and LZ loop execute; peripheral Huffman decoding and full boot are not emulated"
+    },
+    "allowed_rcx_ranges": [
+      [
+        114606478,
+        114606480
+      ],
+      [
+        114606492,
+        114606512
+      ],
+      [
+        119075160,
+        119664984
+      ]
+    ],
+    "independent_6_IPL_correction_identical": true,
+    "all_14_records_verified": true,
+    "stock_GH_and_GR_main_unchanged": true,
+    "zip_readback_identical": true,
+    "limits": [
+      "No real printer/peripheral/updater access or full boot",
+      "Presence association reproduced via stock maintenance UI bitmap; no live trace captured",
+      "Physical IC bus transactions/writeback are not emulated by this state-interface patch",
+      "No universal error suppression or ink cartridge changes",
+      "No version spoofing, EEPROM or NVRAM erasure",
+      "Original Huffman hardware tables and bank setup preserved; DMA/Huffman peripheral decoding untested"
+    ]
+  },
+  "independent_final_archive": {
+    "final_efu_sha256": "2d7909a02b2a2520ca8374122a9cb80512e998beb3a7e244790633286fd01561",
+    "all_48_original_DHTs_byte_identical": true,
+    "all_16_segments_independent_C_decode_verified": true,
+    "only_GR_controller_decompressed_changed": true,
+    "reference": "abrasive/epson-reversing@2ed0a54a4ba98c9a860bf2e0efbfc4d53c0e4a16 uncrom.c",
+    "segments": [
+      {
+        "crom_offset": 38580,
+        "segment": 0,
+        "sha256": "22beac7bccb799bc64603ac2364e1da6ae2db6071f1a5c8852c55ea4bf474ebd",
+        "stock_unchanged": true
+      },
+      {
+        "crom_offset": 38580,
+        "segment": 1,
+        "sha256": "9774e2d5fa1a73096dd3c2e841908b70c25292df1ed5b298589e85a303179217",
+        "stock_unchanged": true
+      },
+      {
+        "crom_offset": 7496024,
+        "segment": 0,
+        "sha256": "b39d0d9a5b576de2ceb67a5364988f95ae0d7f9e0e64dbfd2f28cbedf991ff6b",
+        "stock_unchanged": true
+      },
+      {
+        "crom_offset": 7496024,
+        "segment": 1,
+        "sha256": "6011c777700261a22dd346523b625da07ff26f6edcb91a50f55dbaff27d27adf",
+        "stock_unchanged": true
+      },
+      {
+        "crom_offset": 11690328,
+        "segment": 0,
+        "sha256": "be6cb05afe57d2050cd3eb12c2a41765ae24f143e77afd6853d97155c3a08a80",
+        "stock_unchanged": true
+      },
+      {
+        "crom_offset": 11690328,
+        "segment": 1,
+        "sha256": "adce91a30e75862806059da07e1fcec9476ddc8c8724b7a5d55b65dbcda05ed8",
+        "stock_unchanged": true
+      },
+      {
+        "crom_offset": 11690328,
+        "segment": 2,
+        "sha256": "b3c4324acbf87887b2fc0ec413ad0370df08c600dd711bdd4f9946f59e522d5f",
+        "stock_unchanged": true
+      },
+      {
+        "crom_offset": 24023400,
+        "segment": 0,
+        "sha256": "bb175d1e9eb0f0dbf6012c494c4684129ac8dc9e8a01d29c85ccea9be458563b",
+        "stock_unchanged": true
+      },
+      {
+        "crom_offset": 107423412,
+        "segment": 0,
+        "sha256": "62afb3d436338cbe11ead05975d5a1c86949ad251a54d9ff4a2cb6bb2225fbcc",
+        "stock_unchanged": true
+      },
+      {
+        "crom_offset": 107423412,
+        "segment": 1,
+        "sha256": "d2c49f26fc8b2054223154f766ba621f810010b1ec85f88d648cf3ad21e1ef03",
+        "stock_unchanged": true
+      },
+      {
+        "crom_offset": 114880856,
+        "segment": 0,
+        "sha256": "1ab8d5541e272e82c0e18386f6e992a9ad4b1f66955e0b4824078fd21c230e14",
+        "stock_unchanged": true
+      },
+      {
+        "crom_offset": 114880856,
+        "segment": 1,
+        "sha256": "e7216c5115bf14a530477b970a5291b627f49284bed64155702003b4b4e6aac1",
+        "stock_unchanged": true
+      },
+      {
+        "crom_offset": 119075160,
+        "segment": 0,
+        "sha256": "fc992e25ff3baf88bf95c8bc2384ce01dd5558ab51b5f8a7571d154301be5194",
+        "stock_unchanged": false
+      },
+      {
+        "crom_offset": 119075160,
+        "segment": 1,
+        "sha256": "8f58305746eb15d380db40271525d08d0a4f5aaa6c493de022689c1bc63f0071",
+        "stock_unchanged": true
+      },
+      {
+        "crom_offset": 119075160,
+        "segment": 2,
+        "sha256": "a5d376c29e6847bccd8a07d67fdb952caf77f055a47ebe0f139c16f87948a846",
+        "stock_unchanged": true
+      },
+      {
+        "crom_offset": 131408232,
+        "segment": 0,
+        "sha256": "bb175d1e9eb0f0dbf6012c494c4684129ac8dc9e8a01d29c85ccea9be458563b",
+        "stock_unchanged": true
+      }
+    ]
+  },
+  "native_behavior_validation": {
+    "status_getter_inputs": 256,
+    "conditional_setter_cases": 120,
+    "full_status_API_cases": 7,
+    "unrelated_event_pairs": 28,
+    "full_status_API": [
+      {
+        "input": 0,
+        "original": {
+          "state": "00",
+          "events": [
+            {
+              "event": "0x2010",
+              "data": "00"
+            }
+          ]
+        },
+        "patched": {
+          "state": "00",
+          "events": [
+            {
+              "event": "0x2010",
+              "data": "00"
+            }
+          ]
+        }
+      },
+      {
+        "input": 1,
+        "original": {
+          "state": "01",
+          "events": [
+            {
+              "event": "0x2010",
+              "data": "01"
+            }
+          ]
+        },
+        "patched": {
+          "state": "00",
+          "events": [
+            {
+              "event": "0x2010",
+              "data": "00"
+            }
+          ]
+        }
+      },
+      {
+        "input": 2,
+        "original": {
+          "state": "02",
+          "events": [
+            {
+              "event": "0x2010",
+              "data": "02"
+            }
+          ]
+        },
+        "patched": {
+          "state": "00",
+          "events": [
+            {
+              "event": "0x2010",
+              "data": "00"
+            }
+          ]
+        }
+      },
+      {
+        "input": 3,
+        "original": {
+          "state": "03",
+          "events": [
+            {
+              "event": "0x2010",
+              "data": "04"
+            }
+          ]
+        },
+        "patched": {
+          "state": "00",
+          "events": [
+            {
+              "event": "0x2010",
+              "data": "00"
+            }
+          ]
+        }
+      },
+      {
+        "input": 4,
+        "original": {
+          "state": "04",
+          "events": [
+            {
+              "event": "0x2010",
+              "data": "03"
+            }
+          ]
+        },
+        "patched": {
+          "state": "00",
+          "events": [
+            {
+              "event": "0x2010",
+              "data": "00"
+            }
+          ]
+        }
+      },
+      {
+        "input": 128,
+        "original": {
+          "state": "80",
+          "events": [
+            {
+              "event": "0x2010",
+              "data": "02"
+            }
+          ]
+        },
+        "patched": {
+          "state": "00",
+          "events": [
+            {
+              "event": "0x2010",
+              "data": "00"
+            }
+          ]
+        }
+      },
+      {
+        "input": 255,
+        "original": {
+          "state": "ff",
+          "events": [
+            {
+              "event": "0x2010",
+              "data": "02"
+            }
+          ]
+        },
+        "patched": {
+          "state": "00",
+          "events": [
+            {
+              "event": "0x2010",
+              "data": "00"
+            }
+          ]
+        }
+      }
+    ],
+    "patched_normal_event": {
+      "event": "0x2010",
+      "value": 0,
+      "queued": [],
+      "writes": [
+        {
+          "property": "0xa80",
+          "data": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        },
+        {
+          "property": "0xa81",
+          "data": "000000000000000000000000000000000000000000000000"
+        },
+        {
+          "property": "0xa82",
+          "data": "010164"
+        },
+        {
+          "property": "0xa83",
+          "data": "0000"
+        },
+        {
+          "property": "0xb30",
+          "data": "0d0164"
+        },
+        {
+          "property": "0xb32",
+          "data": "0f0d03010000010000010000010000"
+        },
+        {
+          "property": "0xa66",
+          "data": "010104000000"
+        },
+        {
+          "property": "0xb2a",
+          "data": "53543a30343b00"
+        },
+        {
+          "property": "0xb2f",
+          "data": "0c00"
+        },
+        {
+          "property": "0xa67",
+          "data": "010100020101"
+        },
+        {
+          "property": "0xb2b",
+          "data": "53543a30303b45523a30313b00"
+        },
+        {
+          "property": "0xa84",
+          "data": "0000"
+        },
+        {
+          "property": "0xa85",
+          "data": "0000"
+        },
+        {
+          "property": "0x635",
+          "data": "00"
+        },
+        {
+          "property": "0x7d8",
+          "data": "2000"
+        },
+        {
+          "property": "0x634",
+          "data": "01"
+        }
+      ],
+      "reads": [],
+      "error": null,
+      "pc": "0x47cb8014",
+      "trace": [
+        "0x47cb6b3c",
+        "0x47cb6b40",
+        "0x47cb6b44",
+        "0x47cb6b48",
+        "0x47cbafac",
+        "0x47cbafb0",
+        "0x47cbafb4",
+        "0x47cbafb8",
+        "0x47cbafbc",
+        "0x47cbd5a0",
+        "0x47cbd5b8",
+        "0x47cb8014"
+      ]
+    },
+    "original_missing_event": {
+      "event": "0x2010",
+      "value": 2,
+      "queued": [
+        {
+          "task": 25,
+          "data": "000000000000000000000000190019000100000003000b0000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        },
+        {
+          "notification_code": "0b"
+        },
+        {
+          "task": 20,
+          "data": "00000000000000000000000000001400060000003700000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        }
+      ],
+      "writes": [
+        {
+          "property": "0xa80",
+          "data": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        },
+        {
+          "property": "0xa81",
+          "data": "000000000000000000000000000000000000000000000000"
+        },
+        {
+          "property": "0xa82",
+          "data": "010400"
+        },
+        {
+          "property": "0xa83",
+          "data": "0000"
+        },
+        {
+          "property": "0xb30",
+          "data": "0d016e"
+        },
+        {
+          "property": "0xb32",
+          "data": "0f0d03010000010000010000010000"
+        },
+        {
+          "property": "0xa66",
+          "data": "010104000000"
+        },
+        {
+          "property": "0xb2a",
+          "data": "53543a30343b00"
+        },
+        {
+          "property": "0xb2f",
+          "data": "0c00"
+        },
+        {
+          "property": "0xa67",
+          "data": "010100020101"
+        },
+        {
+          "property": "0xb2b",
+          "data": "53543a30303b45523a30313b00"
+        },
+        {
+          "property": "0xa84",
+          "data": "0302"
+        },
+        {
+          "property": "0xa85",
+          "data": "0302"
+        },
+        {
+          "property": "0xa66",
+          "data": "010100020122"
+        },
+        {
+          "property": "0xb2a",
+          "data": "53543a30303b45523a32323b00"
+        },
+        {
+          "property": "0xa67",
+          "data": "010100020101"
+        },
+        {
+          "property": "0xb2b",
+          "data": "53543a30303b45523a30313b00"
+        },
+        {
+          "property": "0x636",
+          "data": "00"
+        },
+        {
+          "property": "0xa7c",
+          "data": "8000000000000000"
+        },
+        {
+          "property": "0x635",
+          "data": "02"
+        },
+        {
+          "property": "0x7d8",
+          "data": "3700"
+        },
+        {
+          "property": "0x634",
+          "data": "02"
+        }
+      ],
+      "reads": [],
+      "error": null,
+      "pc": "0x47cb8014",
+      "trace": [
+        "0x47cb1468",
+        "0x47cb146c",
+        "0x47cb6b5c",
+        "0x47cb6b60",
+        "0x47cbafac",
+        "0x47cbafb0",
+        "0x47cbafb4",
+        "0x47cbafb8",
+        "0x47cbafbc",
+        "0x47cbd5a0",
+        "0x47cbd5b8",
+        "0x47cb8014"
+      ]
+    }
+  }
+}
