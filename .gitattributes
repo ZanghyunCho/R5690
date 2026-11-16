@@ -1,3 +1,4 @@
 firmware/custom/virtual-maintenance-box-v1/FWE642TL_GR_VIRTUAL_MAINTENANCE_BOX_PROTOTYPE_v1.EFU filter=lfs diff=lfs merge=lfs -text
 firmware/custom/virtual-ink-and-maintenance-v1/FWE642TL_GR_VIRTUAL_INK_AND_MAINTENANCE_PROTOTYPE_v1.EFU filter=lfs diff=lfs merge=lfs -text
 firmware/custom/virtual-ink-report-candidate-v2/FWE642TL_GR_VIRTUAL_INK_REPORT_CANDIDATE_v2.EFU filter=lfs diff=lfs merge=lfs -text
+firmware/custom/virtual-ink-aggregate-candidate-v3/FWE642TL_GR_VIRTUAL_INK_AGGREGATE_CANDIDATE_v3.EFU filter=lfs diff=lfs merge=lfs -text

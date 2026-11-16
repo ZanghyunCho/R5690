@@ -1,0 +1,724 @@
+{
+  "status": "EXPERIMENTAL; remaining UI predicate and physical operation unverified",
+  "build": {
+    "status": "OFFLINE PROTOTYPE: physical boot, update acceptance and operation without a chip UNVERIFIED",
+    "parent_user_confirmed_maintenance_efu_sha256": "2d7909a02b2a2520ca8374122a9cb80512e998beb3a7e244790633286fd01561",
+    "maintenance_patch_retained": true,
+    "file": "FWE642TL_GR_VIRTUAL_INK_AGGREGATE_CANDIDATE_v3.EFU",
+    "bytes": 114841168,
+    "sha256": "a6c4b115f2c80544ed7512bf41fc239badf220b3ae3a562857767b11e1ffe539",
+    "source_rcx_sha256": "17587763f863f4b2e145eb9d25902d69a8161feb6f3ec1de206c67474d8dcb8d",
+    "modified_rcx_sha256": "3d91ff2a6cb9c51619e945061d8996eefb1cf49e43484fa2e28ebced1d45a87d",
+    "patched_controller_sha256": "748593be42f535d2e43e218acf7dfed5eee9270737edb67e60ef2ac109162c29",
+    "changes": [
+      {
+        "address": "0x47c63e0c",
+        "before": "0xe92d4038",
+        "after": "0xe92d4010",
+        "purpose": "Counter gate publishes stock normal/100% response and returns non-full"
+      },
+      {
+        "address": "0x47c63e10",
+        "before": "0xe59f046c",
+        "after": "0xeb0013e4",
+        "purpose": "Counter gate publishes stock normal/100% response and returns non-full"
+      },
+      {
+        "address": "0x47c63e14",
+        "before": "0xe3a02002",
+        "after": "0xe3a00000",
+        "purpose": "Counter gate publishes stock normal/100% response and returns non-full"
+      },
+      {
+        "address": "0x47c63e18",
+        "before": "0xe1a0100d",
+        "after": "0xe8bd8010",
+        "purpose": "Counter gate publishes stock normal/100% response and returns non-full"
+      },
+      {
+        "address": "0x47ca8080",
+        "before": "0xe5d0001e",
+        "after": "0xe3a00000",
+        "purpose": "Maintenance status getter reports normal=0"
+      },
+      {
+        "address": "0x47ca9608",
+        "before": "0x5c5401e",
+        "after": "0x5c5801e",
+        "purpose": "Only status API opcode 0x30 stores normal=0"
+      },
+      {
+        "address": "0x47c63e20",
+        "before": "0xe59f4460",
+        "after": "0xe92d4030",
+        "purpose": "Copy 48-byte outgoing A80 frame; normalize three fields in KCMY records only"
+      },
+      {
+        "address": "0x47c63e24",
+        "before": "0xe3a02000",
+        "after": "0xe24dd034",
+        "purpose": "Copy 48-byte outgoing A80 frame; normalize three fields in KCMY records only"
+      },
+      {
+        "address": "0x47c63e28",
+        "before": "0xe1c420b2",
+        "after": "0xe1a0300d",
+        "purpose": "Copy 48-byte outgoing A80 frame; normalize three fields in KCMY records only"
+      },
+      {
+        "address": "0x47c63e2c",
+        "before": "0xe59f3458",
+        "after": "0xe3a0500c",
+        "purpose": "Copy 48-byte outgoing A80 frame; normalize three fields in KCMY records only"
+      },
+      {
+        "address": "0x47c63e30",
+        "before": "0xe1c420b4",
+        "after": "0xe4914004",
+        "purpose": "Copy 48-byte outgoing A80 frame; normalize three fields in KCMY records only"
+      },
+      {
+        "address": "0x47c63e34",
+        "before": "0xe1d310b2",
+        "after": "0xe4834004",
+        "purpose": "Copy 48-byte outgoing A80 frame; normalize three fields in KCMY records only"
+      },
+      {
+        "address": "0x47c63e38",
+        "before": "0xe1dd00b0",
+        "after": "0xe2555001",
+        "purpose": "Copy 48-byte outgoing A80 frame; normalize three fields in KCMY records only"
+      },
+      {
+        "address": "0x47c63e3c",
+        "before": "0xe1510000",
+        "after": "0x1afffffb",
+        "purpose": "Copy 48-byte outgoing A80 frame; normalize three fields in KCMY records only"
+      },
+      {
+        "address": "0x47c63e40",
+        "before": "0x8a000006",
+        "after": "0xe1a0100d",
+        "purpose": "Copy 48-byte outgoing A80 frame; normalize three fields in KCMY records only"
+      },
+      {
+        "address": "0x47c63e44",
+        "before": "0xe3a00085",
+        "after": "0xe1a0500d",
+        "purpose": "Copy 48-byte outgoing A80 frame; normalize three fields in KCMY records only"
+      },
+      {
+        "address": "0x47c63e48",
+        "before": "0xe5c40000",
+        "after": "0xe3a03004",
+        "purpose": "Copy 48-byte outgoing A80 frame; normalize three fields in KCMY records only"
+      },
+      {
+        "address": "0x47c63e4c",
+        "before": "0xe2840000",
+        "after": "0xe3a04001",
+        "purpose": "Copy 48-byte outgoing A80 frame; normalize three fields in KCMY records only"
+      },
+      {
+        "address": "0x47c63e50",
+        "before": "0xe5c42001",
+        "after": "0xe5c54002",
+        "purpose": "Copy 48-byte outgoing A80 frame; normalize three fields in KCMY records only"
+      },
+      {
+        "address": "0x47c63e54",
+        "before": "0xeb0024ad",
+        "after": "0xe5c54004",
+        "purpose": "Copy 48-byte outgoing A80 frame; normalize three fields in KCMY records only"
+      },
+      {
+        "address": "0x47c63e58",
+        "before": "0xe3a00001",
+        "after": "0xe3a04064",
+        "purpose": "Copy 48-byte outgoing A80 frame; normalize three fields in KCMY records only"
+      },
+      {
+        "address": "0x47c63e5c",
+        "before": "0xe8bd8038",
+        "after": "0xe5c54003",
+        "purpose": "Copy 48-byte outgoing A80 frame; normalize three fields in KCMY records only"
+      },
+      {
+        "address": "0x47c63e60",
+        "before": "0xe1d330b4",
+        "after": "0xe2855006",
+        "purpose": "Copy 48-byte outgoing A80 frame; normalize three fields in KCMY records only"
+      },
+      {
+        "address": "0x47c63e64",
+        "before": "0xe1530000",
+        "after": "0xe2533001",
+        "purpose": "Copy 48-byte outgoing A80 frame; normalize three fields in KCMY records only"
+      },
+      {
+        "address": "0x47c63e68",
+        "before": "0x93a03083",
+        "after": "0x1afffff7",
+        "purpose": "Copy 48-byte outgoing A80 frame; normalize three fields in KCMY records only"
+      },
+      {
+        "address": "0x47c63e6c",
+        "before": "0x83a03080",
+        "after": "0xe3a03000",
+        "purpose": "Copy 48-byte outgoing A80 frame; normalize three fields in KCMY records only"
+      },
+      {
+        "address": "0x47c63e70",
+        "before": "0xe3510000",
+        "after": "0xebff9c58",
+        "purpose": "Copy 48-byte outgoing A80 frame; normalize three fields in KCMY records only"
+      },
+      {
+        "address": "0x47c63e74",
+        "before": "0xe5c43000",
+        "after": "0xe28dd034",
+        "purpose": "Copy 48-byte outgoing A80 frame; normalize three fields in KCMY records only"
+      },
+      {
+        "address": "0x47c63e78",
+        "before": "0x5c42001",
+        "after": "0xe8bd8030",
+        "purpose": "Copy 48-byte outgoing A80 frame; normalize three fields in KCMY records only"
+      },
+      {
+        "address": "0x47cbb6f8",
+        "before": "0xebfe3e36",
+        "after": "0xebfea1c8",
+        "purpose": "Use temporary outgoing frame; preserve controller state and source packet"
+      },
+      {
+        "address": "0x47c63e7c",
+        "before": "0xa000004",
+        "after": "0xe3500f41",
+        "purpose": "For key 0x104 only, clear the low-byte aggregate ink error value; preserve original API"
+      },
+      {
+        "address": "0x47c63e80",
+        "before": "0xe3a02064",
+        "after": "0x3c220ff",
+        "purpose": "For key 0x104 only, clear the low-byte aggregate ink error value; preserve original API"
+      },
+      {
+        "address": "0x47c63e84",
+        "before": "0xe0000092",
+        "after": "0xe92d4ff7",
+        "purpose": "For key 0x104 only, clear the low-byte aggregate ink error value; preserve original API"
+      },
+      {
+        "address": "0x47c63e88",
+        "before": "0xeb03074a",
+        "after": "0xea0115a7",
+        "purpose": "For key 0x104 only, clear the low-byte aggregate ink error value; preserve original API"
+      },
+      {
+        "address": "0x47ca9528",
+        "before": "0xe92d4ff7",
+        "after": "0xeafeea53",
+        "purpose": "Intercept aggregate ink key without normalizing raw cartridge state"
+      }
+    ],
+    "codec": {
+      "stock_dht_byte_identical": true,
+      "original_tokens": 255138,
+      "new_tokens": 255138,
+      "invalidated_copies_replaced": 54,
+      "original_bytes": 539097,
+      "new_bytes": 539273
+    },
+    "native": {
+      "segments": [
+        {
+          "slot": "0x40000",
+          "segment": 0,
+          "bytes": 519876,
+          "sha256": "1ab8d5541e272e82c0e18386f6e992a9ad4b1f66955e0b4824078fd21c230e14",
+          "native_arm_exact": true
+        },
+        {
+          "slot": "0x40000",
+          "segment": 1,
+          "bytes": 2995828,
+          "sha256": "e7216c5115bf14a530477b970a5291b627f49284bed64155702003b4b4e6aac1",
+          "native_arm_exact": true
+        },
+        {
+          "slot": "0x440000",
+          "segment": 0,
+          "bytes": 1310720,
+          "sha256": "748593be42f535d2e43e218acf7dfed5eee9270737edb67e60ef2ac109162c29",
+          "native_arm_exact": true
+        },
+        {
+          "slot": "0x440000",
+          "segment": 1,
+          "bytes": 65536,
+          "sha256": "8f58305746eb15d380db40271525d08d0a4f5aaa6c493de022689c1bc63f0071",
+          "native_arm_exact": true
+        },
+        {
+          "slot": "0x440000",
+          "segment": 2,
+          "bytes": 6824,
+          "sha256": "a5d376c29e6847bccd8a07d67fdb952caf77f055a47ebe0f139c16f87948a846",
+          "native_arm_exact": true
+        }
+      ],
+      "all_segment_header_checks": [
+        {
+          "slot": "0x40000",
+          "segment": 0,
+          "old_position": "0x40004",
+          "new_position": "0x40004",
+          "native_header_and_DHT_setup_pass": true
+        },
+        {
+          "slot": "0x40000",
+          "segment": 1,
+          "old_position": "0x7556b",
+          "new_position": "0x7556b",
+          "native_header_and_DHT_setup_pass": true
+        },
+        {
+          "slot": "0x440000",
+          "segment": 0,
+          "old_position": "0x440004",
+          "new_position": "0x440004",
+          "native_header_and_DHT_setup_pass": true
+        },
+        {
+          "slot": "0x440000",
+          "segment": 1,
+          "old_position": "0x4c39dd",
+          "new_position": "0x4c3a8d",
+          "native_header_and_DHT_setup_pass": true
+        },
+        {
+          "slot": "0x440000",
+          "segment": 2,
+          "old_position": "0x4c85eb",
+          "new_position": "0x4c869b",
+          "native_header_and_DHT_setup_pass": true
+        }
+      ],
+      "stock_descriptor": [
+        "0x244000a",
+        "0x304",
+        "0x65310",
+        "0xe",
+        "0x3e4a2",
+        "0x6561c",
+        "0x1e3bd"
+      ],
+      "modified_descriptor": [
+        "0x244000a",
+        "0x304",
+        "0x652e0",
+        "0xe",
+        "0x3e4a2",
+        "0x655ec",
+        "0x1e49d"
+      ],
+      "original_arm_hardware_setup_passed": true,
+      "dht_bank_writes_byte_identical": true,
+      "limitation": "Original header/setup and LZ loop execute; peripheral Huffman decoding and full boot are not emulated"
+    },
+    "allowed_rcx_ranges": [
+      [
+        114606478,
+        114606480
+      ],
+      [
+        114606492,
+        114606512
+      ],
+      [
+        119075160,
+        119664984
+      ]
+    ],
+    "independent_6_IPL_correction_identical": true,
+    "all_14_records_verified": true,
+    "stock_GH_and_GR_main_unchanged": true,
+    "zip_readback_identical": true,
+    "limits": [
+      "No real printer/peripheral/updater access or full boot",
+      "Ink and maintenance state interfaces tested with synthetic input; no live bus trace captured",
+      "Physical IC bus transactions/writeback are not emulated by this state-interface patch",
+      "Only KCMY ink state extension and the retained maintenance-v1 patch; no universal fatal-error suppression",
+      "No version spoofing, EEPROM or NVRAM erasure",
+      "Original Huffman hardware tables and bank setup preserved; DMA/Huffman peripheral decoding untested"
+    ]
+  },
+  "validation": {
+    "parent_user_confirmed_efu_sha256": "2d7909a02b2a2520ca8374122a9cb80512e998beb3a7e244790633286fd01561",
+    "parent_controller_sha256": "fc992e25ff3baf88bf95c8bc2384ce01dd5558ab51b5f8a7571d154301be5194",
+    "patched_controller_sha256": "748593be42f535d2e43e218acf7dfed5eee9270737edb67e60ef2ac109162c29",
+    "source_sha256": "73e74252536d2880799c66b5dbf186b06848bf51d1a5763e0b5e708f9e4b018b",
+    "v2_controller_sha256": "6a55124519121005efe9a29e7024a25b751a1a32279f2b4583ab44360497da4c",
+    "changes": [
+      {
+        "address": "0x47c63e0c",
+        "before": "0xe92d4038",
+        "after": "0xe92d4010",
+        "purpose": "Counter gate publishes stock normal/100% response and returns non-full"
+      },
+      {
+        "address": "0x47c63e10",
+        "before": "0xe59f046c",
+        "after": "0xeb0013e4",
+        "purpose": "Counter gate publishes stock normal/100% response and returns non-full"
+      },
+      {
+        "address": "0x47c63e14",
+        "before": "0xe3a02002",
+        "after": "0xe3a00000",
+        "purpose": "Counter gate publishes stock normal/100% response and returns non-full"
+      },
+      {
+        "address": "0x47c63e18",
+        "before": "0xe1a0100d",
+        "after": "0xe8bd8010",
+        "purpose": "Counter gate publishes stock normal/100% response and returns non-full"
+      },
+      {
+        "address": "0x47ca8080",
+        "before": "0xe5d0001e",
+        "after": "0xe3a00000",
+        "purpose": "Maintenance status getter reports normal=0"
+      },
+      {
+        "address": "0x47ca9608",
+        "before": "0x5c5401e",
+        "after": "0x5c5801e",
+        "purpose": "Only status API opcode 0x30 stores normal=0"
+      },
+      {
+        "address": "0x47c63e20",
+        "before": "0xe59f4460",
+        "after": "0xe92d4030",
+        "purpose": "Copy 48-byte outgoing A80 frame; normalize three fields in KCMY records only"
+      },
+      {
+        "address": "0x47c63e24",
+        "before": "0xe3a02000",
+        "after": "0xe24dd034",
+        "purpose": "Copy 48-byte outgoing A80 frame; normalize three fields in KCMY records only"
+      },
+      {
+        "address": "0x47c63e28",
+        "before": "0xe1c420b2",
+        "after": "0xe1a0300d",
+        "purpose": "Copy 48-byte outgoing A80 frame; normalize three fields in KCMY records only"
+      },
+      {
+        "address": "0x47c63e2c",
+        "before": "0xe59f3458",
+        "after": "0xe3a0500c",
+        "purpose": "Copy 48-byte outgoing A80 frame; normalize three fields in KCMY records only"
+      },
+      {
+        "address": "0x47c63e30",
+        "before": "0xe1c420b4",
+        "after": "0xe4914004",
+        "purpose": "Copy 48-byte outgoing A80 frame; normalize three fields in KCMY records only"
+      },
+      {
+        "address": "0x47c63e34",
+        "before": "0xe1d310b2",
+        "after": "0xe4834004",
+        "purpose": "Copy 48-byte outgoing A80 frame; normalize three fields in KCMY records only"
+      },
+      {
+        "address": "0x47c63e38",
+        "before": "0xe1dd00b0",
+        "after": "0xe2555001",
+        "purpose": "Copy 48-byte outgoing A80 frame; normalize three fields in KCMY records only"
+      },
+      {
+        "address": "0x47c63e3c",
+        "before": "0xe1510000",
+        "after": "0x1afffffb",
+        "purpose": "Copy 48-byte outgoing A80 frame; normalize three fields in KCMY records only"
+      },
+      {
+        "address": "0x47c63e40",
+        "before": "0x8a000006",
+        "after": "0xe1a0100d",
+        "purpose": "Copy 48-byte outgoing A80 frame; normalize three fields in KCMY records only"
+      },
+      {
+        "address": "0x47c63e44",
+        "before": "0xe3a00085",
+        "after": "0xe1a0500d",
+        "purpose": "Copy 48-byte outgoing A80 frame; normalize three fields in KCMY records only"
+      },
+      {
+        "address": "0x47c63e48",
+        "before": "0xe5c40000",
+        "after": "0xe3a03004",
+        "purpose": "Copy 48-byte outgoing A80 frame; normalize three fields in KCMY records only"
+      },
+      {
+        "address": "0x47c63e4c",
+        "before": "0xe2840000",
+        "after": "0xe3a04001",
+        "purpose": "Copy 48-byte outgoing A80 frame; normalize three fields in KCMY records only"
+      },
+      {
+        "address": "0x47c63e50",
+        "before": "0xe5c42001",
+        "after": "0xe5c54002",
+        "purpose": "Copy 48-byte outgoing A80 frame; normalize three fields in KCMY records only"
+      },
+      {
+        "address": "0x47c63e54",
+        "before": "0xeb0024ad",
+        "after": "0xe5c54004",
+        "purpose": "Copy 48-byte outgoing A80 frame; normalize three fields in KCMY records only"
+      },
+      {
+        "address": "0x47c63e58",
+        "before": "0xe3a00001",
+        "after": "0xe3a04064",
+        "purpose": "Copy 48-byte outgoing A80 frame; normalize three fields in KCMY records only"
+      },
+      {
+        "address": "0x47c63e5c",
+        "before": "0xe8bd8038",
+        "after": "0xe5c54003",
+        "purpose": "Copy 48-byte outgoing A80 frame; normalize three fields in KCMY records only"
+      },
+      {
+        "address": "0x47c63e60",
+        "before": "0xe1d330b4",
+        "after": "0xe2855006",
+        "purpose": "Copy 48-byte outgoing A80 frame; normalize three fields in KCMY records only"
+      },
+      {
+        "address": "0x47c63e64",
+        "before": "0xe1530000",
+        "after": "0xe2533001",
+        "purpose": "Copy 48-byte outgoing A80 frame; normalize three fields in KCMY records only"
+      },
+      {
+        "address": "0x47c63e68",
+        "before": "0x93a03083",
+        "after": "0x1afffff7",
+        "purpose": "Copy 48-byte outgoing A80 frame; normalize three fields in KCMY records only"
+      },
+      {
+        "address": "0x47c63e6c",
+        "before": "0x83a03080",
+        "after": "0xe3a03000",
+        "purpose": "Copy 48-byte outgoing A80 frame; normalize three fields in KCMY records only"
+      },
+      {
+        "address": "0x47c63e70",
+        "before": "0xe3510000",
+        "after": "0xebff9c58",
+        "purpose": "Copy 48-byte outgoing A80 frame; normalize three fields in KCMY records only"
+      },
+      {
+        "address": "0x47c63e74",
+        "before": "0xe5c43000",
+        "after": "0xe28dd034",
+        "purpose": "Copy 48-byte outgoing A80 frame; normalize three fields in KCMY records only"
+      },
+      {
+        "address": "0x47c63e78",
+        "before": "0x5c42001",
+        "after": "0xe8bd8030",
+        "purpose": "Copy 48-byte outgoing A80 frame; normalize three fields in KCMY records only"
+      },
+      {
+        "address": "0x47cbb6f8",
+        "before": "0xebfe3e36",
+        "after": "0xebfea1c8",
+        "purpose": "Use temporary outgoing frame; preserve controller state and source packet"
+      },
+      {
+        "address": "0x47c63e7c",
+        "before": "0xa000004",
+        "after": "0xe3500f41",
+        "purpose": "For key 0x104 only, clear the low-byte aggregate ink error value; preserve original API"
+      },
+      {
+        "address": "0x47c63e80",
+        "before": "0xe3a02064",
+        "after": "0x3c220ff",
+        "purpose": "For key 0x104 only, clear the low-byte aggregate ink error value; preserve original API"
+      },
+      {
+        "address": "0x47c63e84",
+        "before": "0xe0000092",
+        "after": "0xe92d4ff7",
+        "purpose": "For key 0x104 only, clear the low-byte aggregate ink error value; preserve original API"
+      },
+      {
+        "address": "0x47c63e88",
+        "before": "0xeb03074a",
+        "after": "0xea0115a7",
+        "purpose": "For key 0x104 only, clear the low-byte aggregate ink error value; preserve original API"
+      },
+      {
+        "address": "0x47ca9528",
+        "before": "0xe92d4ff7",
+        "after": "0xeafeea53",
+        "purpose": "Intercept aggregate ink key without normalizing raw cartridge state"
+      }
+    ],
+    "ingress_argument_cases": 24,
+    "scalar_cases": 120,
+    "status_cases": 232,
+    "other_aggregate_bits_cases": 12,
+    "outbound_cases": 8,
+    "aggregate_cases": [
+      {
+        "selector": "0x30",
+        "raw_state": 3,
+        "v2_flags": 8,
+        "v3_flags": 0
+      },
+      {
+        "selector": "0x40",
+        "raw_state": 2,
+        "v2_flags": 8,
+        "v3_flags": 0
+      },
+      {
+        "selector": "0x60",
+        "raw_state": 5,
+        "v2_flags": 8,
+        "v3_flags": 0
+      },
+      {
+        "selector": "0x90",
+        "raw_state": 6,
+        "v2_flags": 8,
+        "v3_flags": 0
+      },
+      {
+        "selector": "0xa0",
+        "raw_state": 7,
+        "v2_flags": 8,
+        "v3_flags": 0
+      }
+    ],
+    "limits": [
+      "No full boot, printer, pump or service charge operation executed",
+      "Remaining UI wording has not been linked conclusively to this aggregate key",
+      "This intentionally changes the controller aggregate ink error; operation/charge effects remain unverified",
+      "Other cache bits are preserved; no general fatal-error suppression or NVRAM edit"
+    ]
+  },
+  "independent_archive_check": {
+    "final_efu_sha256": "a6c4b115f2c80544ed7512bf41fc239badf220b3ae3a562857767b11e1ffe539",
+    "all_48_original_DHTs_byte_identical": true,
+    "all_16_segments_independent_C_decode_verified": true,
+    "only_GR_controller_decompressed_changed": true,
+    "reference": "abrasive/epson-reversing@2ed0a54a4ba98c9a860bf2e0efbfc4d53c0e4a16 uncrom.c",
+    "segments": [
+      {
+        "crom_offset": 38580,
+        "segment": 0,
+        "sha256": "22beac7bccb799bc64603ac2364e1da6ae2db6071f1a5c8852c55ea4bf474ebd",
+        "stock_unchanged": true
+      },
+      {
+        "crom_offset": 38580,
+        "segment": 1,
+        "sha256": "9774e2d5fa1a73096dd3c2e841908b70c25292df1ed5b298589e85a303179217",
+        "stock_unchanged": true
+      },
+      {
+        "crom_offset": 7496024,
+        "segment": 0,
+        "sha256": "b39d0d9a5b576de2ceb67a5364988f95ae0d7f9e0e64dbfd2f28cbedf991ff6b",
+        "stock_unchanged": true
+      },
+      {
+        "crom_offset": 7496024,
+        "segment": 1,
+        "sha256": "6011c777700261a22dd346523b625da07ff26f6edcb91a50f55dbaff27d27adf",
+        "stock_unchanged": true
+      },
+      {
+        "crom_offset": 11690328,
+        "segment": 0,
+        "sha256": "be6cb05afe57d2050cd3eb12c2a41765ae24f143e77afd6853d97155c3a08a80",
+        "stock_unchanged": true
+      },
+      {
+        "crom_offset": 11690328,
+        "segment": 1,
+        "sha256": "adce91a30e75862806059da07e1fcec9476ddc8c8724b7a5d55b65dbcda05ed8",
+        "stock_unchanged": true
+      },
+      {
+        "crom_offset": 11690328,
+        "segment": 2,
+        "sha256": "b3c4324acbf87887b2fc0ec413ad0370df08c600dd711bdd4f9946f59e522d5f",
+        "stock_unchanged": true
+      },
+      {
+        "crom_offset": 24023400,
+        "segment": 0,
+        "sha256": "bb175d1e9eb0f0dbf6012c494c4684129ac8dc9e8a01d29c85ccea9be458563b",
+        "stock_unchanged": true
+      },
+      {
+        "crom_offset": 107423412,
+        "segment": 0,
+        "sha256": "62afb3d436338cbe11ead05975d5a1c86949ad251a54d9ff4a2cb6bb2225fbcc",
+        "stock_unchanged": true
+      },
+      {
+        "crom_offset": 107423412,
+        "segment": 1,
+        "sha256": "d2c49f26fc8b2054223154f766ba621f810010b1ec85f88d648cf3ad21e1ef03",
+        "stock_unchanged": true
+      },
+      {
+        "crom_offset": 114880856,
+        "segment": 0,
+        "sha256": "1ab8d5541e272e82c0e18386f6e992a9ad4b1f66955e0b4824078fd21c230e14",
+        "stock_unchanged": true
+      },
+      {
+        "crom_offset": 114880856,
+        "segment": 1,
+        "sha256": "e7216c5115bf14a530477b970a5291b627f49284bed64155702003b4b4e6aac1",
+        "stock_unchanged": true
+      },
+      {
+        "crom_offset": 119075160,
+        "segment": 0,
+        "sha256": "748593be42f535d2e43e218acf7dfed5eee9270737edb67e60ef2ac109162c29",
+        "stock_unchanged": false
+      },
+      {
+        "crom_offset": 119075160,
+        "segment": 1,
+        "sha256": "8f58305746eb15d380db40271525d08d0a4f5aaa6c493de022689c1bc63f0071",
+        "stock_unchanged": true
+      },
+      {
+        "crom_offset": 119075160,
+        "segment": 2,
+        "sha256": "a5d376c29e6847bccd8a07d67fdb952caf77f055a47ebe0f139c16f87948a846",
+        "stock_unchanged": true
+      },
+      {
+        "crom_offset": 131408232,
+        "segment": 0,
+        "sha256": "bb175d1e9eb0f0dbf6012c494c4684129ac8dc9e8a01d29c85ccea9be458563b",
+        "stock_unchanged": true
+      }
+    ]
+  }
+}
