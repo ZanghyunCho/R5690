@@ -2,6 +2,16 @@
 
 **Offline prototype; physical boot and print output are unverified.**
 
+**User-reported result: update fails after transfer starts; the printer still
+boots its previous firmware normally. Cause unresolved. This candidate is
+retained for investigation and should not be treated as a working update.**
+The offline package, IPL and independent decoder checks still pass; those
+checks do not establish device acceptance. See `rejection-audit.json`.
+
+Read-only halftone and encoded ink-duty comparisons are in
+`halftone-ink-comparison.md` and `halftone-ink-comparison.json`. No additional
+EFU has been built from those findings.
+
 Based on the first virtual ink + maintenance v1, SHA256
 `8ab2a81dcc85717e26c476b19aad84378395b52c33835d76cf936cb6f06705de`.
 

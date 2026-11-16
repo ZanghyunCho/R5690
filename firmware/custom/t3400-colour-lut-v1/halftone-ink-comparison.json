@@ -1,0 +1,723 @@
+{
+  "status": "Static comparison; no firmware modified and no physical ink volume measured",
+  "normalization": "raw * 100 / 255; code 20 aligns with R5691 catalogue Total_Duty in the three compared modes",
+  "cautions": [
+    "The precise physical channel mapping is not independently verified.",
+    "Some per-channel catalogue duty values differ from the encoded inkd fields; do not treat catalogue text as exact final settings.",
+    "DB and HYBRID rows coexist in the donor catalogue. Which is selected for a particular print is unresolved.",
+    "The 2-bit OUT_BIT field does not establish droplet volume or the physical meaning of each output state.",
+    "Limits and thresholds do not determine actual pL, mL, or consumption without waveform/drop-volume and raster coverage information."
+  ],
+  "comparisons": [
+    {
+      "resolution": [
+        600,
+        600
+      ],
+      "r5691": {
+        "cmm_id": 11,
+        "rows": [
+          {
+            "Halftone": "DB",
+            "HT-ID": "200",
+            "OUT_BIT": "2",
+            "Micro": "size17",
+            "mw_type": "fol1",
+            "MW_Mode": "0",
+            "INK-ID": "911",
+            "cSMB-ID": "211",
+            "mSMB-ID": "216",
+            "ubec_dither": "650",
+            "ubec_extbl": "-1",
+            "ubec_vinfo": "696",
+            "ubec_tmp": "-1",
+            "C_Duty": "100",
+            "M_Duty": "100",
+            "Y_Duty": "70",
+            "K_Duty": "100",
+            "Total_Duty": "135"
+          },
+          {
+            "Halftone": "DB",
+            "HT-ID": "200",
+            "OUT_BIT": "2",
+            "Micro": "size17",
+            "mw_type": "fol1",
+            "MW_Mode": "0",
+            "INK-ID": "911",
+            "cSMB-ID": "215",
+            "mSMB-ID": "217",
+            "ubec_dither": "650",
+            "ubec_extbl": "-1",
+            "ubec_vinfo": "696",
+            "ubec_tmp": "-1",
+            "C_Duty": "100",
+            "M_Duty": "100",
+            "Y_Duty": "70",
+            "K_Duty": "100",
+            "Total_Duty": "135"
+          }
+        ],
+        "inkd_version": 1,
+        "inkd_values_by_channel_code": {
+          "0": {
+            "raw": 255,
+            "normalized_percent": 100.0
+          },
+          "1": {
+            "raw": 255,
+            "normalized_percent": 100.0
+          },
+          "2": {
+            "raw": 179,
+            "normalized_percent": 70.19607843137256
+          },
+          "3": {
+            "raw": 255,
+            "normalized_percent": 100.0
+          },
+          "8": {
+            "raw": 319,
+            "normalized_percent": 125.09803921568627
+          },
+          "9": {
+            "raw": 319,
+            "normalized_percent": 125.09803921568627
+          },
+          "10": {
+            "raw": 319,
+            "normalized_percent": 125.09803921568627
+          },
+          "12": {
+            "raw": 255,
+            "normalized_percent": 100.0
+          },
+          "20": {
+            "raw": 344,
+            "normalized_percent": 134.90196078431373
+          }
+        },
+        "resources": [
+          {
+            "id": 211,
+            "bytes": 3249,
+            "sha256": "132b2519cc3748af0ea50de59058a0eaf5422094f5299caabab01a9254368f79",
+            "header_hex": "b10c0000fb69f7dc050000002f00000000010400000000dd07070b0d121d00000000000b436f6e76657274534d4c0004"
+          },
+          {
+            "id": 215,
+            "bytes": 3237,
+            "sha256": "2ce02d334a96f8369518ea567576e3e3d9aaa5f5699aa92a2b4bdd046c397cec",
+            "header_hex": "a50c0000fb69f7dc050000002400000000010400000000e007061110031a000000000000040004050159000000025b00"
+          },
+          {
+            "id": 216,
+            "bytes": 1578,
+            "sha256": "ce35e4bbd6b709a880ef284fe79d9469cff9743026683d523a0f9fbc7be28c8e",
+            "header_hex": "2a060000fb69f7dc03000000000000000300000110000400000000000000000000000000000000000800000000001000"
+          },
+          {
+            "id": 217,
+            "bytes": 1578,
+            "sha256": "9bd9fa25f0faff168ca2c14a3f50e0c5bcd1102b4de3e8747b04a3f0888fdf2f",
+            "header_hex": "2a060000fb69f7dc03000000000000000300000110000400000000000000000000000000000000000400000000000800"
+          },
+          {
+            "id": 650,
+            "bytes": 131144,
+            "sha256": "1e6765097fde05e762e6ba7710e8b6b61c68c679d937c14d468061dd8ab8a3ac",
+            "header_hex": "48000200e7cb0d1e0200000048000000080000000400000002000000002000000002000080000000f00f000001000000"
+          },
+          {
+            "id": 696,
+            "bytes": 68,
+            "sha256": "8393a1e931f962318bd30cf5a7c1c8216ce84ff4355bd44dbc8691a7e2f20fb5",
+            "header_hex": "44000000e7cb0dff01000000140000000800000000080000080002080000080006080000080004080000080005080000"
+          },
+          {
+            "id": 911,
+            "bytes": 336,
+            "sha256": "6b1b31b29bef77f9d3834383d651d21141c9ba66fc616629c5b02b5b9d298d97",
+            "header_hex": "a981552740aa354a01000000ff0001000200040301030000000000000000000000006000680070000300780080008800"
+          }
+        ]
+      },
+      "t3400": {
+        "cmm_id": 30,
+        "rows": [
+          {
+            "Halftone": "HYBRID",
+            "HT-ID": "200",
+            "OUT_BIT": "2",
+            "Micro": "size17",
+            "mw_type": "fol1",
+            "MW_Mode": "0",
+            "INK-ID": "914",
+            "cSMB-ID": "244",
+            "mSMB-ID": "244",
+            "ubec_dither": "706",
+            "ubec_extbl": "-1",
+            "ubec_vinfo": "696",
+            "ubec_tmp": "-1"
+          },
+          {
+            "Halftone": "DB",
+            "HT-ID": "200",
+            "OUT_BIT": "2",
+            "Micro": "size17",
+            "mw_type": "fol1",
+            "MW_Mode": "0",
+            "INK-ID": "914",
+            "cSMB-ID": "217",
+            "mSMB-ID": "217",
+            "ubec_dither": "706",
+            "ubec_extbl": "-1",
+            "ubec_vinfo": "696",
+            "ubec_tmp": "-1"
+          }
+        ],
+        "inkd_version": 1,
+        "inkd_values_by_channel_code": {
+          "0": {
+            "raw": 255,
+            "normalized_percent": 100.0
+          },
+          "1": {
+            "raw": 255,
+            "normalized_percent": 100.0
+          },
+          "2": {
+            "raw": 255,
+            "normalized_percent": 100.0
+          },
+          "3": {
+            "raw": 255,
+            "normalized_percent": 100.0
+          },
+          "8": {
+            "raw": 281,
+            "normalized_percent": 110.19607843137256
+          },
+          "9": {
+            "raw": 281,
+            "normalized_percent": 110.19607843137256
+          },
+          "10": {
+            "raw": 281,
+            "normalized_percent": 110.19607843137256
+          },
+          "12": {
+            "raw": 255,
+            "normalized_percent": 100.0
+          },
+          "20": {
+            "raw": 306,
+            "normalized_percent": 120.0
+          }
+        },
+        "resources": [
+          {
+            "id": 217,
+            "bytes": 1661,
+            "sha256": "21b3993377b7fc1911e7a1885975cb9eba583c47dd6146e588873e1b74e78c1d",
+            "header_hex": "7d060000fb69f7dc050000002400000000010000000000e10701110b272d000000000000040004050151000000025300"
+          },
+          {
+            "id": 244,
+            "bytes": 1661,
+            "sha256": "dd01733f2c496c9c5229fb74167c105149bfad7f9a404f80ca770daf7080e8ee",
+            "header_hex": "7d060000fb69f7dc050000002400000000010000000000e10704050d330c000000000000040004050151000000025300"
+          },
+          {
+            "id": 696,
+            "bytes": 68,
+            "sha256": "8393a1e931f962318bd30cf5a7c1c8216ce84ff4355bd44dbc8691a7e2f20fb5",
+            "header_hex": "44000000e7cb0dff01000000140000000800000000080000080002080000080006080000080004080000080005080000"
+          },
+          {
+            "id": 706,
+            "bytes": 24,
+            "sha256": "a35f067979b116532d53ac14da56d0cf11778cd9354a74bd62f62a55394168f2",
+            "header_hex": "18000000fcf92eb801040000000000009a02ae029a02ae02",
+            "referenced_resource_ids": [
+              666,
+              686,
+              666,
+              686
+            ],
+            "referenced_resources": [
+              {
+                "id": 666,
+                "bytes": 393248,
+                "sha256": "65c17d377fbd5c4a24e295d8edf7ca4b16251feb1cdeee4a2eeb7ce2e49b9c93",
+                "header_hex": "20000600cff92e470303200000020002f00f00000101010430010100000000009f07af3f028039df43cea80be2bf853a"
+              },
+              {
+                "id": 686,
+                "bytes": 393248,
+                "sha256": "c73ec1e15dc4d285d11ebf4d2d280a86c8762c0f89e4f86d649230452dca6199",
+                "header_hex": "20000600cff92e470303200000020002f00f00000101010430010100000000000d41764d9c04090b946225e06cd05ea2"
+              }
+            ]
+          },
+          {
+            "id": 914,
+            "bytes": 336,
+            "sha256": "16b8239a376810fa9f3afa5648f6ca1d1fd0aab9133cf666ab2e13abcf7253d2",
+            "header_hex": "a981552740aa354a01000000ff0001000200040301030000000000000000000001006000680070000300780080008800"
+          }
+        ]
+      }
+    },
+    {
+      "resolution": [
+        600,
+        1200
+      ],
+      "r5691": {
+        "cmm_id": 13,
+        "rows": [
+          {
+            "Halftone": "DB",
+            "HT-ID": "200",
+            "OUT_BIT": "2",
+            "Micro": "size17",
+            "mw_type": "fol1",
+            "MW_Mode": "0",
+            "INK-ID": "913",
+            "cSMB-ID": "220",
+            "mSMB-ID": "225",
+            "ubec_dither": "651",
+            "ubec_extbl": "-1",
+            "ubec_vinfo": "696",
+            "ubec_tmp": "-1",
+            "C_Duty": "60",
+            "M_Duty": "40",
+            "Y_Duty": "35",
+            "K_Duty": "80",
+            "Total_Duty": "80"
+          }
+        ],
+        "inkd_version": 1,
+        "inkd_values_by_channel_code": {
+          "0": {
+            "raw": 153,
+            "normalized_percent": 60.0
+          },
+          "1": {
+            "raw": 153,
+            "normalized_percent": 60.0
+          },
+          "2": {
+            "raw": 102,
+            "normalized_percent": 40.0
+          },
+          "3": {
+            "raw": 204,
+            "normalized_percent": 80.0
+          },
+          "8": {
+            "raw": 179,
+            "normalized_percent": 70.19607843137256
+          },
+          "9": {
+            "raw": 179,
+            "normalized_percent": 70.19607843137256
+          },
+          "10": {
+            "raw": 179,
+            "normalized_percent": 70.19607843137256
+          },
+          "12": {
+            "raw": 153,
+            "normalized_percent": 60.0
+          },
+          "20": {
+            "raw": 204,
+            "normalized_percent": 80.0
+          }
+        },
+        "resources": [
+          {
+            "id": 220,
+            "bytes": 3249,
+            "sha256": "9c41a78d108025d5cb518ffcda55d8a1c7fdc727d782ffb8fd0917567d0e69d3",
+            "header_hex": "b10c0000fb69f7dc050000002f00000000010400000000dd070819111f2100000000000b436f6e76657274534d4c0004"
+          },
+          {
+            "id": 225,
+            "bytes": 1578,
+            "sha256": "40b8b32bb21bc27c88b780d317877c5ba0776ef6fb5a8bc19a1184a47dc32192",
+            "header_hex": "2a060000fb69f7dc03000000000000000300000110000400000000000000000000000000000000000600000000000e00"
+          },
+          {
+            "id": 651,
+            "bytes": 131144,
+            "sha256": "05b93a5bce82b88456f612e2c7d492b1da273a6931c8f95f891315f06121bc0e",
+            "header_hex": "48000200e7cb0d1e0200000048000000080000000400000002000000002000000002000080000000f00f000001000000"
+          },
+          {
+            "id": 696,
+            "bytes": 68,
+            "sha256": "8393a1e931f962318bd30cf5a7c1c8216ce84ff4355bd44dbc8691a7e2f20fb5",
+            "header_hex": "44000000e7cb0dff01000000140000000800000000080000080002080000080006080000080004080000080005080000"
+          },
+          {
+            "id": 913,
+            "bytes": 336,
+            "sha256": "14ccc997dca2c22d931eef1dae8b1c414c5894d6bdcd78051ce524bff1811af1",
+            "header_hex": "a981552740aa354a01000000ff0001000200040301030000000000000000000000006000680070000300780080008800"
+          }
+        ]
+      },
+      "t3400": {
+        "cmm_id": 31,
+        "rows": [
+          {
+            "Halftone": "HYBRID",
+            "HT-ID": "200",
+            "OUT_BIT": "2",
+            "Micro": "size17",
+            "mw_type": "fol1",
+            "MW_Mode": "0",
+            "INK-ID": "914",
+            "cSMB-ID": "245",
+            "mSMB-ID": "245",
+            "ubec_dither": "705",
+            "ubec_extbl": "-1",
+            "ubec_vinfo": "696",
+            "ubec_tmp": "-1"
+          },
+          {
+            "Halftone": "DB",
+            "HT-ID": "200",
+            "OUT_BIT": "2",
+            "Micro": "size17",
+            "mw_type": "fol1",
+            "MW_Mode": "0",
+            "INK-ID": "914",
+            "cSMB-ID": "226",
+            "mSMB-ID": "226",
+            "ubec_dither": "705",
+            "ubec_extbl": "-1",
+            "ubec_vinfo": "696",
+            "ubec_tmp": "-1"
+          }
+        ],
+        "inkd_version": 1,
+        "inkd_values_by_channel_code": {
+          "0": {
+            "raw": 179,
+            "normalized_percent": 70.19607843137256
+          },
+          "1": {
+            "raw": 179,
+            "normalized_percent": 70.19607843137256
+          },
+          "2": {
+            "raw": 179,
+            "normalized_percent": 70.19607843137256
+          },
+          "3": {
+            "raw": 179,
+            "normalized_percent": 70.19607843137256
+          },
+          "8": {
+            "raw": 217,
+            "normalized_percent": 85.09803921568627
+          },
+          "9": {
+            "raw": 217,
+            "normalized_percent": 85.09803921568627
+          },
+          "10": {
+            "raw": 217,
+            "normalized_percent": 85.09803921568627
+          },
+          "12": {
+            "raw": 179,
+            "normalized_percent": 70.19607843137256
+          },
+          "20": {
+            "raw": 242,
+            "normalized_percent": 94.90196078431373
+          }
+        },
+        "resources": [
+          {
+            "id": 226,
+            "bytes": 1661,
+            "sha256": "7247660c44563395042715a7a4e7266857d84851ddc78fe0dde00f9cf4cba1f6",
+            "header_hex": "7d060000fb69f7dc050000002400000000010000000000e10701110b2a3a000000000000040004050151000000025300"
+          },
+          {
+            "id": 245,
+            "bytes": 1661,
+            "sha256": "475bbe8d5082f2ccdb5a36c7f4b6cbce02bcbde51939b9b92d88595a8ea97667",
+            "header_hex": "7d060000fb69f7dc050000002400000000010000000000e10704050d352c000000000000040004050151000000025300"
+          },
+          {
+            "id": 696,
+            "bytes": 68,
+            "sha256": "8393a1e931f962318bd30cf5a7c1c8216ce84ff4355bd44dbc8691a7e2f20fb5",
+            "header_hex": "44000000e7cb0dff01000000140000000800000000080000080002080000080006080000080004080000080005080000"
+          },
+          {
+            "id": 705,
+            "bytes": 24,
+            "sha256": "a41409ec4b467493de2dd02812d982810e8abc42f79d2a6540477f0c2c020c44",
+            "header_hex": "18000000fcf92eb801040000000000009902ad029902ad02",
+            "referenced_resource_ids": [
+              665,
+              685,
+              665,
+              685
+            ],
+            "referenced_resources": [
+              {
+                "id": 665,
+                "bytes": 786464,
+                "sha256": "d147fc8db99b21f16f1b2dd5832e356a08657b609f0090f6cc1104e58e977289",
+                "header_hex": "20000c00cff92e470303200000020004f00f00000102010430010100000000000d40b12bdd376a7707358935a1f6d1fa"
+              },
+              {
+                "id": 685,
+                "bytes": 786464,
+                "sha256": "174c73bddf7409308e0f16bd61cda302db115c5051de6a992506ed317fd531af",
+                "header_hex": "20000c00cff92e470303200000020004f00f000001020104300101000000000083128191dafce5e83d5f77d922e93620"
+              }
+            ]
+          },
+          {
+            "id": 914,
+            "bytes": 336,
+            "sha256": "16b8239a376810fa9f3afa5648f6ca1d1fd0aab9133cf666ab2e13abcf7253d2",
+            "header_hex": "a981552740aa354a01000000ff0001000200040301030000000000000000000001006000680070000300780080008800"
+          }
+        ]
+      }
+    },
+    {
+      "resolution": [
+        1200,
+        1200
+      ],
+      "r5691": {
+        "cmm_id": 14,
+        "rows": [
+          {
+            "Halftone": "DB",
+            "HT-ID": "200",
+            "OUT_BIT": "2",
+            "Micro": "size17",
+            "mw_type": "fol1",
+            "MW_Mode": "0",
+            "INK-ID": "914",
+            "cSMB-ID": "214",
+            "mSMB-ID": "214",
+            "ubec_dither": "652",
+            "ubec_extbl": "-1",
+            "ubec_vinfo": "696",
+            "ubec_tmp": "-1",
+            "C_Duty": "65",
+            "M_Duty": "65",
+            "Y_Duty": "45",
+            "K_Duty": "65",
+            "Total_Duty": "85"
+          }
+        ],
+        "inkd_version": 1,
+        "inkd_values_by_channel_code": {
+          "0": {
+            "raw": 166,
+            "normalized_percent": 65.09803921568627
+          },
+          "1": {
+            "raw": 166,
+            "normalized_percent": 65.09803921568627
+          },
+          "2": {
+            "raw": 115,
+            "normalized_percent": 45.09803921568628
+          },
+          "3": {
+            "raw": 166,
+            "normalized_percent": 65.09803921568627
+          },
+          "8": {
+            "raw": 191,
+            "normalized_percent": 74.90196078431373
+          },
+          "9": {
+            "raw": 191,
+            "normalized_percent": 74.90196078431373
+          },
+          "10": {
+            "raw": 191,
+            "normalized_percent": 74.90196078431373
+          },
+          "12": {
+            "raw": 166,
+            "normalized_percent": 65.09803921568627
+          },
+          "20": {
+            "raw": 217,
+            "normalized_percent": 85.09803921568627
+          }
+        },
+        "resources": [
+          {
+            "id": 214,
+            "bytes": 1578,
+            "sha256": "2fb8b82d48b903295916311a0075b63fa46f441d6263c967d0d5d1969dcc3ff9",
+            "header_hex": "2a060000fb69f7dc03000000000000000300000110000400000000000000000000000000000000000200000000000500"
+          },
+          {
+            "id": 652,
+            "bytes": 262216,
+            "sha256": "c8cc3e481d06d6c026d1adc0fda8005e440e66645920783fc5a097271058852f",
+            "header_hex": "48000400e7cb0d1e0200000048000000080000000400000002000000004000000002000000010000f00f000001000000"
+          },
+          {
+            "id": 696,
+            "bytes": 68,
+            "sha256": "8393a1e931f962318bd30cf5a7c1c8216ce84ff4355bd44dbc8691a7e2f20fb5",
+            "header_hex": "44000000e7cb0dff01000000140000000800000000080000080002080000080006080000080004080000080005080000"
+          },
+          {
+            "id": 914,
+            "bytes": 336,
+            "sha256": "c71cea018d7c4309c32f6ee790ab4fe7824b84ed0447054c687dad8fb0213828",
+            "header_hex": "a981552740aa354a01000000ff0001000200040301030000000000000000000000006000680070000300780080008800"
+          }
+        ]
+      },
+      "t3400": {
+        "cmm_id": 32,
+        "rows": [
+          {
+            "Halftone": "HYBRID",
+            "HT-ID": "200",
+            "OUT_BIT": "2",
+            "Micro": "size17",
+            "mw_type": "fol1",
+            "MW_Mode": "0",
+            "INK-ID": "914",
+            "cSMB-ID": "246",
+            "mSMB-ID": "246",
+            "ubec_dither": "702",
+            "ubec_extbl": "-1",
+            "ubec_vinfo": "696",
+            "ubec_tmp": "-1"
+          },
+          {
+            "Halftone": "DB",
+            "HT-ID": "200",
+            "OUT_BIT": "2",
+            "Micro": "size17",
+            "mw_type": "fol1",
+            "MW_Mode": "0",
+            "INK-ID": "914",
+            "cSMB-ID": "225",
+            "mSMB-ID": "225",
+            "ubec_dither": "702",
+            "ubec_extbl": "-1",
+            "ubec_vinfo": "696",
+            "ubec_tmp": "-1"
+          }
+        ],
+        "inkd_version": 1,
+        "inkd_values_by_channel_code": {
+          "0": {
+            "raw": 89,
+            "normalized_percent": 34.90196078431372
+          },
+          "1": {
+            "raw": 89,
+            "normalized_percent": 34.90196078431372
+          },
+          "2": {
+            "raw": 89,
+            "normalized_percent": 34.90196078431372
+          },
+          "3": {
+            "raw": 89,
+            "normalized_percent": 34.90196078431372
+          },
+          "8": {
+            "raw": 102,
+            "normalized_percent": 40.0
+          },
+          "9": {
+            "raw": 102,
+            "normalized_percent": 40.0
+          },
+          "10": {
+            "raw": 102,
+            "normalized_percent": 40.0
+          },
+          "12": {
+            "raw": 89,
+            "normalized_percent": 34.90196078431372
+          },
+          "20": {
+            "raw": 128,
+            "normalized_percent": 50.19607843137255
+          }
+        },
+        "resources": [
+          {
+            "id": 225,
+            "bytes": 1661,
+            "sha256": "3903ccfa18947a63c2dcc907a1a5cc00f20feac7a40f1b50f328b2595381f5ab",
+            "header_hex": "7d060000fb69f7dc050000002400000000010000000000e10701110b2a14000000000000040004050151000000025300"
+          },
+          {
+            "id": 246,
+            "bytes": 1661,
+            "sha256": "64bd9163ff400e33b7a3a7cea0ef74715f0017b8c43bd99a6a4efd3a6c79e963",
+            "header_hex": "7d060000fb69f7dc050000002400000000010000000000e10704050d3633000000000000040004050151000000025300"
+          },
+          {
+            "id": 696,
+            "bytes": 68,
+            "sha256": "8393a1e931f962318bd30cf5a7c1c8216ce84ff4355bd44dbc8691a7e2f20fb5",
+            "header_hex": "44000000e7cb0dff01000000140000000800000000080000080002080000080006080000080004080000080005080000"
+          },
+          {
+            "id": 702,
+            "bytes": 24,
+            "sha256": "924c0d1bb967fa1cdc854cb91fd479b8fb5df7df0eb436e6102e3915b488aad9",
+            "header_hex": "18000000fcf92eb801040000000000009602aa029602aa02",
+            "referenced_resource_ids": [
+              662,
+              682,
+              662,
+              682
+            ],
+            "referenced_resources": [
+              {
+                "id": 662,
+                "bytes": 1572896,
+                "sha256": "8b5a0983acfb5ceaa60594ec4b78764584f25c5e595e3b11dec89a044a1c90d4",
+                "header_hex": "20001800cff92e470303200000040004f00f00000101010460020100000000005649b2f3c27aeb3d9285e8546ae41666"
+              },
+              {
+                "id": 682,
+                "bytes": 1572896,
+                "sha256": "0550aafffdf1274cf87438d5e0736abc0f57bc1e769e61487785f7762217d8d1",
+                "header_hex": "20001800cff92e470303200000040004f00f0000010101046002010000000000b0b1f3e6894ca646887cebc3eaa43f45"
+              }
+            ]
+          },
+          {
+            "id": 914,
+            "bytes": 336,
+            "sha256": "16b8239a376810fa9f3afa5648f6ca1d1fd0aab9133cf666ab2e13abcf7253d2",
+            "header_hex": "a981552740aa354a01000000ff0001000200040301030000000000000000000001006000680070000300780080008800"
+          }
+        ]
+      }
+    }
+  ]
+}
