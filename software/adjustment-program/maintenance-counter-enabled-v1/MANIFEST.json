@@ -1,0 +1,43 @@
+{
+  "source_sha256": "43937204e968868fddaf747738287114e0b27280b4ab4d9817f0de7946d5c7b9",
+  "patched_sha256": "f2aa8c227687c40c98beb12ffe1ce69e0ac12530e8cc527fbfa4e5b2d30e251d",
+  "size": 2908160,
+  "original_byte_sum": 326292159,
+  "patched_byte_sum": 326292159,
+  "modified_byte_count": 5,
+  "changes": [
+    {
+      "va": "0x4f3421",
+      "file_offset": "0xf3421",
+      "before": "18",
+      "after": "17",
+      "reason": "Include type 0x17 in the count of initializable counters"
+    },
+    {
+      "va": "0x4f398b",
+      "file_offset": "0xf398b",
+      "before": "17",
+      "after": "16",
+      "reason": "Leave the type 0x17 counter checkbox enabled"
+    },
+    {
+      "va": "0x4f5545",
+      "file_offset": "0xf5545",
+      "before": "0f8476010000",
+      "after": "0f8455000000",
+      "reason": "Route type 0x17 to the existing requested-value write path instead of skipping"
+    },
+    {
+      "file_offset": "0x1f635c",
+      "before": "00",
+      "after": "24",
+      "reason": "Preserve additive file integrity sum in unused raw .text padding"
+    }
+  ],
+  "target": "Maintenance counter: type 0x17 / logical ID 0xFC",
+  "verification": "Static structure, patch bytes, branch target and additive checksum preservation; no Windows/printer execution",
+  "limits": [
+    "Initializes the program logical EEPROM counter 0xFC; a maintenance-box chip reset is not established",
+    "Does not repair ink-pack recognition, initial-charge or IES conditions"
+  ]
+}
