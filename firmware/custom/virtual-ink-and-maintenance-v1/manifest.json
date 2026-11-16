@@ -1,5 +1,5 @@
 {
-  "status": "EXPERIMENTAL ink extension: real boot/printing/cleaning without ink chips unverified",
+  "status": "USER_REPORTED_INITIAL_OPERATION; subsequently reported discharge/re-charge stall; cause unconfirmed",
   "parent": "User reported the maintenance-only v1 works; all six active maintenance patch instructions retained",
   "build": {
     "status": "OFFLINE PROTOTYPE: physical boot, update acceptance and operation without a chip UNVERIFIED",
@@ -549,5 +549,20 @@
       "Snapshot bytes outside the first four 3-byte ink records preserved",
       "Existing maintenance-v1 instructions retained; reused body was already unreachable"
     ]
+  },
+  "user_feedback": {
+    "initial": "User reported this version works; detailed test coverage unknown",
+    "subsequent_issue": {
+      "operation": "Adjustment Program Ink Discharge followed by ink charge",
+      "physical_ink_chips_installed": true,
+      "display": "시작하는 중입니다",
+      "elapsed": "more than ten minutes",
+      "led": "flashing",
+      "pump_motor_sound": "none reported",
+      "charge_command_result": "Communication Error",
+      "information_reads_work": true
+    },
+    "root_cause_confirmed": false,
+    "physical_testing_by_assistant": false
   }
 }
