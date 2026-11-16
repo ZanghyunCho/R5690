@@ -9,10 +9,15 @@ displays “다음 잉크팩을 인식할 수 없습니다”. No repair is esta
 
 The user suggests a changed ink serial/new-pack recognition may be needed.
 That is a hypothesis, not a verified cause of the M supply issue. No current
-chip detail response or pump-state trace is available. A read-only request for
-Adjustment Program “Printer information check” fatal error history is pending.
-Such history may be useful but is not guaranteed to expose a nonfatal current
-cartridge error.
+chip detail response or pump-state trace is available. The user says the
+requested fatal-history fields are absent from their Adjustment Program UI.
+The earlier request was based on generic executable strings, not verified
+model-specific availability. Do not ask for those absent fields again.
+
+The user also reports real-chip depletion on V1 and failure when chips are
+removed. They correctly identify that this is not a complete virtual cartridge,
+and explicitly request rewriting that part. The old state-override terminology
+has been corrected. New work is in `virtual-csic-rewrite-progress.md`.
 
 ## Evidence from original firmware
 

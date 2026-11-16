@@ -1,5 +1,11 @@
 # T3400 CLUT-only candidate for R5691
 
+**Ink virtualisation correction:** this retains the old V1 ink-state overrides,
+not a complete virtual cartridge. Physical chip reads/writes and validation
+remain active. The user reports real chip depletion and failure without chips.
+The colour LUT change does not fix that limitation. See
+`../../../docs/virtual-csic-rewrite-progress.md` for the unreleased rewrite.
+
 **User reports that the update succeeded after a power cycle and colours look
 better. No controlled colour measurement or verified print-path trace exists.**
 

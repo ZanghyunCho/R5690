@@ -207,5 +207,7 @@
     "exact_device_error_code": null,
     "root_cause": "Unresolved"
   },
-  "ink_limit_correction": "Preserved inkd metadata does not establish preserved runtime limits. Native parser 0x48ABCAE4 ignores those fields in paired tests; enforcement path unresolved."
+  "ink_limit_correction": "Preserved inkd metadata does not establish preserved runtime limits. Native parser 0x48ABCAE4 ignores those fields in paired tests; enforcement path unresolved.",
+  "ink_implementation_status": "PARTIAL STATE OVERRIDE, NOT A COMPLETE VIRTUAL CARTRIDGE",
+  "ink_transport_correction": "Physical CSIC read/write and validation are unchanged by the V1 ink extension. User reports actual chip depletion and failure without chips."
 }

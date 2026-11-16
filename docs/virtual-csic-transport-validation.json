@@ -1,0 +1,303 @@
+{
+  "status": "UNRELEASED ADAPTER EXPERIMENT; NOT A COMPLETE VIRTUAL CHIP OR EFU",
+  "changes": [
+    {
+      "entry": "0x47c51b78",
+      "helper": "0x47d70000",
+      "operation": "read"
+    },
+    {
+      "entry": "0x47c51c50",
+      "helper": "0x47d70020",
+      "operation": "alternate_read"
+    },
+    {
+      "entry": "0x47c51cf4",
+      "helper": "0x47d70040",
+      "operation": "readback"
+    },
+    {
+      "entry": "0x47c51d84",
+      "helper": "0x47d70060",
+      "operation": "write"
+    },
+    {
+      "entry": "0x47c51e28",
+      "helper": "0x47d70080",
+      "operation": "alternate_write"
+    }
+  ],
+  "roundtrips": [
+    {
+      "slot": 0,
+      "counter_written": 0,
+      "counter_read": 0,
+      "other_banks_preserved": true
+    },
+    {
+      "slot": 0,
+      "counter_written": 1,
+      "counter_read": 1,
+      "other_banks_preserved": true
+    },
+    {
+      "slot": 0,
+      "counter_written": 4,
+      "counter_read": 4,
+      "other_banks_preserved": true
+    },
+    {
+      "slot": 0,
+      "counter_written": 4660,
+      "counter_read": 4660,
+      "other_banks_preserved": true
+    },
+    {
+      "slot": 0,
+      "counter_written": 16383,
+      "counter_read": 16383,
+      "other_banks_preserved": true
+    },
+    {
+      "slot": 1,
+      "counter_written": 0,
+      "counter_read": 0,
+      "other_banks_preserved": true
+    },
+    {
+      "slot": 1,
+      "counter_written": 1,
+      "counter_read": 1,
+      "other_banks_preserved": true
+    },
+    {
+      "slot": 1,
+      "counter_written": 4,
+      "counter_read": 4,
+      "other_banks_preserved": true
+    },
+    {
+      "slot": 1,
+      "counter_written": 4660,
+      "counter_read": 4660,
+      "other_banks_preserved": true
+    },
+    {
+      "slot": 1,
+      "counter_written": 16383,
+      "counter_read": 16383,
+      "other_banks_preserved": true
+    },
+    {
+      "slot": 2,
+      "counter_written": 0,
+      "counter_read": 0,
+      "other_banks_preserved": true
+    },
+    {
+      "slot": 2,
+      "counter_written": 1,
+      "counter_read": 1,
+      "other_banks_preserved": true
+    },
+    {
+      "slot": 2,
+      "counter_written": 4,
+      "counter_read": 4,
+      "other_banks_preserved": true
+    },
+    {
+      "slot": 2,
+      "counter_written": 4660,
+      "counter_read": 4660,
+      "other_banks_preserved": true
+    },
+    {
+      "slot": 2,
+      "counter_written": 16383,
+      "counter_read": 16383,
+      "other_banks_preserved": true
+    },
+    {
+      "slot": 3,
+      "counter_written": 0,
+      "counter_read": 0,
+      "other_banks_preserved": true
+    },
+    {
+      "slot": 3,
+      "counter_written": 1,
+      "counter_read": 1,
+      "other_banks_preserved": true
+    },
+    {
+      "slot": 3,
+      "counter_written": 4,
+      "counter_read": 4,
+      "other_banks_preserved": true
+    },
+    {
+      "slot": 3,
+      "counter_written": 4660,
+      "counter_read": 4660,
+      "other_banks_preserved": true
+    },
+    {
+      "slot": 3,
+      "counter_written": 16383,
+      "counter_read": 16383,
+      "other_banks_preserved": true
+    }
+  ],
+  "consumption_commit_cases": [
+    {
+      "slot": 0,
+      "counter": 0,
+      "native_commit_return": 0,
+      "readback_verified": true,
+      "acknowledgement_observed": true
+    },
+    {
+      "slot": 0,
+      "counter": 1,
+      "native_commit_return": 0,
+      "readback_verified": true,
+      "acknowledgement_observed": true
+    },
+    {
+      "slot": 0,
+      "counter": 4660,
+      "native_commit_return": 0,
+      "readback_verified": true,
+      "acknowledgement_observed": true
+    },
+    {
+      "slot": 1,
+      "counter": 0,
+      "native_commit_return": 0,
+      "readback_verified": true,
+      "acknowledgement_observed": true
+    },
+    {
+      "slot": 1,
+      "counter": 1,
+      "native_commit_return": 0,
+      "readback_verified": true,
+      "acknowledgement_observed": true
+    },
+    {
+      "slot": 1,
+      "counter": 4660,
+      "native_commit_return": 0,
+      "readback_verified": true,
+      "acknowledgement_observed": true
+    },
+    {
+      "slot": 2,
+      "counter": 0,
+      "native_commit_return": 0,
+      "readback_verified": true,
+      "acknowledgement_observed": true
+    },
+    {
+      "slot": 2,
+      "counter": 1,
+      "native_commit_return": 0,
+      "readback_verified": true,
+      "acknowledgement_observed": true
+    },
+    {
+      "slot": 2,
+      "counter": 4660,
+      "native_commit_return": 0,
+      "readback_verified": true,
+      "acknowledgement_observed": true
+    },
+    {
+      "slot": 3,
+      "counter": 0,
+      "native_commit_return": 0,
+      "readback_verified": true,
+      "acknowledgement_observed": true
+    },
+    {
+      "slot": 3,
+      "counter": 1,
+      "native_commit_return": 0,
+      "readback_verified": true,
+      "acknowledgement_observed": true
+    },
+    {
+      "slot": 3,
+      "counter": 4660,
+      "native_commit_return": 0,
+      "readback_verified": true,
+      "acknowledgement_observed": true
+    }
+  ],
+  "unsupported_slot_controls": [
+    {
+      "entry": "0x47c51b78",
+      "slot": 4,
+      "original_prologue_and_arguments_preserved": true
+    },
+    {
+      "entry": "0x47c51b78",
+      "slot": 255,
+      "original_prologue_and_arguments_preserved": true
+    },
+    {
+      "entry": "0x47c51c50",
+      "slot": 4,
+      "original_prologue_and_arguments_preserved": true
+    },
+    {
+      "entry": "0x47c51c50",
+      "slot": 255,
+      "original_prologue_and_arguments_preserved": true
+    },
+    {
+      "entry": "0x47c51cf4",
+      "slot": 4,
+      "original_prologue_and_arguments_preserved": true
+    },
+    {
+      "entry": "0x47c51cf4",
+      "slot": 255,
+      "original_prologue_and_arguments_preserved": true
+    },
+    {
+      "entry": "0x47c51d84",
+      "slot": 4,
+      "original_prologue_and_arguments_preserved": true
+    },
+    {
+      "entry": "0x47c51d84",
+      "slot": 255,
+      "original_prologue_and_arguments_preserved": true
+    },
+    {
+      "entry": "0x47c51e28",
+      "slot": 4,
+      "original_prologue_and_arguments_preserved": true
+    },
+    {
+      "entry": "0x47c51e28",
+      "slot": 255,
+      "original_prologue_and_arguments_preserved": true
+    }
+  ],
+  "physical_bus_calls": [],
+  "stock_positive_control": [
+    "0x47c555a0"
+  ],
+  "scope": "No V1 state-cache overrides. Original field packing and per-slot RAM banks remain active.",
+  "missing": [
+    "Cold-start valid chip data and stable identity",
+    "No-chip discovery and authentication integration",
+    "Persistence and reboot consistency",
+    "Always-available ink semantics without breaking write verification",
+    "Actual automatic supply/IES and actuator behavior",
+    "Physical boot and print validation"
+  ]
+}

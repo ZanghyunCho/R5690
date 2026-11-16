@@ -564,5 +564,7 @@
     },
     "root_cause_confirmed": false,
     "physical_testing_by_assistant": false
-  }
+  },
+  "ink_implementation_status": "PARTIAL STATE OVERRIDE, NOT A COMPLETE VIRTUAL CARTRIDGE",
+  "ink_transport_correction": "Physical CSIC read/write and validation are unchanged by the V1 ink extension. User reports actual chip depletion and failure without chips."
 }
