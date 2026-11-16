@@ -1,5 +1,5 @@
 {
-  "status": "EXPERIMENTAL, physical boot/update/printing without cartridge unverified",
+  "status": "USER_REPORTED_WORKING; detailed physical test coverage not specified",
   "build": {
     "status": "OFFLINE PROTOTYPE: physical boot, update acceptance and operation without a chip UNVERIFIED",
     "file": "FWE642TL_GR_VIRTUAL_MAINTENANCE_BOX_PROTOTYPE_v1.EFU",
@@ -612,5 +612,6 @@
         "0x47cb8014"
       ]
     }
-  }
+  },
+  "user_feedback": "\uc798 \uc791\ub3d9\ud574\uc694"
 }
