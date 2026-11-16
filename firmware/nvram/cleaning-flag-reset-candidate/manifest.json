@@ -36,5 +36,12 @@
     "Cleaning pending is an observed backup bit, not a proven cause of cartridge-installation error",
     "Restore workflows can filter fields; read back byte zero to verify any intended device write",
     "No full EEPROM initialization or calibration edits were performed"
-  ]
+  ],
+  "subsequent_user_feedback": {
+    "symptom_changed_after_applying_candidate": false,
+    "new_ic3_active_bmap_initial_charge_flag": 0,
+    "new_ic3_active_bmap_cleaning_flag": 0,
+    "new_ic3_payload_offset": "0xFDE830",
+    "note": "New IC3 BMAP and earlier service EEPROM backup differ in 242 bytes; capture chronology not established. No IES field or error root cause identified."
+  }
 }

@@ -1,0 +1,53 @@
+{
+  "status": "READ-ONLY EXTRACTION; no new reset patch or device write",
+  "ic3_bytes": 16777216,
+  "ic3_sha256": "ca3c42d3bfa512ae66f7fff3077c81feb2cb45db498f64ac07b098ee805d7d20",
+  "earlier_backup_sha256": "4a23b01db59e307a134da0c5488230c08194c9bb3c5b9ab3203a15a8281f88e5",
+  "active_eep_file": "IC3_BMAP_ACTIVE.eep",
+  "active_eep_bytes": 2048,
+  "active_eep_sha256": "00853207ebd22c5344c2785910e76a86b590a771dbf5d0ac8e75b0af94b0f5d6",
+  "active_sector": "0xFD0000",
+  "active_slot": 29,
+  "active_payload_start": "0xFDE830",
+  "active_payload_end_inclusive": "0xFDF02F",
+  "header_bytes_before_payload": 48,
+  "complete_slots_per_sector": 31,
+  "valid_status": "0x3F",
+  "reference_ARM_selection": {
+    "reference_function": "0x47C957EC",
+    "slot_count": 31,
+    "return": 0,
+    "selected_index": 29,
+    "simulated_flash_reads": 31,
+    "limits": "Stock reference routine only; flash reads stubbed; no real device or header-selection emulation"
+  },
+  "nvram_start": "0x6F0000",
+  "nvram_end_inclusive": "0xFFFFFF",
+  "nvram_sector_bytes": 65536,
+  "sector_counts": {
+    "INC_P001": 2,
+    "NO_ASCII_TAG": 45,
+    "ADDL0002": 54,
+    "INC_F013": 22,
+    "INC_S002": 6,
+    "INC_A002": 6,
+    "INC_C006": 6,
+    "1WAY0001": 2,
+    "BMAP0001": 2
+  },
+  "product_serial": "W9VY010556",
+  "initial_charge_flag": 0,
+  "cleaning_flag": 0,
+  "different_bytes_vs_earlier_backup": 242,
+  "service_table_item_anchor_addresses": 133,
+  "service_table_unique_logical_ids": 115,
+  "stock_reference_nv_object_count": 103,
+  "limits": [
+    "Dump capture order versus earlier EEPROM backup not established",
+    "No IES persistent flag or cartridge-installation error root cause identified",
+    "Headers and storage tags do not by themselves name the stored product features",
+    "Header word at +0x0C and header halfword at +0x0A are not semantically decoded",
+    "Stock reference firmware and uploaded chip image are not assumed identical",
+    "No SPI or EEPROM writes; raw IC3 firmware or other NV blocks not modified"
+  ]
+}

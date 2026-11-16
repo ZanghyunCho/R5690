@@ -1,0 +1,1696 @@
+[
+  {
+    "address": "0x0000",
+    "ic3_active_address": "0xFDE830",
+    "active_hex": "00",
+    "earlier_backup_hex": "20",
+    "verified_meaning": "bit0 initial charge=0; bit5 cleaning=0; other bits not decoded"
+  },
+  {
+    "address": "0x0005",
+    "ic3_active_address": "0xFDE835",
+    "active_hex": "03",
+    "earlier_backup_hex": "00",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x000C",
+    "ic3_active_address": "0xFDE83C",
+    "active_hex": "D4",
+    "earlier_backup_hex": "00",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x000E",
+    "ic3_active_address": "0xFDE83E",
+    "active_hex": "D4",
+    "earlier_backup_hex": "02",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0010",
+    "ic3_active_address": "0xFDE840",
+    "active_hex": "11",
+    "earlier_backup_hex": "22",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0014",
+    "ic3_active_address": "0xFDE844",
+    "active_hex": "9E",
+    "earlier_backup_hex": "00",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0015",
+    "ic3_active_address": "0xFDE845",
+    "active_hex": "0F",
+    "earlier_backup_hex": "00",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0018",
+    "ic3_active_address": "0xFDE848",
+    "active_hex": "E7",
+    "earlier_backup_hex": "B4",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0019",
+    "ic3_active_address": "0xFDE849",
+    "active_hex": "25",
+    "earlier_backup_hex": "2B",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x001A",
+    "ic3_active_address": "0xFDE84A",
+    "active_hex": "08",
+    "earlier_backup_hex": "73",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x001B",
+    "ic3_active_address": "0xFDE84B",
+    "active_hex": "02",
+    "earlier_backup_hex": "0B",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x001C",
+    "ic3_active_address": "0xFDE84C",
+    "active_hex": "D6",
+    "earlier_backup_hex": "4B",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x001D",
+    "ic3_active_address": "0xFDE84D",
+    "active_hex": "22",
+    "earlier_backup_hex": "96",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x001E",
+    "ic3_active_address": "0xFDE84E",
+    "active_hex": "42",
+    "earlier_backup_hex": "B5",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x001F",
+    "ic3_active_address": "0xFDE84F",
+    "active_hex": "0E",
+    "earlier_backup_hex": "17",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0020",
+    "ic3_active_address": "0xFDE850",
+    "active_hex": "FD",
+    "earlier_backup_hex": "06",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0021",
+    "ic3_active_address": "0xFDE851",
+    "active_hex": "46",
+    "earlier_backup_hex": "0B",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0022",
+    "ic3_active_address": "0xFDE852",
+    "active_hex": "DF",
+    "earlier_backup_hex": "62",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0023",
+    "ic3_active_address": "0xFDE853",
+    "active_hex": "02",
+    "earlier_backup_hex": "0C",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0024",
+    "ic3_active_address": "0xFDE854",
+    "active_hex": "A6",
+    "earlier_backup_hex": "8D",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0025",
+    "ic3_active_address": "0xFDE855",
+    "active_hex": "2B",
+    "earlier_backup_hex": "F5",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0026",
+    "ic3_active_address": "0xFDE856",
+    "active_hex": "FE",
+    "earlier_backup_hex": "61",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0027",
+    "ic3_active_address": "0xFDE857",
+    "active_hex": "02",
+    "earlier_backup_hex": "0C",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0028",
+    "ic3_active_address": "0xFDE858",
+    "active_hex": "04",
+    "earlier_backup_hex": "7B",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0029",
+    "ic3_active_address": "0xFDE859",
+    "active_hex": "03",
+    "earlier_backup_hex": "76",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x002A",
+    "ic3_active_address": "0xFDE85A",
+    "active_hex": "C7",
+    "earlier_backup_hex": "AC",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x002B",
+    "ic3_active_address": "0xFDE85B",
+    "active_hex": "03",
+    "earlier_backup_hex": "78",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0035",
+    "ic3_active_address": "0xFDE865",
+    "active_hex": "7F",
+    "earlier_backup_hex": "82",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x003F",
+    "ic3_active_address": "0xFDE86F",
+    "active_hex": "A3",
+    "earlier_backup_hex": "E0",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0040",
+    "ic3_active_address": "0xFDE870",
+    "active_hex": "01",
+    "earlier_backup_hex": "08",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0042",
+    "ic3_active_address": "0xFDE872",
+    "active_hex": "4A",
+    "earlier_backup_hex": "C5",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0043",
+    "ic3_active_address": "0xFDE873",
+    "active_hex": "15",
+    "earlier_backup_hex": "22",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0045",
+    "ic3_active_address": "0xFDE875",
+    "active_hex": "4F",
+    "earlier_backup_hex": "F1",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0046",
+    "ic3_active_address": "0xFDE876",
+    "active_hex": "04",
+    "earlier_backup_hex": "11",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0048",
+    "ic3_active_address": "0xFDE878",
+    "active_hex": "87",
+    "earlier_backup_hex": "16",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0049",
+    "ic3_active_address": "0xFDE879",
+    "active_hex": "04",
+    "earlier_backup_hex": "12",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x004E",
+    "ic3_active_address": "0xFDE87E",
+    "active_hex": "00",
+    "earlier_backup_hex": "08",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x006C",
+    "ic3_active_address": "0xFDE89C",
+    "active_hex": "6F",
+    "earlier_backup_hex": "6E",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x006E",
+    "ic3_active_address": "0xFDE89E",
+    "active_hex": "BA",
+    "earlier_backup_hex": "B7",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0071",
+    "ic3_active_address": "0xFDE8A1",
+    "active_hex": "DE",
+    "earlier_backup_hex": "DD",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0074",
+    "ic3_active_address": "0xFDE8A4",
+    "active_hex": "01",
+    "earlier_backup_hex": "20",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0078",
+    "ic3_active_address": "0xFDE8A8",
+    "active_hex": "51",
+    "earlier_backup_hex": "6E",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x007C",
+    "ic3_active_address": "0xFDE8AC",
+    "active_hex": "F3",
+    "earlier_backup_hex": "2F",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x007D",
+    "ic3_active_address": "0xFDE8AD",
+    "active_hex": "13",
+    "earlier_backup_hex": "15",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0087",
+    "ic3_active_address": "0xFDE8B7",
+    "active_hex": "00",
+    "earlier_backup_hex": "18",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0088",
+    "ic3_active_address": "0xFDE8B8",
+    "active_hex": "04",
+    "earlier_backup_hex": "15",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0094",
+    "ic3_active_address": "0xFDE8C4",
+    "active_hex": "01",
+    "earlier_backup_hex": "54",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0096",
+    "ic3_active_address": "0xFDE8C6",
+    "active_hex": "4D",
+    "earlier_backup_hex": "56",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0098",
+    "ic3_active_address": "0xFDE8C8",
+    "active_hex": "55",
+    "earlier_backup_hex": "65",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0099",
+    "ic3_active_address": "0xFDE8C9",
+    "active_hex": "C4",
+    "earlier_backup_hex": "C6",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x00C5",
+    "ic3_active_address": "0xFDE8F5",
+    "active_hex": "25",
+    "earlier_backup_hex": "26",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x00C6",
+    "ic3_active_address": "0xFDE8F6",
+    "active_hex": "2A",
+    "earlier_backup_hex": "26",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x00C7",
+    "ic3_active_address": "0xFDE8F7",
+    "active_hex": "2A",
+    "earlier_backup_hex": "26",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x00C8",
+    "ic3_active_address": "0xFDE8F8",
+    "active_hex": "2A",
+    "earlier_backup_hex": "26",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x00CA",
+    "ic3_active_address": "0xFDE8FA",
+    "active_hex": "72",
+    "earlier_backup_hex": "4A",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0140",
+    "ic3_active_address": "0xFDE970",
+    "active_hex": "7D",
+    "earlier_backup_hex": "E6",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0141",
+    "ic3_active_address": "0xFDE971",
+    "active_hex": "1E",
+    "earlier_backup_hex": "A4",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0142",
+    "ic3_active_address": "0xFDE972",
+    "active_hex": "48",
+    "earlier_backup_hex": "64",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0144",
+    "ic3_active_address": "0xFDE974",
+    "active_hex": "5D",
+    "earlier_backup_hex": "D8",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0145",
+    "ic3_active_address": "0xFDE975",
+    "active_hex": "61",
+    "earlier_backup_hex": "ED",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0146",
+    "ic3_active_address": "0xFDE976",
+    "active_hex": "23",
+    "earlier_backup_hex": "41",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0148",
+    "ic3_active_address": "0xFDE978",
+    "active_hex": "D0",
+    "earlier_backup_hex": "58",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0149",
+    "ic3_active_address": "0xFDE979",
+    "active_hex": "4D",
+    "earlier_backup_hex": "B4",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x014A",
+    "ic3_active_address": "0xFDE97A",
+    "active_hex": "41",
+    "earlier_backup_hex": "61",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x014C",
+    "ic3_active_address": "0xFDE97C",
+    "active_hex": "49",
+    "earlier_backup_hex": "75",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x014D",
+    "ic3_active_address": "0xFDE97D",
+    "active_hex": "F9",
+    "earlier_backup_hex": "56",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x014E",
+    "ic3_active_address": "0xFDE97E",
+    "active_hex": "23",
+    "earlier_backup_hex": "41",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0150",
+    "ic3_active_address": "0xFDE980",
+    "active_hex": "5D",
+    "earlier_backup_hex": "8B",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0151",
+    "ic3_active_address": "0xFDE981",
+    "active_hex": "AA",
+    "earlier_backup_hex": "73",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0152",
+    "ic3_active_address": "0xFDE982",
+    "active_hex": "06",
+    "earlier_backup_hex": "08",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0154",
+    "ic3_active_address": "0xFDE984",
+    "active_hex": "7A",
+    "earlier_backup_hex": "5E",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0155",
+    "ic3_active_address": "0xFDE985",
+    "active_hex": "50",
+    "earlier_backup_hex": "3A",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0156",
+    "ic3_active_address": "0xFDE986",
+    "active_hex": "0F",
+    "earlier_backup_hex": "12",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0158",
+    "ic3_active_address": "0xFDE988",
+    "active_hex": "2C",
+    "earlier_backup_hex": "8B",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0159",
+    "ic3_active_address": "0xFDE989",
+    "active_hex": "8F",
+    "earlier_backup_hex": "F8",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x015A",
+    "ic3_active_address": "0xFDE98A",
+    "active_hex": "28",
+    "earlier_backup_hex": "2C",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x015C",
+    "ic3_active_address": "0xFDE98C",
+    "active_hex": "FB",
+    "earlier_backup_hex": "60",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x015D",
+    "ic3_active_address": "0xFDE98D",
+    "active_hex": "F3",
+    "earlier_backup_hex": "B6",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x015E",
+    "ic3_active_address": "0xFDE98E",
+    "active_hex": "0F",
+    "earlier_backup_hex": "11",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0160",
+    "ic3_active_address": "0xFDE990",
+    "active_hex": "E1",
+    "earlier_backup_hex": "D5",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0161",
+    "ic3_active_address": "0xFDE991",
+    "active_hex": "B1",
+    "earlier_backup_hex": "BF",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0162",
+    "ic3_active_address": "0xFDE992",
+    "active_hex": "0E",
+    "earlier_backup_hex": "10",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0164",
+    "ic3_active_address": "0xFDE994",
+    "active_hex": "22",
+    "earlier_backup_hex": "3C",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0165",
+    "ic3_active_address": "0xFDE995",
+    "active_hex": "DE",
+    "earlier_backup_hex": "E9",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0166",
+    "ic3_active_address": "0xFDE996",
+    "active_hex": "E5",
+    "earlier_backup_hex": "E8",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0168",
+    "ic3_active_address": "0xFDE998",
+    "active_hex": "BA",
+    "earlier_backup_hex": "4F",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0169",
+    "ic3_active_address": "0xFDE999",
+    "active_hex": "1C",
+    "earlier_backup_hex": "A7",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x016A",
+    "ic3_active_address": "0xFDE99A",
+    "active_hex": "FF",
+    "earlier_backup_hex": "03",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x016B",
+    "ic3_active_address": "0xFDE99B",
+    "active_hex": "01",
+    "earlier_backup_hex": "02",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x016C",
+    "ic3_active_address": "0xFDE99C",
+    "active_hex": "C5",
+    "earlier_backup_hex": "60",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x016D",
+    "ic3_active_address": "0xFDE99D",
+    "active_hex": "81",
+    "earlier_backup_hex": "65",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x016E",
+    "ic3_active_address": "0xFDE99E",
+    "active_hex": "E6",
+    "earlier_backup_hex": "E8",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0170",
+    "ic3_active_address": "0xFDE9A0",
+    "active_hex": "7D",
+    "earlier_backup_hex": "E6",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0171",
+    "ic3_active_address": "0xFDE9A1",
+    "active_hex": "1E",
+    "earlier_backup_hex": "A4",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0172",
+    "ic3_active_address": "0xFDE9A2",
+    "active_hex": "48",
+    "earlier_backup_hex": "64",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0174",
+    "ic3_active_address": "0xFDE9A4",
+    "active_hex": "5D",
+    "earlier_backup_hex": "D8",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0175",
+    "ic3_active_address": "0xFDE9A5",
+    "active_hex": "61",
+    "earlier_backup_hex": "ED",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0176",
+    "ic3_active_address": "0xFDE9A6",
+    "active_hex": "23",
+    "earlier_backup_hex": "41",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0178",
+    "ic3_active_address": "0xFDE9A8",
+    "active_hex": "D0",
+    "earlier_backup_hex": "58",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0179",
+    "ic3_active_address": "0xFDE9A9",
+    "active_hex": "4D",
+    "earlier_backup_hex": "B4",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x017A",
+    "ic3_active_address": "0xFDE9AA",
+    "active_hex": "41",
+    "earlier_backup_hex": "61",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x017C",
+    "ic3_active_address": "0xFDE9AC",
+    "active_hex": "49",
+    "earlier_backup_hex": "75",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x017D",
+    "ic3_active_address": "0xFDE9AD",
+    "active_hex": "F9",
+    "earlier_backup_hex": "56",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x017E",
+    "ic3_active_address": "0xFDE9AE",
+    "active_hex": "23",
+    "earlier_backup_hex": "41",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0180",
+    "ic3_active_address": "0xFDE9B0",
+    "active_hex": "5D",
+    "earlier_backup_hex": "8B",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0181",
+    "ic3_active_address": "0xFDE9B1",
+    "active_hex": "AA",
+    "earlier_backup_hex": "73",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0182",
+    "ic3_active_address": "0xFDE9B2",
+    "active_hex": "06",
+    "earlier_backup_hex": "08",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0184",
+    "ic3_active_address": "0xFDE9B4",
+    "active_hex": "7A",
+    "earlier_backup_hex": "5E",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0185",
+    "ic3_active_address": "0xFDE9B5",
+    "active_hex": "50",
+    "earlier_backup_hex": "3A",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0186",
+    "ic3_active_address": "0xFDE9B6",
+    "active_hex": "0F",
+    "earlier_backup_hex": "12",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0188",
+    "ic3_active_address": "0xFDE9B8",
+    "active_hex": "2C",
+    "earlier_backup_hex": "8B",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0189",
+    "ic3_active_address": "0xFDE9B9",
+    "active_hex": "8F",
+    "earlier_backup_hex": "F8",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x018A",
+    "ic3_active_address": "0xFDE9BA",
+    "active_hex": "28",
+    "earlier_backup_hex": "2C",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x018C",
+    "ic3_active_address": "0xFDE9BC",
+    "active_hex": "FB",
+    "earlier_backup_hex": "60",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x018D",
+    "ic3_active_address": "0xFDE9BD",
+    "active_hex": "F3",
+    "earlier_backup_hex": "B6",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x018E",
+    "ic3_active_address": "0xFDE9BE",
+    "active_hex": "0F",
+    "earlier_backup_hex": "11",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0190",
+    "ic3_active_address": "0xFDE9C0",
+    "active_hex": "E1",
+    "earlier_backup_hex": "D5",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0191",
+    "ic3_active_address": "0xFDE9C1",
+    "active_hex": "B1",
+    "earlier_backup_hex": "BF",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0192",
+    "ic3_active_address": "0xFDE9C2",
+    "active_hex": "0E",
+    "earlier_backup_hex": "10",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0194",
+    "ic3_active_address": "0xFDE9C4",
+    "active_hex": "22",
+    "earlier_backup_hex": "3C",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0195",
+    "ic3_active_address": "0xFDE9C5",
+    "active_hex": "DE",
+    "earlier_backup_hex": "E9",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0196",
+    "ic3_active_address": "0xFDE9C6",
+    "active_hex": "E5",
+    "earlier_backup_hex": "E8",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0198",
+    "ic3_active_address": "0xFDE9C8",
+    "active_hex": "BA",
+    "earlier_backup_hex": "4F",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0199",
+    "ic3_active_address": "0xFDE9C9",
+    "active_hex": "1C",
+    "earlier_backup_hex": "A7",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x019A",
+    "ic3_active_address": "0xFDE9CA",
+    "active_hex": "FF",
+    "earlier_backup_hex": "03",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x019B",
+    "ic3_active_address": "0xFDE9CB",
+    "active_hex": "01",
+    "earlier_backup_hex": "02",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x019C",
+    "ic3_active_address": "0xFDE9CC",
+    "active_hex": "C5",
+    "earlier_backup_hex": "60",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x019D",
+    "ic3_active_address": "0xFDE9CD",
+    "active_hex": "81",
+    "earlier_backup_hex": "65",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x019E",
+    "ic3_active_address": "0xFDE9CE",
+    "active_hex": "E6",
+    "earlier_backup_hex": "E8",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x01A2",
+    "ic3_active_address": "0xFDE9D2",
+    "active_hex": "1A",
+    "earlier_backup_hex": "1B",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x01A8",
+    "ic3_active_address": "0xFDE9D8",
+    "active_hex": "F3",
+    "earlier_backup_hex": "12",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x01A9",
+    "ic3_active_address": "0xFDE9D9",
+    "active_hex": "C5",
+    "earlier_backup_hex": "C6",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x01AC",
+    "ic3_active_address": "0xFDE9DC",
+    "active_hex": "1A",
+    "earlier_backup_hex": "39",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x01B4",
+    "ic3_active_address": "0xFDE9E4",
+    "active_hex": "33",
+    "earlier_backup_hex": "35",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x01B6",
+    "ic3_active_address": "0xFDE9E6",
+    "active_hex": "61",
+    "earlier_backup_hex": "64",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0254",
+    "ic3_active_address": "0xFDEA84",
+    "active_hex": "D9",
+    "earlier_backup_hex": "F8",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x02C4",
+    "ic3_active_address": "0xFDEAF4",
+    "active_hex": "13",
+    "earlier_backup_hex": "2B",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x02CC",
+    "ic3_active_address": "0xFDEAFC",
+    "active_hex": "3C",
+    "earlier_backup_hex": "43",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x02D0",
+    "ic3_active_address": "0xFDEB00",
+    "active_hex": "97",
+    "earlier_backup_hex": "AF",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x02DC",
+    "ic3_active_address": "0xFDEB0C",
+    "active_hex": "76",
+    "earlier_backup_hex": "7D",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x02E0",
+    "ic3_active_address": "0xFDEB10",
+    "active_hex": "82",
+    "earlier_backup_hex": "A1",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0304",
+    "ic3_active_address": "0xFDEB34",
+    "active_hex": "46",
+    "earlier_backup_hex": "AC",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0306",
+    "ic3_active_address": "0xFDEB36",
+    "active_hex": "45",
+    "earlier_backup_hex": "AB",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0308",
+    "ic3_active_address": "0xFDEB38",
+    "active_hex": "44",
+    "earlier_backup_hex": "AA",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x030A",
+    "ic3_active_address": "0xFDEB3A",
+    "active_hex": "43",
+    "earlier_backup_hex": "A9",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x030C",
+    "ic3_active_address": "0xFDEB3C",
+    "active_hex": "42",
+    "earlier_backup_hex": "A8",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x030E",
+    "ic3_active_address": "0xFDEB3E",
+    "active_hex": "41",
+    "earlier_backup_hex": "A7",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0310",
+    "ic3_active_address": "0xFDEB40",
+    "active_hex": "40",
+    "earlier_backup_hex": "A6",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0312",
+    "ic3_active_address": "0xFDEB42",
+    "active_hex": "3F",
+    "earlier_backup_hex": "A5",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0314",
+    "ic3_active_address": "0xFDEB44",
+    "active_hex": "3E",
+    "earlier_backup_hex": "A4",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0316",
+    "ic3_active_address": "0xFDEB46",
+    "active_hex": "3D",
+    "earlier_backup_hex": "A3",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0318",
+    "ic3_active_address": "0xFDEB48",
+    "active_hex": "3C",
+    "earlier_backup_hex": "A2",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x031A",
+    "ic3_active_address": "0xFDEB4A",
+    "active_hex": "3B",
+    "earlier_backup_hex": "A1",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x031C",
+    "ic3_active_address": "0xFDEB4C",
+    "active_hex": "3A",
+    "earlier_backup_hex": "A0",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x031E",
+    "ic3_active_address": "0xFDEB4E",
+    "active_hex": "39",
+    "earlier_backup_hex": "9F",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0320",
+    "ic3_active_address": "0xFDEB50",
+    "active_hex": "38",
+    "earlier_backup_hex": "9E",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0322",
+    "ic3_active_address": "0xFDEB52",
+    "active_hex": "37",
+    "earlier_backup_hex": "9D",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0324",
+    "ic3_active_address": "0xFDEB54",
+    "active_hex": "36",
+    "earlier_backup_hex": "9C",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0326",
+    "ic3_active_address": "0xFDEB56",
+    "active_hex": "35",
+    "earlier_backup_hex": "9B",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0328",
+    "ic3_active_address": "0xFDEB58",
+    "active_hex": "34",
+    "earlier_backup_hex": "9A",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x032A",
+    "ic3_active_address": "0xFDEB5A",
+    "active_hex": "33",
+    "earlier_backup_hex": "99",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x032C",
+    "ic3_active_address": "0xFDEB5C",
+    "active_hex": "01",
+    "earlier_backup_hex": "04",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x032E",
+    "ic3_active_address": "0xFDEB5E",
+    "active_hex": "01",
+    "earlier_backup_hex": "04",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x032F",
+    "ic3_active_address": "0xFDEB5F",
+    "active_hex": "04",
+    "earlier_backup_hex": "22",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0330",
+    "ic3_active_address": "0xFDEB60",
+    "active_hex": "01",
+    "earlier_backup_hex": "0B",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0332",
+    "ic3_active_address": "0xFDEB62",
+    "active_hex": "01",
+    "earlier_backup_hex": "04",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0333",
+    "ic3_active_address": "0xFDEB63",
+    "active_hex": "01",
+    "earlier_backup_hex": "04",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0334",
+    "ic3_active_address": "0xFDEB64",
+    "active_hex": "01",
+    "earlier_backup_hex": "04",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0335",
+    "ic3_active_address": "0xFDEB65",
+    "active_hex": "01",
+    "earlier_backup_hex": "22",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0336",
+    "ic3_active_address": "0xFDEB66",
+    "active_hex": "01",
+    "earlier_backup_hex": "22",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0337",
+    "ic3_active_address": "0xFDEB67",
+    "active_hex": "01",
+    "earlier_backup_hex": "04",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0338",
+    "ic3_active_address": "0xFDEB68",
+    "active_hex": "01",
+    "earlier_backup_hex": "22",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0339",
+    "ic3_active_address": "0xFDEB69",
+    "active_hex": "01",
+    "earlier_backup_hex": "22",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x033A",
+    "ic3_active_address": "0xFDEB6A",
+    "active_hex": "04",
+    "earlier_backup_hex": "22",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x033B",
+    "ic3_active_address": "0xFDEB6B",
+    "active_hex": "22",
+    "earlier_backup_hex": "04",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x033C",
+    "ic3_active_address": "0xFDEB6C",
+    "active_hex": "04",
+    "earlier_backup_hex": "22",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x033D",
+    "ic3_active_address": "0xFDEB6D",
+    "active_hex": "07",
+    "earlier_backup_hex": "22",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0340",
+    "ic3_active_address": "0xFDEB70",
+    "active_hex": "27",
+    "earlier_backup_hex": "29",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0341",
+    "ic3_active_address": "0xFDEB71",
+    "active_hex": "01",
+    "earlier_backup_hex": "12",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0344",
+    "ic3_active_address": "0xFDEB74",
+    "active_hex": "27",
+    "earlier_backup_hex": "29",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0345",
+    "ic3_active_address": "0xFDEB75",
+    "active_hex": "01",
+    "earlier_backup_hex": "12",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0348",
+    "ic3_active_address": "0xFDEB78",
+    "active_hex": "27",
+    "earlier_backup_hex": "29",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0349",
+    "ic3_active_address": "0xFDEB79",
+    "active_hex": "01",
+    "earlier_backup_hex": "12",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x034D",
+    "ic3_active_address": "0xFDEB7D",
+    "active_hex": "01",
+    "earlier_backup_hex": "12",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0350",
+    "ic3_active_address": "0xFDEB80",
+    "active_hex": "26",
+    "earlier_backup_hex": "27",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0351",
+    "ic3_active_address": "0xFDEB81",
+    "active_hex": "01",
+    "earlier_backup_hex": "12",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0355",
+    "ic3_active_address": "0xFDEB85",
+    "active_hex": "01",
+    "earlier_backup_hex": "12",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0358",
+    "ic3_active_address": "0xFDEB88",
+    "active_hex": "22",
+    "earlier_backup_hex": "26",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0359",
+    "ic3_active_address": "0xFDEB89",
+    "active_hex": "01",
+    "earlier_backup_hex": "12",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x035C",
+    "ic3_active_address": "0xFDEB8C",
+    "active_hex": "20",
+    "earlier_backup_hex": "26",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x035D",
+    "ic3_active_address": "0xFDEB8D",
+    "active_hex": "01",
+    "earlier_backup_hex": "12",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0360",
+    "ic3_active_address": "0xFDEB90",
+    "active_hex": "1F",
+    "earlier_backup_hex": "26",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0361",
+    "ic3_active_address": "0xFDEB91",
+    "active_hex": "01",
+    "earlier_backup_hex": "12",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0364",
+    "ic3_active_address": "0xFDEB94",
+    "active_hex": "1B",
+    "earlier_backup_hex": "26",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0365",
+    "ic3_active_address": "0xFDEB95",
+    "active_hex": "01",
+    "earlier_backup_hex": "12",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0368",
+    "ic3_active_address": "0xFDEB98",
+    "active_hex": "2D",
+    "earlier_backup_hex": "26",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0369",
+    "ic3_active_address": "0xFDEB99",
+    "active_hex": "10",
+    "earlier_backup_hex": "12",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x036A",
+    "ic3_active_address": "0xFDEB9A",
+    "active_hex": "64",
+    "earlier_backup_hex": "70",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x036C",
+    "ic3_active_address": "0xFDEB9C",
+    "active_hex": "2B",
+    "earlier_backup_hex": "25",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x036D",
+    "ic3_active_address": "0xFDEB9D",
+    "active_hex": "10",
+    "earlier_backup_hex": "12",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x036E",
+    "ic3_active_address": "0xFDEB9E",
+    "active_hex": "64",
+    "earlier_backup_hex": "70",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0370",
+    "ic3_active_address": "0xFDEBA0",
+    "active_hex": "12",
+    "earlier_backup_hex": "25",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0371",
+    "ic3_active_address": "0xFDEBA1",
+    "active_hex": "10",
+    "earlier_backup_hex": "12",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0372",
+    "ic3_active_address": "0xFDEBA2",
+    "active_hex": "64",
+    "earlier_backup_hex": "70",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0374",
+    "ic3_active_address": "0xFDEBA4",
+    "active_hex": "10",
+    "earlier_backup_hex": "1F",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0375",
+    "ic3_active_address": "0xFDEBA5",
+    "active_hex": "10",
+    "earlier_backup_hex": "12",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0376",
+    "ic3_active_address": "0xFDEBA6",
+    "active_hex": "64",
+    "earlier_backup_hex": "70",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0378",
+    "ic3_active_address": "0xFDEBA8",
+    "active_hex": "2C",
+    "earlier_backup_hex": "1F",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0379",
+    "ic3_active_address": "0xFDEBA9",
+    "active_hex": "10",
+    "earlier_backup_hex": "12",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x037A",
+    "ic3_active_address": "0xFDEBAA",
+    "active_hex": "27",
+    "earlier_backup_hex": "70",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x037B",
+    "ic3_active_address": "0xFDEBAB",
+    "active_hex": "2E",
+    "earlier_backup_hex": "35",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x037C",
+    "ic3_active_address": "0xFDEBAC",
+    "active_hex": "1E",
+    "earlier_backup_hex": "1F",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x037D",
+    "ic3_active_address": "0xFDEBAD",
+    "active_hex": "0C",
+    "earlier_backup_hex": "12",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x037E",
+    "ic3_active_address": "0xFDEBAE",
+    "active_hex": "26",
+    "earlier_backup_hex": "70",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x037F",
+    "ic3_active_address": "0xFDEBAF",
+    "active_hex": "2E",
+    "earlier_backup_hex": "35",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0380",
+    "ic3_active_address": "0xFDEBB0",
+    "active_hex": "17",
+    "earlier_backup_hex": "1F",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0381",
+    "ic3_active_address": "0xFDEBB1",
+    "active_hex": "15",
+    "earlier_backup_hex": "12",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0382",
+    "ic3_active_address": "0xFDEBB2",
+    "active_hex": "25",
+    "earlier_backup_hex": "70",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0383",
+    "ic3_active_address": "0xFDEBB3",
+    "active_hex": "2E",
+    "earlier_backup_hex": "35",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0384",
+    "ic3_active_address": "0xFDEBB4",
+    "active_hex": "13",
+    "earlier_backup_hex": "1F",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0385",
+    "ic3_active_address": "0xFDEBB5",
+    "active_hex": "14",
+    "earlier_backup_hex": "12",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0386",
+    "ic3_active_address": "0xFDEBB6",
+    "active_hex": "25",
+    "earlier_backup_hex": "70",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0387",
+    "ic3_active_address": "0xFDEBB7",
+    "active_hex": "2E",
+    "earlier_backup_hex": "35",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0388",
+    "ic3_active_address": "0xFDEBB8",
+    "active_hex": "0A",
+    "earlier_backup_hex": "1F",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0389",
+    "ic3_active_address": "0xFDEBB9",
+    "active_hex": "14",
+    "earlier_backup_hex": "12",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x038A",
+    "ic3_active_address": "0xFDEBBA",
+    "active_hex": "25",
+    "earlier_backup_hex": "70",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x038B",
+    "ic3_active_address": "0xFDEBBB",
+    "active_hex": "2E",
+    "earlier_backup_hex": "35",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x038C",
+    "ic3_active_address": "0xFDEBBC",
+    "active_hex": "09",
+    "earlier_backup_hex": "1F",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x038D",
+    "ic3_active_address": "0xFDEBBD",
+    "active_hex": "14",
+    "earlier_backup_hex": "12",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x038E",
+    "ic3_active_address": "0xFDEBBE",
+    "active_hex": "25",
+    "earlier_backup_hex": "70",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x038F",
+    "ic3_active_address": "0xFDEBBF",
+    "active_hex": "2E",
+    "earlier_backup_hex": "35",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x05BD",
+    "ic3_active_address": "0xFDEDED",
+    "active_hex": "11",
+    "earlier_backup_hex": "22",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x05BF",
+    "ic3_active_address": "0xFDEDEF",
+    "active_hex": "19",
+    "earlier_backup_hex": "1A",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x05C0",
+    "ic3_active_address": "0xFDEDF0",
+    "active_hex": "38",
+    "earlier_backup_hex": "12",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0720",
+    "ic3_active_address": "0xFDEF50",
+    "active_hex": "00",
+    "earlier_backup_hex": "06",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x0745",
+    "ic3_active_address": "0xFDEF75",
+    "active_hex": "EE",
+    "earlier_backup_hex": "E9",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x074C",
+    "ic3_active_address": "0xFDEF7C",
+    "active_hex": "04",
+    "earlier_backup_hex": "B6",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x074D",
+    "ic3_active_address": "0xFDEF7D",
+    "active_hex": "05",
+    "earlier_backup_hex": "06",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x079D",
+    "ic3_active_address": "0xFDEFCD",
+    "active_hex": "CB",
+    "earlier_backup_hex": "E2",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x07AF",
+    "ic3_active_address": "0xFDEFDF",
+    "active_hex": "13",
+    "earlier_backup_hex": "E3",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x07B0",
+    "ic3_active_address": "0xFDEFE0",
+    "active_hex": "38",
+    "earlier_backup_hex": "27",
+    "verified_meaning": ""
+  },
+  {
+    "address": "0x07B1",
+    "ic3_active_address": "0xFDEFE1",
+    "active_hex": "18",
+    "earlier_backup_hex": "19",
+    "verified_meaning": ""
+  }
+]
