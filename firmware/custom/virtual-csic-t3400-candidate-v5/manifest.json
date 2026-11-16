@@ -1,5 +1,5 @@
 {
-  "status": "V5 OFFLINE STARTUP-REGRESSION CANDIDATE; physical boot unverified; exact V4 shutdown cause unconfirmed",
+  "status": "WITHDRAWN: user reports same boot-time shutdown as V4",
   "file": "FWE642TL_GR_VIRTUAL_CSIC_MB_T3400_CLUT_CANDIDATE_v5.EFU",
   "bytes": 114855730,
   "sha256": "64888576dccd59f25c704af1383b6273ede8e8fcbf5502276b193b16418620e3",
@@ -2274,5 +2274,6 @@
     "No IES/leak sensor, pump branch, Initial Charge flag or NVRAM history erasure patch.",
     "Original hardware Huffman tables retained; hardware peripheral decoding untested.",
     "Only existing common-mode T3400 CLUTs retained; no new halftone, total-ink, waveform or resolution transplant."
-  ]
+  ],
+  "physical_failure_report": "Same boot-time shutdown reported; V5 source fixes did not resolve it."
 }
