@@ -3,7 +3,73 @@
   "source": "artifacts/t3400-lut/decoded/71459089.crom.0.bin",
   "source_sha256": "a4ebcb1e2c40a87d1bbfe66683e0d69b53c87aa1fef40958901aa747c31c5fc7",
   "main_base": "0x43696000",
-  "cmm_media_conversion": "0x438D1118",
+  "unclassified_setting_conversion": "0x438D1118",
+  "correction": "Earlier CMM-media interpretation withdrawn: no dataflow links this result to the CMM PaperType field.",
+  "concrete_vtable": "0x441610FC",
+  "getter_40_field": "0x7C",
+  "getter_48_field": "0x80",
+  "config_to_field_7c": {
+    "function": "0x43725694",
+    "cases": [
+      {
+        "config_key": 0,
+        "object_field_7c": 0
+      },
+      {
+        "config_key": 8,
+        "object_field_7c": 13
+      },
+      {
+        "config_key": 36,
+        "object_field_7c": 22
+      },
+      {
+        "config_key": 178,
+        "object_field_7c": 19
+      }
+    ]
+  },
+  "actual_cmm_trace": {
+    "debug_function": "0x4398591C",
+    "paper_type_field": "u16 +0x8",
+    "cmm_type_field": "u16 +0xA",
+    "copy_function": "0x43836254",
+    "copy_source_offset": "0xD8",
+    "copy_length": "0x9C",
+    "producer": "0x43835CF0",
+    "producer_input": "raster object u16 +0x44",
+    "producer_table": "0x43D4DFDC",
+    "producer_cases": [
+      {
+        "input_code": 144,
+        "paper_type": 102
+      },
+      {
+        "input_code": 215,
+        "paper_type": 102
+      },
+      {
+        "input_code": 178,
+        "paper_type": 65535
+      },
+      {
+        "input_code": 6,
+        "paper_type": 65535
+      },
+      {
+        "input_code": 205,
+        "paper_type": 124
+      },
+      {
+        "input_code": 65535,
+        "paper_type": 65535
+      }
+    ],
+    "debug_callers": [
+      "0x43836640",
+      "0x43836E98"
+    ]
+  },
   "caller": "0x438C69E8",
   "caller_input_virtual_method_offset": "0x48",
   "caller_output_byte_offset": "0xE",
@@ -58,8 +124,8 @@
     "dither_id": 702
   },
   "limits": [
-    "Numeric codes in UI labels, the 0x438D0E70 helper and CMM media conversion are different namespaces.",
-    "The actual Enhanced Matte job-setting object and its +0x48 method result are not yet traced.",
+    "Numeric codes in UI labels, the 0x438D0E70 helper and the +0x48 setting conversion are different namespaces.",
+    "The Enhanced Matte UI-to-CMM PaperType path is not yet traced; +0x48 may describe paper size.",
     "No EFU or printer access; native catalogue selection uses synthetic inputs."
   ]
 }

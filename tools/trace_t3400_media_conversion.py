@@ -1,7 +1,7 @@
 """Execute donor media-code helpers; preserve distinct input namespaces.
 
-This identifies a CMM media conversion and its immediate caller. It does not
-prove the complete UI Enhanced Matte -> job-setting path.
+This probes distinct job-setting fields and catalogue selection independently.
+The +0x48 conversion is NOT established as a CMM media conversion.
 """
 from pathlib import Path
 import hashlib,json,struct
@@ -31,6 +31,22 @@ def main():
         cpu.emu_start(address,0x20000100,count=1000)
         assert cpu.reg_read(UC_ARM_REG_PC)==0x20000100
         return cpu.reg_read(UC_ARM_REG_R0)
+    # Concrete vtable 0x441610FC: +0x40 reads object+0x7C;
+    # +0x48 reads object+0x80. Never merge these input namespaces.
+    assert struct.unpack_from('<I',data,0x441610fc-BASE+0x40)[0]==0x436f013c
+    assert struct.unpack_from('<I',data,0x441610fc-BASE+0x48)[0]==0x436f014c
+    field_cases=[]
+    for key in [0,8,36,178]:
+        cpu.reg_write(UC_ARM_REG_R1,0x20001000)
+        run(0x43725694,key)
+        field_cases.append(dict(config_key=key,object_field_7c=struct.unpack('<I',cpu.mem_read(0x20001000,4))[0]))
+    assert field_cases[1]['object_field_7c']==13
+    # Actual CMM PaperType producer: consumes raster object u16 +0x44.
+    paper_cases=[]
+    for key in [144,215,178,6,205,65535]:
+        cpu.mem_write(0x20002044,struct.pack('<H',key))
+        paper_cases.append(dict(input_code=key,paper_type=run(0x43835cf0,0x20002000)))
+    assert [r['paper_type'] for r in paper_cases[:2]]==[102,102]
     cases=[dict(input=i,result=run(0x438d1118,i)) for i in [0,6,15,36,178,183,184]]
     assert next(x['result'] for x in cases if x['input']==6)==102
     assert run(0x438d0e70,36)==178
@@ -47,12 +63,19 @@ def main():
     assert result==0 and (words[0],words[3],words[14])==(14,213,702),(result,words)
     report=dict(status='NATIVE CONVERSION/SELECTION PROBES PASSED; UI ASSOCIATION UNRESOLVED',
         source=str(path.relative_to(ROOT)),source_sha256=hashlib.sha256(data).hexdigest(),main_base=hex(BASE),
-        cmm_media_conversion='0x438D1118',caller='0x438C69E8',caller_input_virtual_method_offset='0x48',caller_output_byte_offset='0xE',
+        unclassified_setting_conversion='0x438D1118',
+        correction='Earlier CMM-media interpretation withdrawn: no dataflow links this result to the CMM PaperType field.',
+        concrete_vtable='0x441610FC',getter_40_field='0x7C',getter_48_field='0x80',
+        config_to_field_7c=dict(function='0x43725694',cases=field_cases),
+        actual_cmm_trace=dict(debug_function='0x4398591C',paper_type_field='u16 +0x8',cmm_type_field='u16 +0xA',
+            copy_function='0x43836254',copy_source_offset='0xD8',copy_length='0x9C',producer='0x43835CF0',producer_input='raster object u16 +0x44',
+            producer_table='0x43D4DFDC',producer_cases=paper_cases,
+            debug_callers=['0x43836640','0x43836E98']),caller='0x438C69E8',caller_input_virtual_method_offset='0x48',caller_output_byte_offset='0xE',
         conversion_cases=cases,other_media_helper=dict(function='0x438D0E70',input=36,output=178),
         donor_catalogue_selection=dict(function='recipient 0x48ABE280',media_enum=102,media_label='L_APMP_MK',
             resolution=[1200,1200],doc_type='BASE',halftone='DB',output_bits=2,cmm_id=words[0],sml_id=words[3],dither_id=words[14]),
-        limits=['Numeric codes in UI labels, the 0x438D0E70 helper and CMM media conversion are different namespaces.',
-            'The actual Enhanced Matte job-setting object and its +0x48 method result are not yet traced.',
+        limits=['Numeric codes in UI labels, the 0x438D0E70 helper and the +0x48 setting conversion are different namespaces.',
+            'The Enhanced Matte UI-to-CMM PaperType path is not yet traced; +0x48 may describe paper size.',
             'No EFU or printer access; native catalogue selection uses synthetic inputs.'])
     (ROOT/'docs/t3400-native-media-conversion.json').write_text(json.dumps(report,indent=2)+'\n')
     print(json.dumps(report,indent=2))
