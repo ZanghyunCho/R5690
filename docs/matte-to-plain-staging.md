@@ -12,7 +12,7 @@ selection 0x48ABE280 confirms those IDs with synthetic settings. Rebinding this
 resource does not require changing the paper selector or other paper modes.
 There is no proposed DPI/pass/waveform change.
 
-## Candidate donor, not yet a proven UI mapping
+## Donor identity confirmed from independent name tables
 
 The T3400 catalogue has L_APMP_MK BASE 1200×1200, OUT_BIT 2, DB, SML 213/213,
 dither selector 702. Its 2400×1200 row instead uses OUT_BIT 1 and SML 211:
@@ -20,11 +20,13 @@ that is not interchangeable with the recipient's 2-bit mode. L_APMP_MK has no
 600×600 or 600×1200 BASE rows, so lower recipient modes cannot be called an
 exact corresponding-resolution transplant.
 
-The donor main image contains separate labels Enhanced Matte (preceding ID
-0xB2) and Archival Matte (0x0F). The connection from the Enhanced Matte UI
-selection to L_APMP_MK has not been established by native execution. Do not
-present this candidate as a confirmed Enhanced Matte profile merely from its
-abbreviated name. Source offsets and hashes are recorded in the JSON report.
+The donor name record at 0x44018D7C binds code 215 to a translation table
+whose English entry is **Enhanced Matte Paper**. An independent IPP table
+at 0x4405B69C binds the same code to `com.epson-matte-enhanced`.
+Native function 0x43835CF0 maps 215 to CMM PaperType 102, whose catalogue
+label is L_APMP_MK. This confirms the donor identity through actual firmware
+records and execution, without relying on the older 0xB2 label namespace.
+The probe is synthetic; it does not capture a live PC print job.
 
 ## Implemented offline probe
 
@@ -44,7 +46,6 @@ raster execution, physical dot-size identification or print-quality evidence.
 
 ## Remaining work
 
-- Prove the donor Enhanced Matte UI-to-catalogue association.
 - Install dither selector 702 together with matrices 662/682 using an owned,
   bounded storage/loading path. The large matrices do not fit the original
   652 slot; a selector-only patch would leave missing dependencies.
@@ -111,3 +112,11 @@ through 31 pairs at 0x43D4DFDC. Both input codes 144 and 215 map to PaperType
 The native function is executed in the probe, including its original table
 copy. This is a real CMM producer, but neither 144 nor 215 is yet connected
 to the Enhanced Matte user setting. No earlier numeric shortcut is retained.
+
+## Name-table association resolved
+
+The earlier unresolved-identity notes above describe the investigation before
+finding code 215 in the independent UI-name and IPP-media tables. Those notes
+are superseded by the confirmed identity section. Native assertions cover both
+records, the CMM producer, and the catalogue selection. The large dither storage
+and full raster-processing blockers remain; no new EFU is released.

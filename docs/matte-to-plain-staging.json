@@ -232,8 +232,8 @@
   "native_lookup_and_sml_parser_pass": true,
   "dither_and_halftone_engine_unchanged": true,
   "controller_unchanged": true,
+  "identity_evidence": "See t3400-native-media-conversion.json: Enhanced Matte input 215 -> PaperType 102.",
   "blockers": [
-    "Mapping donor UI Enhanced Matte (0xB2) to catalogue L_APMP_MK is not proven; Archival Matte (0x0F) is a separate UI label.",
     "Donor 1200x1200 dither 702 references two large matrices, 662 and 682. Full storage/loading integration remains unresolved.",
     "No donor L_APMP_MK rows exist at 600x600 or 600x1200; no resampling or implicit DPI change is staged.",
     "T3400 2400x1200 row uses OUT_BIT 1; cannot substitute it into the recipient 2-bit mode without further work.",

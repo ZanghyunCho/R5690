@@ -41,6 +41,18 @@ def main():
         run(0x43725694,key)
         field_cases.append(dict(config_key=key,object_field_7c=struct.unpack('<I',cpu.mem_read(0x20001000,4))[0]))
     assert field_cases[1]['object_field_7c']==13
+    def word(address):
+        return struct.unpack_from('<I',data,address-BASE)[0]
+    def cstring(address):
+        return data[address-BASE:].split(b'\0',1)[0].decode('utf-8')
+    # Independent name and IPP media tables use the SAME input code 215.
+    assert [word(0x44018d7c+i*4) for i in range(3)]==[215,0x44019efc,0x1037]
+    assert cstring(word(0x44019efc+4))=='Enhanced Matte Paper'
+    assert word(0x4405b69c)==215
+    assert cstring(word(0x4405b6a0))=='com.epson-matte-enhanced'
+    association=dict(input_code=215,name_record='0x44018D7C',name_pointer_table='0x44019EFC',
+        english_name=cstring(word(0x44019efc+4)),ipp_record='0x4405B69C',
+        ipp_name=cstring(word(0x4405b6a0)),cmm_paper_type=102)
     # Actual CMM PaperType producer: consumes raster object u16 +0x44.
     paper_cases=[]
     for key in [144,215,178,6,205,65535]:
@@ -61,10 +73,11 @@ def main():
     result=c.call(0x48abe280,[0x20031000,0x20030000,0x22000000])
     words=struct.unpack('<64i',c.cpu.mem_read(0x20031000,256))
     assert result==0 and (words[0],words[3],words[14])==(14,213,702),(result,words)
-    report=dict(status='NATIVE CONVERSION/SELECTION PROBES PASSED; UI ASSOCIATION UNRESOLVED',
+    report=dict(status='ENHANCED MATTE IDENTITY CONFIRMED IN NAME/IPP TABLES; NATIVE CMM CONVERSION AND SELECTION PASSED',
         source=str(path.relative_to(ROOT)),source_sha256=hashlib.sha256(data).hexdigest(),main_base=hex(BASE),
         unclassified_setting_conversion='0x438D1118',
         correction='Earlier CMM-media interpretation withdrawn: no dataflow links this result to the CMM PaperType field.',
+        enhanced_matte_association=association,
         concrete_vtable='0x441610FC',getter_40_field='0x7C',getter_48_field='0x80',
         config_to_field_7c=dict(function='0x43725694',cases=field_cases),
         actual_cmm_trace=dict(debug_function='0x4398591C',paper_type_field='u16 +0x8',cmm_type_field='u16 +0xA',
@@ -75,7 +88,8 @@ def main():
         donor_catalogue_selection=dict(function='recipient 0x48ABE280',media_enum=102,media_label='L_APMP_MK',
             resolution=[1200,1200],doc_type='BASE',halftone='DB',output_bits=2,cmm_id=words[0],sml_id=words[3],dither_id=words[14]),
         limits=['Numeric codes in UI labels, the 0x438D0E70 helper and the +0x48 setting conversion are different namespaces.',
-            'The Enhanced Matte UI-to-CMM PaperType path is not yet traced; +0x48 may describe paper size.',
+            'Enhanced Matte code 215 is tied to CMM PaperType 102 by table identity and native execution, not a live captured print job.',
+            'Large dither storage/loading and complete raster processing remain unverified.',
             'No EFU or printer access; native catalogue selection uses synthetic inputs.'])
     (ROOT/'docs/t3400-native-media-conversion.json').write_text(json.dumps(report,indent=2)+'\n')
     print(json.dumps(report,indent=2))

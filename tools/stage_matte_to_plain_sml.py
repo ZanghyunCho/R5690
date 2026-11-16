@@ -1,7 +1,7 @@
-"""OFFLINE SML binding probe, not an EFU or confirmed Enhanced Matte mapping.
+"""OFFLINE SML binding probe, not an EFU.
 
-Only donor catalogue L_APMP_MK/1200x1200 is staged. The UI Enhanced Matte
-association is not proven here. Dither/halftone engine are deliberately stock.
+Only donor catalogue L_APMP_MK/1200x1200 is staged. Enhanced Matte identity
+is checked separately by trace_t3400_media_conversion.py. Dither/halftone engine are deliberately stock.
 """
 from pathlib import Path
 import hashlib,json,struct,zipfile
@@ -89,14 +89,14 @@ def main():
             unused_compressed_tail_start=hex(slack_start),unused_tail_bytes=slack_end-slack_start,
             inserted_bytes=len(payload),host_live_stream_unchanged=True),native_lookup_and_sml_parser_pass=True,
         dither_and_halftone_engine_unchanged=True,controller_unchanged=True,
-        blockers=['Mapping donor UI Enhanced Matte (0xB2) to catalogue L_APMP_MK is not proven; Archival Matte (0x0F) is a separate UI label.',
-            'Donor 1200x1200 dither 702 references two large matrices, 662 and 682. Full storage/loading integration remains unresolved.',
+        identity_evidence='See t3400-native-media-conversion.json: Enhanced Matte input 215 -> PaperType 102.',
+        blockers=['Donor 1200x1200 dither 702 references two large matrices, 662 and 682. Full storage/loading integration remains unresolved.',
             'No donor L_APMP_MK rows exist at 600x600 or 600x1200; no resampling or implicit DPI change is staged.',
             'T3400 2400x1200 row uses OUT_BIT 1; cannot substitute it into the recipient 2-bit mode without further work.',
             'Synthetic allocator/channel settings; no complete raster pipeline or physical output validation.'])
     out=ROOT/'artifacts/t3400-lut/matte-to-plain';out.mkdir(exist_ok=True)
     (out/'staged-library.bin.offline-only').write_bytes(staged)
     (ROOT/'docs/matte-to-plain-staging.json').write_text(json.dumps(report,indent=2)+'\n')
-    print('Native lookup, donor SML decode/parser and bounded storage pass; no EFU, dither or confirmed UI mapping.')
+    print('Native lookup, donor SML decode/parser and bounded storage pass; no EFU or dither integration.')
 
 if __name__=='__main__':main()

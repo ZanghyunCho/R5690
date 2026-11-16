@@ -1,10 +1,19 @@
 {
-  "status": "NATIVE CONVERSION/SELECTION PROBES PASSED; UI ASSOCIATION UNRESOLVED",
+  "status": "ENHANCED MATTE IDENTITY CONFIRMED IN NAME/IPP TABLES; NATIVE CMM CONVERSION AND SELECTION PASSED",
   "source": "artifacts/t3400-lut/decoded/71459089.crom.0.bin",
   "source_sha256": "a4ebcb1e2c40a87d1bbfe66683e0d69b53c87aa1fef40958901aa747c31c5fc7",
   "main_base": "0x43696000",
   "unclassified_setting_conversion": "0x438D1118",
   "correction": "Earlier CMM-media interpretation withdrawn: no dataflow links this result to the CMM PaperType field.",
+  "enhanced_matte_association": {
+    "input_code": 215,
+    "name_record": "0x44018D7C",
+    "name_pointer_table": "0x44019EFC",
+    "english_name": "Enhanced Matte Paper",
+    "ipp_record": "0x4405B69C",
+    "ipp_name": "com.epson-matte-enhanced",
+    "cmm_paper_type": 102
+  },
   "concrete_vtable": "0x441610FC",
   "getter_40_field": "0x7C",
   "getter_48_field": "0x80",
@@ -125,7 +134,8 @@
   },
   "limits": [
     "Numeric codes in UI labels, the 0x438D0E70 helper and the +0x48 setting conversion are different namespaces.",
-    "The Enhanced Matte UI-to-CMM PaperType path is not yet traced; +0x48 may describe paper size.",
+    "Enhanced Matte code 215 is tied to CMM PaperType 102 by table identity and native execution, not a live captured print job.",
+    "Large dither storage/loading and complete raster processing remain unverified.",
     "No EFU or printer access; native catalogue selection uses synthetic inputs."
   ]
 }
