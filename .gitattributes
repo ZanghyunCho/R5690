@@ -3,3 +3,4 @@ firmware/custom/virtual-ink-and-maintenance-v1/FWE642TL_GR_VIRTUAL_INK_AND_MAINT
 firmware/custom/virtual-ink-report-candidate-v2/FWE642TL_GR_VIRTUAL_INK_REPORT_CANDIDATE_v2.EFU filter=lfs diff=lfs merge=lfs -text
 firmware/custom/virtual-ink-aggregate-candidate-v3/FWE642TL_GR_VIRTUAL_INK_AGGREGATE_CANDIDATE_v3.EFU filter=lfs diff=lfs merge=lfs -text
 firmware/custom/t3400-colour-lut-v1/FWE642TL_GR_VIRTUAL_INK_MB_T3400_CLUT_PROTOTYPE_v1.EFU filter=lfs diff=lfs merge=lfs -text
+firmware/custom/virtual-csic-t3400-candidate-v4/FWE642TL_GR_VIRTUAL_CSIC_MB_T3400_CLUT_CANDIDATE_v4.EFU filter=lfs diff=lfs merge=lfs -text

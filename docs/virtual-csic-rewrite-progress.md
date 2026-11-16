@@ -1,92 +1,79 @@
-# Virtual ink rewrite: unreleased RAM transport core
+# Virtual CSIC rewrite: v4 offline candidate
 
-The old V1 and its T3400 CLUT derivative do not implement a complete virtual
-ink cartridge. Actual chip reads/writes and validation are still present.
-The user reports actual chip depletion and failure without chips, and requests
-a rewrite. No new EFU is released with the following adapter experiment.
+The old ink/maintenance V1 and T3400 CLUT v1 only overrode status/level
+interfaces; real-chip reads, consumption writes and validation remained.
+The user confirmed chip depletion and failure without chips. V4 replaces
+that approach with virtual-slot transport and registration adapters.
+Physical printer operation has not yet been verified.
 
-## Implemented and executed
+## Corrected registration protocol
 
-`tools/prototype_virtual_csic_transport.py` creates an isolated modified ARM
-image in memory, based on the stock GR controller, without V1's cache overrides.
-It routes four ink slot indices through their existing RAM chip buffers:
+The native field setter marks modified words with bit 15. A RAM-only reload
+exposed those marks as chip flags. The virtual reload now returns clean data
+words. The native registration self-test also attempts decrements of monotonic
+cells and writes protected diagnostic cells. The virtual field policy rejects
+decrements and preserves protected cells, while retaining the native packer
+for normal writes. This resolves the earlier 0x27/0x38 failures without
+skipping the original write/readback comparison in 0x47C573CC.
 
-| Slot | Existing bank |
-| --- | --- |
-| 0 | 0x47E02B68 |
-| 1 | 0x47E02EB0 |
-| 2 | 0x47E02E08 |
-| 3 | 0x47E02D60 |
+The virtual authentication adapter synchronizes the chip consumption and
+verified counter cache from the original cumulative-use calculation. Omitting
+the verified cache caused native mode 1 to reject re-registration with 0xAE;
+that was fixed. The native 0x47C57320 comparison remains active.
 
-The adapter handles read, alternate read, readback, write and alternate write
-at `0x47C51B78`, `0x47C51C50`, `0x47C51CF4`, `0x47C51D84`, `0x47C51E28`.
-It retains the RAM contents across emulated reads/writes, so the native field
-setter's changes remain visible when the original field getter reads back.
-It does not generate a fake all-success report while issuing physical writes.
-Indices outside 0..3 retain the displaced prologue and original continuation.
+The stock chip-bank clear invalidates seed markers, allowing a later read to
+restore consistent metadata. Four stable virtual UIDs are reconstructed from
+six supported SKU/part tables. Virtual slots use the stock no-physical-history
+sentinel rather than erasing IC3 records. Virtual authentication is an explicit
+virtual-device contract, not emulation of Epson chip cryptography.
 
-The prototype helpers occupy known FF-filled padding at `0x47D70000`; no
-module extension or extra runtime state buffer is needed for this experiment.
-This placement and bounded helpers alone do not establish a boot-safe image.
+## Evidence
 
-Original ARM execution passes:
+`tools/validate_virtual_csic_candidate.py` executes the combined MB/virtual-CSIC
+controller, with synthetic property reads/writes, event delivery, delay and OS
+status publication. It covers six SKUs and six cumulative-use inputs through
+4,000,000,000, exercising configured generation modes 1–4 across the cases.
 
-- 20 counter packing → virtual write → virtual reload → field readback cases.
-- Per-colour bank independence in every roundtrip.
-- 20 supported-slot stack/callee-saved register checks.
-- 10 unsupported-slot original-prologue/argument controls.
-- 12 calls through the original consumption commit `0x47C561B4`, covering
-  native packing, virtual write/reload, native readback comparison and ack.
-- No execution of the trapped physical bus helpers in these cases.
-- A stock-image positive control reaches the physical write helper.
+- 72 original four-slot scan/registration calls at 0x47C58AB0.
+- 144 original consumption commits at 0x47C561B4, including bookkeeping.
+- 144 original per-slot re-registrations at 0x47C58508.
+- Four fresh CPU/RAM reconstruction cases with stable virtual identities.
+- No trapped physical CSIC, fatal, chip-history object write or format calls.
+- An unsupported SKU fails; unmodified stock reaches a physical CSIC call.
 
-The consumption tests use synthetic branch mode 3. Clock-derived consumption
-calculation and final bookkeeping are mocked; the original commit executes.
-The raw RAM buffers are seeded by the test. No printer, chip, pump or service
-program is accessed, and no physical EEPROM/NVRAM write occurs.
+`tools/validate_virtual_csic_interfaces.py` covers 126 scalar cases, 45 snapshot
+cases and 232 unchanged error API cases. Only level values become 100%; raw
+state, cartridge type and general error handling retain stock behavior.
 
-## Still required before a complete virtual cartridge
+Reports: `docs/virtual-csic-v4-arm-validation.json` and
+`docs/virtual-csic-v4-interface-validation.json`.
 
-The adapter is not a valid new firmware or a complete chip emulator. It still
-requires valid cold-start data and identity, no-chip discovery/authentication
-integration, stable reboot behavior, always-available ink semantics that do
-not corrupt consumption readback, and verification against real supply/IES
-state transitions. In particular, suppressing actual chip writes is not proof
-that M ink physically reaches the head or that ordinary ink supply will run.
+The native integration and API checks also pass with Unicorn configured as
+ARM926. Added helpers avoid MOVW/MOVT instructions. This is a compatibility
+check, not identification of the physical printer CPU.
 
-Do not package this partial controller as an EFU or describe the user request
-as completed. No new identity or Initial Charge flag has been written. The
-working colour LUT is retained as a separate existing artifact.
+## Packaging and limits
 
-Evidence: `virtual-csic-transport-validation.json`. The script asserts every
-described test and writes its report to `artifacts/virtual-csic-adapter/`.
+`firmware/custom/virtual-csic-t3400-candidate-v4/` contains the EFU, checksum and
+manifest. The working MB patch and existing T3400 CLUT library are retained;
+old V1 raw-state/error overrides are absent. The builder checks all 14 records,
+native ARM reconstruction of five CROM modules, an independent IPL correction
+and ZIP readback. Only the GR controller storage and its integrity fields differ
+from the T3400 CLUT v1 parent. IC3, IC5, boot code and the library are unchanged.
 
-## Cold-start and registration follow-up
+This is offline evidence, not a complete OS boot or physical printer test.
+Update acceptance, no-chip operation, automatic ink supply, IES behavior,
+long-duration operation and printing remain unverified. There is no pump,
+Initial Charge flag, leak-sensor or physical NVRAM-history erasure patch.
+The separate earlier transport-only experiment is still not a usable firmware
+on its own; v4 includes additional bootstrap, discovery and registration code.
 
-The user restored all three SPI ROMs with stock firmware when the earlier
-problem disappeared. This does not isolate a single IC or a single flag.
-The later IC3 dump contains a separate `1WAY0001` sector at `0xFC0000`
-with objects `0x04400001` (853 records of 24 bytes) and `0x04400002`
-(4080 bytes). Native routines link these objects to chip identity/counter
-history, beyond the 2KB service EEPROM backup. No history is erased.
+## User recovery observation
 
-New unreleased scripts generate 24 SKU/slot metadata candidates using the
-stock part table and native field packer/capacity parser. A cold-start ARM
-adapter installs the appropriate candidate and four stable in-boot UIDs.
-All 24 cold-load/write/reload cases pass with trapped physical bus calls
-remaining unused. This is synthetic execution, not a printer boot test.
-
-The integrated replay of stock registration `0x47C582B4` currently FAILS:
-SKU 0x10, slot 0 returns 1 with detail 0x27. The original routine
-`0x47C573CC` writes test fields and compares the readback. The current
-RAM transport does not yet satisfy this protocol. Initializing fields
-0x17/0x18 to the comparison constants instead fails the earlier reserved
-flag check (detail 0x38); that attempted workaround was removed.
-Do not bypass either failure or package this controller as an EFU.
-
-`tools/prototype_virtual_csic_registration.py` is an intentionally failing
-integration probe, not a passing validation or a released patch. Its virtual
-acceptance adapters replace vendor-chip authentication with a virtual-slot
-contract; they do not emulate real-chip cryptography. Discovery, reboot
-persistence, unlimited remaining semantics and physical ink supply remain
-unverified.
+The user restored all three SPI ROMs with stock when the previous problem
+cleared; that does not isolate one IC, one flag or a specific code patch.
+The later authorized IC3 dump has a separate `1WAY0001` sector at `0xFC0000`,
+containing identity/counter history objects `0x04400001` (853 x 24-byte records)
+and `0x04400002` (4080 bytes), beyond the 2KB service EEPROM backup. The native
+link is documented by `tools/trace_ink_history_storage.py`. It does not prove
+that this history was the live cause of the user's M ink supply fault.

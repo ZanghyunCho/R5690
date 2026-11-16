@@ -1,7 +1,7 @@
 """Unreleased cold-start register/UID bootstrap for the RAM CSIC adapter.
 
-NOT an EFU. This still lacks authentication/discovery, full-width lifetime
-counter/availability policy and ink-supply integration. No physical device.
+Component-only bootstrap. Discovery/registration integration is implemented
+separately; this standalone experiment is not an EFU or physical boot test.
 Requires keystone-engine 0.9.2 for ARM helper assembly.
 """
 from pathlib import Path
@@ -51,7 +51,7 @@ def build(stock):
         beq ready
         mov r0, #255
         strb r0, [sp]
-        movw r0, #0x2e6
+        ldr r0, =0x2e6
         mov r1, sp
         mov r2, #1
         bl 0x47c4b0c8
@@ -106,6 +106,23 @@ def build(stock):
         .word {BUFFERS[0]}, {BUFFERS[1]}, {BUFFERS[2]}, {BUFFERS[3]}
     ''',SEED)
     assert len(seed)<0x800;place(SEED,seed)
+    # Native field setters mark modified words with bit 15. Physical reload
+    # returns clean data words; exposing these marks as chip flags breaks the
+    # original registration write/readback self-test.
+    clean=asm(f'''
+        push {{r0-r4,lr}}
+        bl 0x47c51b4c
+        bl 0x47c51a60
+        mov r1, #84
+    clean_loop:
+        ldrh r2, [r0]
+        bic r2, r2, #0x8000
+        strh r2, [r0], #2
+        subs r1, r1, #1
+        bne clean_loop
+        pop {{r0-r4,pc}}
+    ''',CAVE+0x600)
+    place(CAVE+0x600,clean)
     changes=[]
     for i,(entry,name) in enumerate(ENTRIES.items()):
         helper=CAVE+64*i;prologue=struct.unpack_from('<I',stock,entry-BASE)[0]
@@ -115,6 +132,12 @@ def build(stock):
             bhs fallback
             push {{r0-r4, lr}}
             bl {SEED}
+            cmp r0, #0
+            bne complete
+            ldr r0, [sp]
+            bl {CAVE+0x600}
+            mov r0, #0
+        complete:
             str r0, [sp]
             pop {{r0-r4, pc}}
         fallback:

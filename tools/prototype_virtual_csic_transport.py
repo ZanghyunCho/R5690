@@ -42,8 +42,9 @@ def staged_adapter(stock):
         edits.append(dict(entry=hex(entry),helper=hex(helper),operation=name))
     return bytes(image),edits
 
-def machine(image):
+def machine(image,cpu_model=None):
     cpu=Uc(UC_ARCH_ARM,UC_MODE_ARM)
+    if cpu_model is not None:cpu.ctl_set_cpu_model(cpu_model)
     cpu.mem_map(BASE,0x3b8000);cpu.mem_write(BASE,image)
     cpu.mem_map(0x20000000,0x20000)
     return cpu
