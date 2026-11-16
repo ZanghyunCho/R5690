@@ -1,0 +1,40 @@
+{
+  "status": "ONE-BIT CANDIDATE; no real printer write or symptom resolution verified",
+  "source_bytes": 2048,
+  "source_sha256": "4a23b01db59e307a134da0c5488230c08194c9bb3c5b9ab3203a15a8281f88e5",
+  "output_file": "bkupdata.CLEAR_CLEANING_FLAG.eep",
+  "output_bytes": 2048,
+  "output_sha256": "cb689aa0ed083741b1054a8d78022d4dbff15119f8ecc887e7fae65ed01a3612",
+  "changes": [
+    {
+      "file_offset": "0x0",
+      "before": "0x20",
+      "after": "0x0",
+      "xor": "0x20"
+    }
+  ],
+  "unchanged_bytes": 2047,
+  "initial_charge_flag_before": 0,
+  "initial_charge_flag_after": 0,
+  "cleaning_flag_before": 1,
+  "cleaning_flag_after": 0,
+  "logical_item": "0xF5 (Set cleaning flag / Reset the flags in supplied Adjustment Program)",
+  "eeprom_logical_byte": 0,
+  "mask": "0x20",
+  "physical_spi_chip_and_offset": "unconfirmed; NOT an instruction to modify SPI offset zero",
+  "evidence": {
+    "program_sha256": "43937204e968868fddaf747738287114e0b27280b4ab4d9817f0de7946d5c7b9",
+    "logical_map_descriptor_va": "0x6969e0",
+    "logical_byte_zero_record_va": "0x6909e0",
+    "cleaning_item_row_va": "0x68f050",
+    "masked_read_modify_write_va": "0x4b8303",
+    "backup_raw_writer_va": "0x4c7b5a",
+    "restore_reader_va": "0x4c960c"
+  },
+  "limits": [
+    "No IES flag has been identified or cleared",
+    "Cleaning pending is an observed backup bit, not a proven cause of cartridge-installation error",
+    "Restore workflows can filter fields; read back byte zero to verify any intended device write",
+    "No full EEPROM initialization or calibration edits were performed"
+  ]
+}
