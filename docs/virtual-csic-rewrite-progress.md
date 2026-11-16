@@ -121,3 +121,11 @@ helpers inside the stock LCD framebuffer. Original display clear destroys
 them and the patched call fails to return. See `virtual-csic-framebuffer-collision.md`
 and the native reproduction JSON. V6 relocates helpers into retired auth code
 and passes the new display regressions; physical boot remains unverified.
+
+## User feedback after V6
+
+The user reported V6 operating, pumping, and subsequently no M nozzle dropout.
+Treat this as user-reported improvement under current conditions, not proof
+of no-chip operation or long-duration supply reliability. New colour work is
+scoped to donor Enhanced Matte → recipient Plain Paper; see
+`matte-to-plain-staging.md`. The offline probe emits no new EFU.
