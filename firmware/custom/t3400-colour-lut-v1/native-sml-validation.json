@@ -1,0 +1,128 @@
+[
+  {
+    "model": "r5691",
+    "id": 211,
+    "return_value": 0,
+    "synthetic_channel_codes": [
+      1,
+      2,
+      3,
+      0
+    ],
+    "synthetic_output_bits": 2,
+    "context_sha256": "2d5f3d34357ec988e3147205455d0dfe4d3d301db3368ebea5eb97b9693728be",
+    "allocated_table_sha256": "fd446e3c730bf9e0202c6bfbc33e140c1129da46ee988f6a45d0e89cac9fce17"
+  },
+  {
+    "model": "r5691",
+    "id": 220,
+    "return_value": 0,
+    "synthetic_channel_codes": [
+      1,
+      2,
+      3,
+      0
+    ],
+    "synthetic_output_bits": 2,
+    "context_sha256": "2d5f3d34357ec988e3147205455d0dfe4d3d301db3368ebea5eb97b9693728be",
+    "allocated_table_sha256": "c07562e63df3802175ddf28a0cdbebc02bb832e6a8b49ed1602bd9abc04210ab"
+  },
+  {
+    "model": "r5691",
+    "id": 214,
+    "return_value": 0,
+    "synthetic_channel_codes": [
+      1,
+      2,
+      3,
+      0
+    ],
+    "synthetic_output_bits": 2,
+    "context_sha256": "9af6836d3ffa962a53a83dabbe02e743a3cffaf8bae82baf71288ba098d0d9a7",
+    "allocated_table_sha256": "ff1b2bbc379e675bf5d7e6a66d8df4ce1f0ec37368d89a0bdccaae328935abdb"
+  },
+  {
+    "model": "t3400",
+    "id": 217,
+    "return_value": 0,
+    "synthetic_channel_codes": [
+      1,
+      2,
+      3,
+      0
+    ],
+    "synthetic_output_bits": 2,
+    "context_sha256": "dc60b7d79e80ac0450cdc00f6b25efbc97fa25376810d127d0a33e35bb3854d5",
+    "allocated_table_sha256": "6f088f9ddee4b850512eac4214912154217a24f3bb362aa564bfed67a552388e"
+  },
+  {
+    "model": "t3400",
+    "id": 226,
+    "return_value": 0,
+    "synthetic_channel_codes": [
+      1,
+      2,
+      3,
+      0
+    ],
+    "synthetic_output_bits": 2,
+    "context_sha256": "dc60b7d79e80ac0450cdc00f6b25efbc97fa25376810d127d0a33e35bb3854d5",
+    "allocated_table_sha256": "21ef2f3bd0a23613d9a0f74742bfbf1d8507b9b0838c480407a50cf082994b48"
+  },
+  {
+    "model": "t3400",
+    "id": 225,
+    "return_value": 0,
+    "synthetic_channel_codes": [
+      1,
+      2,
+      3,
+      0
+    ],
+    "synthetic_output_bits": 2,
+    "context_sha256": "dc60b7d79e80ac0450cdc00f6b25efbc97fa25376810d127d0a33e35bb3854d5",
+    "allocated_table_sha256": "4b54aeeeff948278a044e101cd77c91b17334fa9c2e8d89ed7805e2449adc23d"
+  },
+  {
+    "model": "t3400",
+    "id": 244,
+    "return_value": 0,
+    "synthetic_channel_codes": [
+      1,
+      2,
+      3,
+      0
+    ],
+    "synthetic_output_bits": 2,
+    "context_sha256": "dc60b7d79e80ac0450cdc00f6b25efbc97fa25376810d127d0a33e35bb3854d5",
+    "allocated_table_sha256": "3018e199557d19cc1a5551948059e29dae99fe1f16fb9b46ccfffe3921a8507d"
+  },
+  {
+    "model": "t3400",
+    "id": 245,
+    "return_value": 0,
+    "synthetic_channel_codes": [
+      1,
+      2,
+      3,
+      0
+    ],
+    "synthetic_output_bits": 2,
+    "context_sha256": "dc60b7d79e80ac0450cdc00f6b25efbc97fa25376810d127d0a33e35bb3854d5",
+    "allocated_table_sha256": "81e740168cb6b938836b5a06511b9753006dba1ecb876368d9dc34b43fa1bc2e"
+  },
+  {
+    "model": "t3400",
+    "id": 246,
+    "return_value": 0,
+    "synthetic_channel_codes": [
+      1,
+      2,
+      3,
+      0
+    ],
+    "synthetic_output_bits": 2,
+    "context_sha256": "dc60b7d79e80ac0450cdc00f6b25efbc97fa25376810d127d0a33e35bb3854d5",
+    "allocated_table_sha256": "8512e0b8144d03f765a75632a53b95a03ecb46f8424f08932b556bece764e29d"
+  }
+]

@@ -28,7 +28,8 @@
     }
   ],
   "header_unchanged": true,
-  "cause": "UNRESOLVED: failure after transfer starts; previous firmware still boots",
+  "cause": "Initial failure cause unresolved; no package change was needed for reported update acceptance",
   "independent_upstream_decoder_library_sha256": "43f7d5e97f1903f81dc53e5d80c1e614e53bb247638327838dfad49707e1f5ab",
-  "no_replacement_efu_built": true
+  "no_replacement_efu_built": true,
+  "subsequent_user_report": "Update succeeded after power cycle; colours look better"
 }

@@ -1,5 +1,12 @@
 # Halftone and ink-duty comparison
 
+**Correction after native execution:** the `inkd` values discussed below are
+not read by the tested runtime colour parser `0x48ABCAE4`. They must not be
+presented as verified enforced runtime limits. Changing only code 20 leaves
+the parser's context and output pointers identical. Other possible consumers
+and the actual ink-limit implementation remain unresolved. See the follow-up
+`halftone-transplant-progress.md` in the published firmware directory.
+
 Read-only comparison of stock R5691 and user-supplied T3400 data. No additional
 firmware is built or modified by this analysis. Reproduce with
 `python tools/compare_halftone_ink.py`; raw values and resource hashes are in
@@ -75,8 +82,7 @@ R5691 ink-duty metadata and halftone resources.
 
 ## EFU rejection during this investigation
 
-The user reports the published CLUT candidate fails **after transfer starts**;
-the printer subsequently boots its previous firmware normally. Rejection cause
-is unresolved. This rules out neither device-side integrity checks nor
-transfer/programming conditions. It does not establish a faulty LUT format.
-No speculative replacement EFU was issued.
+The user initially reported failure after transfer starts, then reported that
+power-cycling allowed the update and that T3400 LUT colours look better. The
+initial failure cause is unresolved; a USB fault has not been established.
+No replacement EFU was needed for that failure.

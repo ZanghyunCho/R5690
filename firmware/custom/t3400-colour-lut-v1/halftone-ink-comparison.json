@@ -719,5 +719,6 @@
         ]
       }
     }
-  ]
+  ],
+  "runtime_limit_correction": "inkd values are not read by native parser 0x48ABCAE4 in paired tests. They are not verified enforced runtime limits; see inkd-consumer-check.json."
 }

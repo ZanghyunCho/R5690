@@ -1,16 +1,17 @@
 # T3400 CLUT-only candidate for R5691
 
-**Offline prototype; physical boot and print output are unverified.**
+**User reports that the update succeeded after a power cycle and colours look
+better. No controlled colour measurement or verified print-path trace exists.**
 
-**User-reported result: update fails after transfer starts; the printer still
-boots its previous firmware normally. Cause unresolved. This candidate is
-retained for investigation and should not be treated as a working update.**
-The offline package, IPL and independent decoder checks still pass; those
-checks do not establish device acceptance. See `rejection-audit.json`.
+An initial transfer-stage failure was resolved by power-cycling, according to
+the user. The cause is unknown; a USB fault has not been proven. Historical
+offline checks are in `rejection-audit.json`.
 
 Read-only halftone and encoded ink-duty comparisons are in
 `halftone-ink-comparison.md` and `halftone-ink-comparison.json`. No additional
-EFU has been built from those findings.
+EFU has been released from those findings. Follow-up native tests and an
+important correction about ink-limit metadata are in
+`halftone-transplant-progress.md`.
 
 Based on the first virtual ink + maintenance v1, SHA256
 `8ab2a81dcc85717e26c476b19aad84378395b52c33835d76cf936cb6f06705de`.
@@ -25,7 +26,7 @@ Only three colour CLUT payloads change:
 
 The two printers' numeric channel codes and grid layouts match. Physical
 channel assignment and actual ink/media colour performance are unverified.
-Existing virtual-cartridge patches, ink limits, gamma, dot conversion,
+Existing virtual-cartridge patches, encoded ink-duty metadata, gamma, dot conversion,
 monochrome settings, DPI and passes are retained. Other modes, including
 E-RGB, retain stock LUTs. This is not a complete T3400 ink or mode transplant.
 The parent's reported discharge/re-charge stall is not fixed by this change.
@@ -36,7 +37,7 @@ LZ replay, all 14 IPL records, independent IPL correction, ZIP readback and
 unchanged bytes outside the documented ranges. No printer was accessed.
 
 The existing firmware version is retained. This build does not bypass version
-checks. No live updater acceptance or boot test has been performed.
+checks. The author has no live printer access; update acceptance is user-reported.
 
 For a meaningful output comparison, use the same document, paper and driver
 settings before/after. The installed Epson driver's active processing path is

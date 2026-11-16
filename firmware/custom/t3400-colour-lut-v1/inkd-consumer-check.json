@@ -1,0 +1,32 @@
+[
+  {
+    "id": 11,
+    "parser": "0x48ABCAE4",
+    "modified_total_field_offset": 119,
+    "context_outputs_identical": true,
+    "inkd_value_reads": [
+      [],
+      []
+    ]
+  },
+  {
+    "id": 13,
+    "parser": "0x48ABCAE4",
+    "modified_total_field_offset": 119,
+    "context_outputs_identical": true,
+    "inkd_value_reads": [
+      [],
+      []
+    ]
+  },
+  {
+    "id": 14,
+    "parser": "0x48ABCAE4",
+    "modified_total_field_offset": 119,
+    "context_outputs_identical": true,
+    "inkd_value_reads": [
+      [],
+      []
+    ]
+  }
+]

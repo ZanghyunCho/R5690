@@ -1,0 +1,161 @@
+[
+  {
+    "id": 662,
+    "kind": "matrix",
+    "synthetic_input_bits": 12,
+    "native_return": 0,
+    "descriptor": [
+      587202560,
+      1024,
+      1024,
+      608,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      256
+    ],
+    "decoded_sha256": "aabe3355bde77795b0f59f2bc4c4e79ae1612b48a16437e984467815dccdb4f1",
+    "decoded_bytes": 2097156
+  },
+  {
+    "id": 665,
+    "kind": "matrix",
+    "synthetic_input_bits": 12,
+    "native_return": 0,
+    "descriptor": [
+      587202560,
+      512,
+      1024,
+      304,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      256
+    ],
+    "decoded_sha256": "21b86f91d72367e8a32bf653933d5a3acac882c9fe737abcb9194a905b749577",
+    "decoded_bytes": 1048580
+  },
+  {
+    "id": 666,
+    "kind": "matrix",
+    "synthetic_input_bits": 12,
+    "native_return": 0,
+    "descriptor": [
+      587202560,
+      512,
+      512,
+      304,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      256
+    ],
+    "decoded_sha256": "10d90e6aca867c7f650362393c14de147b57622dbbcd7bc6121f6cd7ba50a51d",
+    "decoded_bytes": 524292
+  },
+  {
+    "id": 682,
+    "kind": "matrix",
+    "synthetic_input_bits": 12,
+    "native_return": 0,
+    "descriptor": [
+      587202560,
+      1024,
+      1024,
+      608,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      256
+    ],
+    "decoded_sha256": "c499ceb9c65251d8294c918cd07d1f97cda8a9f4ae9e184ab035f6d442e95de7",
+    "decoded_bytes": 2097156
+  },
+  {
+    "id": 685,
+    "kind": "matrix",
+    "synthetic_input_bits": 12,
+    "native_return": 0,
+    "descriptor": [
+      587202560,
+      512,
+      1024,
+      304,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      256
+    ],
+    "decoded_sha256": "0ff49f084fb8a56ec3663dd4c197f676051b1aae7b16394e8796c9927a84fee8",
+    "decoded_bytes": 1048580
+  },
+  {
+    "id": 686,
+    "kind": "matrix",
+    "synthetic_input_bits": 12,
+    "native_return": 0,
+    "descriptor": [
+      587202560,
+      512,
+      512,
+      304,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      256
+    ],
+    "decoded_sha256": "b8ef3bff46a4de948d00aba6becba4103240be47006a49a52f21a88e4e9c527b",
+    "decoded_bytes": 524292
+  },
+  {
+    "id": 702,
+    "kind": "selector",
+    "native_return": 0,
+    "resource_ids": [
+      682,
+      662,
+      682,
+      662
+    ]
+  },
+  {
+    "id": 705,
+    "kind": "selector",
+    "native_return": 0,
+    "resource_ids": [
+      685,
+      665,
+      685,
+      665
+    ]
+  },
+  {
+    "id": 706,
+    "kind": "selector",
+    "native_return": 0,
+    "resource_ids": [
+      686,
+      666,
+      686,
+      666
+    ]
+  }
+]

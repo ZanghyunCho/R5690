@@ -1,5 +1,5 @@
 {
-  "status": "USER_REPORTED_UPDATE_REJECTION_AFTER_TRANSFER; previous firmware still boots; cause unresolved",
+  "status": "USER_REPORTED_UPDATE_SUCCESS_AFTER_POWER_CYCLE_AND_IMPROVED_COLOURS; actual processing path unverified",
   "file": "FWE642TL_GR_VIRTUAL_INK_MB_T3400_CLUT_PROTOTYPE_v1.EFU",
   "bytes": 114856015,
   "sha256": "42e3630b8be35d8cd6dc469bff4c84528b27e7256b069cdb2e0e003fd5b2a62d",
@@ -192,14 +192,20 @@
     "Only PLAIN BASE subtype-0 CMM IDs 11/13/14 CLUT payloads are transplanted.",
     "Other modes including E-RGB modes retain their original LUTs.",
     "Driver path and physical CMYK assignment have not been independently verified.",
-    "Original ink limits, gamma, dot conversion resources, monochrome LUT behavior, resolution and pass scheduling are retained.",
+    "Original encoded inkd metadata, gamma, dot conversion resources, monochrome LUT behavior, resolution and pass scheduling are retained.",
     "No full boot, hardware Huffman decoding, update acceptance or physical print test.",
     "Parent v1 had a later reported discharge/re-charge stall; this candidate does not address it."
   ],
   "user_report": {
+    "update_result": "User reports update accepted after power cycle",
+    "print_result": "User reports T3400 LUT colours look better",
+    "initial_failure_cause": "Unknown; USB fault not established"
+  },
+  "previous_user_report": {
     "update_result": "Failure after transfer starts",
     "subsequent_boot": "Previous firmware boots normally",
     "exact_device_error_code": null,
     "root_cause": "Unresolved"
-  }
+  },
+  "ink_limit_correction": "Preserved inkd metadata does not establish preserved runtime limits. Native parser 0x48ABCAE4 ignores those fields in paired tests; enforcement path unresolved."
 }

@@ -1,0 +1,23 @@
+[
+  {
+    "id": 666,
+    "raw_bytes": 393248,
+    "compressed_bytes": 398365,
+    "native_decode_exact": true,
+    "sha256": "65c17d377fbd5c4a24e295d8edf7ca4b16251feb1cdeee4a2eeb7ce2e49b9c93"
+  },
+  {
+    "id": 686,
+    "raw_bytes": 393248,
+    "compressed_bytes": 398278,
+    "native_decode_exact": true,
+    "sha256": "c73ec1e15dc4d285d11ebf4d2d280a86c8762c0f89e4f86d649230452dca6199"
+  },
+  {
+    "id": 662,
+    "raw_bytes": 1572896,
+    "compressed_bytes": 1592954,
+    "native_decode_exact": true,
+    "sha256": "8b5a0983acfb5ceaa60594ec4b78764584f25c5e595e3b11dec89a044a1c90d4"
+  }
+]
