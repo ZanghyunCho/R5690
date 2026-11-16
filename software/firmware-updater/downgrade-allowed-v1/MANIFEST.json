@@ -1,0 +1,28 @@
+{
+  "source_sha256": "a200845cb97241382c7c8593f173a78dc3b4760a9088711e9b329cc14e808aa5",
+  "patched_sha256": "b17e1e5848dcf482e07e29a873cd806b0ed8144175174d9f547bf73cf5ac6733",
+  "source_bytes": 4037168,
+  "patched_bytes": 4016640,
+  "patch": {
+    "va": "0x4507D8",
+    "file_offset": "0x4fbd8",
+    "before": "80790500",
+    "after": "eb0a9090",
+    "effect": "Common downgrade permission accessor returns AL=1 through its existing cleanup"
+  },
+  "policy_vtable_slots": [
+    "0x66E738",
+    "0x66F000"
+  ],
+  "integrity": {
+    "pe_checksum": "0x3dc49f",
+    "vendor_signature": "removed; modified executable is unsigned",
+    "removed_certificate_bytes": 20528
+  },
+  "verification": "Source SHA-256, both vtables, branch targets, preserved prologue/epilogue, complete byte diff, PE checksum and archive consistency; no Windows or printer execution",
+  "limits": [
+    "Host-side downgrade policy only; printer-side rejection is not bypassed",
+    "No EFU/model/USB/firmware payload changes",
+    "No device update tested"
+  ]
+}
