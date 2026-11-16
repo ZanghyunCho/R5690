@@ -1,0 +1,897 @@
+{
+  "status": "READ-ONLY MAPPING; no additional EEPROM changes",
+  "mapped_ids": 115,
+  "evidence_level_counts": {
+    "usage_only": 12,
+    "unresolved": 59,
+    "container_only": 2,
+    "model_setting_binding": 39,
+    "traced_reader": 1,
+    "named_action": 2
+  },
+  "program_sha256": "43937204e968868fddaf747738287114e0b27280b4ab4d9817f0de7946d5c7b9",
+  "ic3_extracted_eep_sha256": "00853207ebd22c5344c2785910e76a86b590a771dbf5d0ac8e75b0af94b0f5d6",
+  "earlier_backup_sha256": "4a23b01db59e307a134da0c5488230c08194c9bb3c5b9ab3203a15a8281f88e5",
+  "initial_charge_on_eep_sha256": "01759a68f9f1c997cd1e5c4e7f1c61c08cead03eae6deef2f03c82a3e9e0ecce",
+  "configuration_records": {
+    "0xb3": [
+      {
+        "record_va": "0x698540",
+        "group_id": "0xf",
+        "operation_kind_raw": "0x1",
+        "logical_parameter": "0xb3",
+        "configured_value": "0x0",
+        "english_labels": [
+          "PG1",
+          "VSD1",
+          "Black",
+          "VSD1"
+        ]
+      }
+    ],
+    "0xb4": [
+      {
+        "record_va": "0x6985b8",
+        "group_id": "0xf",
+        "operation_kind_raw": "0x1",
+        "logical_parameter": "0xb4",
+        "configured_value": "0x0",
+        "english_labels": [
+          "PG1",
+          "VSD1",
+          "Color",
+          "VSD1"
+        ]
+      }
+    ],
+    "0xbf": [
+      {
+        "record_va": "0x698630",
+        "group_id": "0xf",
+        "operation_kind_raw": "0x1",
+        "logical_parameter": "0xbf",
+        "configured_value": "0x0",
+        "english_labels": [
+          "PG1",
+          "VSD1D",
+          "Black",
+          "VSD1D"
+        ]
+      }
+    ],
+    "0xc0": [
+      {
+        "record_va": "0x6986a8",
+        "group_id": "0xf",
+        "operation_kind_raw": "0x1",
+        "logical_parameter": "0xc0",
+        "configured_value": "0x0",
+        "english_labels": [
+          "PG1",
+          "VSD1D",
+          "Color",
+          "VSD1D"
+        ]
+      }
+    ],
+    "0xb9": [
+      {
+        "record_va": "0x698720",
+        "group_id": "0xf",
+        "operation_kind_raw": "0x1",
+        "logical_parameter": "0xb9",
+        "configured_value": "0x0",
+        "english_labels": [
+          "PG1",
+          "VSD2",
+          "Black",
+          "VSD2"
+        ]
+      }
+    ],
+    "0xba": [
+      {
+        "record_va": "0x698798",
+        "group_id": "0xf",
+        "operation_kind_raw": "0x1",
+        "logical_parameter": "0xba",
+        "configured_value": "0x0",
+        "english_labels": [
+          "PG1",
+          "VSD2",
+          "Color",
+          "VSD2"
+        ]
+      }
+    ],
+    "0xb5": [
+      {
+        "record_va": "0x698810",
+        "group_id": "0xf",
+        "operation_kind_raw": "0x1",
+        "logical_parameter": "0xb5",
+        "configured_value": "0x0",
+        "english_labels": [
+          "PG2",
+          "VSD1",
+          "Black",
+          "VSD1"
+        ]
+      }
+    ],
+    "0xb6": [
+      {
+        "record_va": "0x698888",
+        "group_id": "0xf",
+        "operation_kind_raw": "0x1",
+        "logical_parameter": "0xb6",
+        "configured_value": "0x0",
+        "english_labels": [
+          "PG2",
+          "VSD1",
+          "Color",
+          "VSD1"
+        ]
+      }
+    ],
+    "0xc1": [
+      {
+        "record_va": "0x698900",
+        "group_id": "0xf",
+        "operation_kind_raw": "0x1",
+        "logical_parameter": "0xc1",
+        "configured_value": "0x0",
+        "english_labels": [
+          "PG2",
+          "VSD1D",
+          "Black",
+          "VSD1D"
+        ]
+      }
+    ],
+    "0xc2": [
+      {
+        "record_va": "0x698978",
+        "group_id": "0xf",
+        "operation_kind_raw": "0x1",
+        "logical_parameter": "0xc2",
+        "configured_value": "0x0",
+        "english_labels": [
+          "PG2",
+          "VSD1D",
+          "Color",
+          "VSD1D"
+        ]
+      }
+    ],
+    "0xbb": [
+      {
+        "record_va": "0x6989f0",
+        "group_id": "0xf",
+        "operation_kind_raw": "0x1",
+        "logical_parameter": "0xbb",
+        "configured_value": "0x0",
+        "english_labels": [
+          "PG2",
+          "VSD2",
+          "Black",
+          "VSD2"
+        ]
+      }
+    ],
+    "0xbc": [
+      {
+        "record_va": "0x698a68",
+        "group_id": "0xf",
+        "operation_kind_raw": "0x1",
+        "logical_parameter": "0xbc",
+        "configured_value": "0x0",
+        "english_labels": [
+          "PG2",
+          "VSD2",
+          "Color",
+          "VSD2"
+        ]
+      }
+    ],
+    "0xb7": [
+      {
+        "record_va": "0x698ae0",
+        "group_id": "0xf",
+        "operation_kind_raw": "0x1",
+        "logical_parameter": "0xb7",
+        "configured_value": "0x0",
+        "english_labels": [
+          "PG3",
+          "VSD1",
+          "Black",
+          "VSD1"
+        ]
+      }
+    ],
+    "0xb8": [
+      {
+        "record_va": "0x698b58",
+        "group_id": "0xf",
+        "operation_kind_raw": "0x1",
+        "logical_parameter": "0xb8",
+        "configured_value": "0x0",
+        "english_labels": [
+          "PG3",
+          "VSD1",
+          "Color",
+          "VSD1"
+        ]
+      }
+    ],
+    "0xc3": [
+      {
+        "record_va": "0x698bd0",
+        "group_id": "0xf",
+        "operation_kind_raw": "0x1",
+        "logical_parameter": "0xc3",
+        "configured_value": "0x0",
+        "english_labels": [
+          "PG3",
+          "VSD1D",
+          "Black",
+          "VSD1D"
+        ]
+      }
+    ],
+    "0xc4": [
+      {
+        "record_va": "0x698c48",
+        "group_id": "0xf",
+        "operation_kind_raw": "0x1",
+        "logical_parameter": "0xc4",
+        "configured_value": "0x0",
+        "english_labels": [
+          "PG3",
+          "VSD1D",
+          "Color",
+          "VSD1D"
+        ]
+      }
+    ],
+    "0xdf": [
+      {
+        "record_va": "0x698d38",
+        "group_id": "0x10",
+        "operation_kind_raw": "0x2b",
+        "logical_parameter": "0xdf",
+        "configured_value": "0x0",
+        "english_labels": [
+          "",
+          "Rear",
+          "",
+          "Top"
+        ]
+      }
+    ],
+    "0xe1": [
+      {
+        "record_va": "0x698db0",
+        "group_id": "0x10",
+        "operation_kind_raw": "0x2c",
+        "logical_parameter": "0xe1",
+        "configured_value": "0x0",
+        "english_labels": [
+          "",
+          "",
+          "",
+          "Bottom"
+        ]
+      }
+    ],
+    "0xe0": [
+      {
+        "record_va": "0x698e28",
+        "group_id": "0x10",
+        "operation_kind_raw": "0x2d",
+        "logical_parameter": "0xe0",
+        "configured_value": "0x0",
+        "english_labels": [
+          "",
+          "",
+          "",
+          "Left"
+        ]
+      }
+    ],
+    "0xde": [
+      {
+        "record_va": "0x698ea0",
+        "group_id": "0x10",
+        "operation_kind_raw": "0x2e",
+        "logical_parameter": "0xde",
+        "configured_value": "0x0",
+        "english_labels": [
+          "",
+          "",
+          "",
+          "Right"
+        ]
+      }
+    ],
+    "0x14": [
+      {
+        "record_va": "0x698f18",
+        "group_id": "0x10",
+        "operation_kind_raw": "0x2f",
+        "logical_parameter": "0x14",
+        "configured_value": "0x0",
+        "english_labels": [
+          "",
+          "",
+          "",
+          "1st Dot (Rear)"
+        ]
+      }
+    ],
+    "0x15": [
+      {
+        "record_va": "0x698f90",
+        "group_id": "0x10",
+        "operation_kind_raw": "0x30",
+        "logical_parameter": "0x15",
+        "configured_value": "0x0",
+        "english_labels": [
+          "",
+          "Front (1st dot pattern only)",
+          "",
+          "1st Dot (Front)"
+        ]
+      }
+    ],
+    "0x1a": [
+      {
+        "record_va": "0x699008",
+        "group_id": "0x10",
+        "operation_kind_raw": "0x30",
+        "logical_parameter": "0x1a",
+        "configured_value": "0x0",
+        "english_labels": [
+          "",
+          "",
+          "",
+          ""
+        ]
+      }
+    ],
+    "0xa": [
+      {
+        "record_va": "0x699080",
+        "group_id": "0x22",
+        "operation_kind_raw": "0x3",
+        "logical_parameter": "0xa",
+        "configured_value": "0x0",
+        "english_labels": [
+          "",
+          "Rear",
+          "Rear",
+          "Top margin"
+        ]
+      }
+    ],
+    "0xd": [
+      {
+        "record_va": "0x6990f8",
+        "group_id": "0x22",
+        "operation_kind_raw": "0x3",
+        "logical_parameter": "0xd",
+        "configured_value": "0x0",
+        "english_labels": [
+          "",
+          "",
+          "",
+          "Bottom margin"
+        ]
+      }
+    ],
+    "0xb": [
+      {
+        "record_va": "0x699170",
+        "group_id": "0x22",
+        "operation_kind_raw": "0x3",
+        "logical_parameter": "0xb",
+        "configured_value": "0x0",
+        "english_labels": [
+          "",
+          "Front ",
+          "Front",
+          "Top margin"
+        ]
+      }
+    ],
+    "0x12": [
+      {
+        "record_va": "0x6991e8",
+        "group_id": "0x57",
+        "operation_kind_raw": "0x11",
+        "logical_parameter": "0x12",
+        "configured_value": "0x0",
+        "english_labels": [
+          "",
+          "Band Feed",
+          "",
+          "Band Feed"
+        ]
+      }
+    ],
+    "0x1c": [
+      {
+        "record_va": "0x6992d8",
+        "group_id": "0x54",
+        "operation_kind_raw": "0x1",
+        "logical_parameter": "0x1c",
+        "configured_value": "0x0",
+        "english_labels": [
+          "",
+          "1st Bin",
+          "",
+          "Smap"
+        ]
+      }
+    ],
+    "0x20": [
+      {
+        "record_va": "0x699350",
+        "group_id": "0x54",
+        "operation_kind_raw": "0x1",
+        "logical_parameter": "0x20",
+        "configured_value": "0x0",
+        "english_labels": [
+          "",
+          "",
+          "",
+          "Eject"
+        ]
+      }
+    ],
+    "0x1d": [
+      {
+        "record_va": "0x6993c8",
+        "group_id": "0x54",
+        "operation_kind_raw": "0x2",
+        "logical_parameter": "0x1d",
+        "configured_value": "0x0",
+        "english_labels": [
+          "",
+          "",
+          "",
+          ""
+        ]
+      }
+    ],
+    "0x24": [
+      {
+        "record_va": "0x699440",
+        "group_id": "0x13",
+        "operation_kind_raw": "0x1",
+        "logical_parameter": "0x24",
+        "configured_value": "0x0",
+        "english_labels": [
+          "",
+          "Black",
+          "",
+          "Black"
+        ]
+      }
+    ],
+    "0x25": [
+      {
+        "record_va": "0x6994b8",
+        "group_id": "0x13",
+        "operation_kind_raw": "0x1",
+        "logical_parameter": "0x25",
+        "configured_value": "0x0",
+        "english_labels": [
+          "",
+          "Color",
+          "",
+          "Color"
+        ]
+      }
+    ],
+    "0x1b4": [
+      {
+        "record_va": "0x699530",
+        "group_id": "0x52",
+        "operation_kind_raw": "0x0",
+        "logical_parameter": "0x1b4",
+        "configured_value": "0x0",
+        "english_labels": [
+          "",
+          "",
+          "",
+          "VSD1"
+        ]
+      }
+    ],
+    "0x1b6": [
+      {
+        "record_va": "0x6995a8",
+        "group_id": "0x52",
+        "operation_kind_raw": "0x0",
+        "logical_parameter": "0x1b6",
+        "configured_value": "0x0",
+        "english_labels": [
+          "",
+          "",
+          "",
+          "VSD1D"
+        ]
+      }
+    ],
+    "0x30": [
+      {
+        "record_va": "0x699968",
+        "group_id": "0xa",
+        "operation_kind_raw": "0x9",
+        "logical_parameter": "0x30",
+        "configured_value": "0x0",
+        "english_labels": [
+          "",
+          "",
+          "",
+          ""
+        ]
+      }
+    ],
+    "0x261": [
+      {
+        "record_va": "0x6999e0",
+        "group_id": "0x81",
+        "operation_kind_raw": "0xa",
+        "logical_parameter": "0x261",
+        "configured_value": "0x0",
+        "english_labels": [
+          "",
+          "",
+          "",
+          ""
+        ]
+      }
+    ],
+    "0xfc": [
+      {
+        "record_va": "0x699ad0",
+        "group_id": "0x8",
+        "operation_kind_raw": "0x17",
+        "logical_parameter": "0xfc",
+        "configured_value": "0x0",
+        "english_labels": [
+          "",
+          "Maintenance Box counter",
+          "",
+          "point"
+        ]
+      }
+    ],
+    "0xf5": [
+      {
+        "record_va": "0x699b48",
+        "group_id": "0x25",
+        "operation_kind_raw": "0x6",
+        "logical_parameter": "0xf5",
+        "configured_value": "0x30"
+      },
+      {
+        "record_va": "0x69a340",
+        "group_id": "0x73",
+        "operation_kind_raw": "0x6",
+        "logical_parameter": "0xf5",
+        "configured_value": "0x0",
+        "english_labels": [
+          "",
+          "",
+          "",
+          ""
+        ]
+      },
+      {
+        "record_va": "0x69a3b8",
+        "group_id": "0x73",
+        "operation_kind_raw": "0x6",
+        "logical_parameter": "0xf5",
+        "configured_value": "0xff",
+        "english_labels": [
+          "This will start cleaning when the printer will be turned on.",
+          "Set cleaning flag",
+          "",
+          ""
+        ]
+      },
+      {
+        "record_va": "0x69a520",
+        "group_id": "0x73",
+        "operation_kind_raw": "0x6",
+        "logical_parameter": "0xf5",
+        "configured_value": "0x0",
+        "english_labels": [
+          "",
+          "",
+          "",
+          ""
+        ]
+      }
+    ],
+    "0xc9": [
+      {
+        "record_va": "0x699bc0",
+        "group_id": "0x25",
+        "operation_kind_raw": "0x6",
+        "logical_parameter": "0xc9",
+        "configured_value": "0x0"
+      }
+    ],
+    "0xcb": [
+      {
+        "record_va": "0x699c38",
+        "group_id": "0x25",
+        "operation_kind_raw": "0x6",
+        "logical_parameter": "0xcb",
+        "configured_value": "0x0"
+      }
+    ],
+    "0xcc": [
+      {
+        "record_va": "0x699cb0",
+        "group_id": "0x25",
+        "operation_kind_raw": "0x6",
+        "logical_parameter": "0xcc",
+        "configured_value": "0x0"
+      }
+    ],
+    "0xcd": [
+      {
+        "record_va": "0x699d28",
+        "group_id": "0x25",
+        "operation_kind_raw": "0x6",
+        "logical_parameter": "0xcd",
+        "configured_value": "0x0"
+      }
+    ],
+    "0xce": [
+      {
+        "record_va": "0x699da0",
+        "group_id": "0x25",
+        "operation_kind_raw": "0x6",
+        "logical_parameter": "0xce",
+        "configured_value": "0x0"
+      }
+    ],
+    "0x168": [
+      {
+        "record_va": "0x699e18",
+        "group_id": "0x25",
+        "operation_kind_raw": "0x6",
+        "logical_parameter": "0x168",
+        "configured_value": "0x0"
+      }
+    ],
+    "0x169": [
+      {
+        "record_va": "0x699e90",
+        "group_id": "0x25",
+        "operation_kind_raw": "0x6",
+        "logical_parameter": "0x169",
+        "configured_value": "0x0"
+      }
+    ],
+    "0x16a": [
+      {
+        "record_va": "0x699f08",
+        "group_id": "0x25",
+        "operation_kind_raw": "0x6",
+        "logical_parameter": "0x16a",
+        "configured_value": "0x0"
+      }
+    ],
+    "0x16b": [
+      {
+        "record_va": "0x699f80",
+        "group_id": "0x25",
+        "operation_kind_raw": "0x6",
+        "logical_parameter": "0x16b",
+        "configured_value": "0x0"
+      }
+    ],
+    "0x16c": [
+      {
+        "record_va": "0x699ff8",
+        "group_id": "0x25",
+        "operation_kind_raw": "0x6",
+        "logical_parameter": "0x16c",
+        "configured_value": "0x0"
+      }
+    ],
+    "0x15f": [
+      {
+        "record_va": "0x69a070",
+        "group_id": "0x25",
+        "operation_kind_raw": "0x6",
+        "logical_parameter": "0x15f",
+        "configured_value": "0x0"
+      }
+    ],
+    "0xf7": [
+      {
+        "record_va": "0x69a2c8",
+        "group_id": "0x73",
+        "operation_kind_raw": "0x6",
+        "logical_parameter": "0xf7",
+        "configured_value": "0xff",
+        "english_labels": [
+          "This will start initial ink charge when the printer will be turned on.",
+          "Set initial charge flag",
+          "Select optional factory settings",
+          ""
+        ]
+      },
+      {
+        "record_va": "0x69a430",
+        "group_id": "0x73",
+        "operation_kind_raw": "0x6",
+        "logical_parameter": "0xf7",
+        "configured_value": "0x0",
+        "english_labels": [
+          "",
+          "",
+          "",
+          ""
+        ]
+      },
+      {
+        "record_va": "0x69a4a8",
+        "group_id": "0x73",
+        "operation_kind_raw": "0x6",
+        "logical_parameter": "0xf7",
+        "configured_value": "0x0",
+        "english_labels": [
+          "",
+          "Reset the flags",
+          "",
+          ""
+        ]
+      }
+    ],
+    "0x259": [
+      {
+        "record_va": "0x69a598",
+        "group_id": "0x75",
+        "operation_kind_raw": "0x4a",
+        "logical_parameter": "0x259",
+        "configured_value": "0x0",
+        "english_labels": [
+          "",
+          "BAM flag",
+          "",
+          "OFF"
+        ]
+      },
+      {
+        "record_va": "0x69a610",
+        "group_id": "0x75",
+        "operation_kind_raw": "0x4a",
+        "logical_parameter": "0x259",
+        "configured_value": "0x1",
+        "english_labels": [
+          "",
+          "",
+          "",
+          "ON"
+        ]
+      }
+    ],
+    "0x25a": [
+      {
+        "record_va": "0x69a688",
+        "group_id": "0x75",
+        "operation_kind_raw": "0x4a",
+        "logical_parameter": "0x25a",
+        "configured_value": "0x0",
+        "english_labels": [
+          "",
+          "BAM flag",
+          "",
+          "OFF"
+        ]
+      },
+      {
+        "record_va": "0x69a700",
+        "group_id": "0x75",
+        "operation_kind_raw": "0x4a",
+        "logical_parameter": "0x25a",
+        "configured_value": "0x2",
+        "english_labels": [
+          "",
+          "",
+          "",
+          "ON"
+        ]
+      }
+    ],
+    "0x2": [],
+    "0x4": [],
+    "0x5": [],
+    "0x7": [],
+    "0x8": [],
+    "0xd1": [],
+    "0xe4": [],
+    "0xe6": [],
+    "0xe9": [],
+    "0xea": [],
+    "0xeb": [],
+    "0xec": [],
+    "0xee": [],
+    "0xf9": [],
+    "0xff": [],
+    "0x112": [],
+    "0x122": [],
+    "0x143": [],
+    "0x160": [],
+    "0x16d": [],
+    "0x16e": [],
+    "0x16f": [],
+    "0x1b9": [],
+    "0x1ba": [],
+    "0x1bb": [],
+    "0x1bc": [],
+    "0x1bd": [],
+    "0x201": [],
+    "0x202": [],
+    "0x203": [],
+    "0x204": [],
+    "0x205": [],
+    "0x206": [],
+    "0x207": [],
+    "0x20e": [],
+    "0x221": [],
+    "0x222": [],
+    "0x223": [],
+    "0x224": [],
+    "0x225": [],
+    "0x226": [],
+    "0x227": [],
+    "0x228": [],
+    "0x229": [],
+    "0x22a": [],
+    "0x22b": [],
+    "0x22c": [],
+    "0x22d": [],
+    "0x22e": [],
+    "0x22f": [],
+    "0x230": [],
+    "0x231": [],
+    "0x232": [],
+    "0x233": [],
+    "0x234": [],
+    "0x235": [],
+    "0x236": [],
+    "0x237": [],
+    "0x238": [],
+    "0x239": [],
+    "0x254": [],
+    "0x255": [],
+    "0x256": []
+  },
+  "serial_reader": {
+    "function_va": "0x4091E5",
+    "fallback_logical_id": "0xD1",
+    "read_bytes": 10
+  },
+  "critical_difference": {
+    "logical_id": "0x261",
+    "eep_addresses": "0x0005",
+    "masks": "0xFF",
+    "meaning_ko": "잉크 누수 오류 리셋 대상 — 개별 비트 의미와 값 03의 인코딩은 미확인; IES 실시간값으로 단정하지 않음",
+    "evidence_level": "model_setting_binding",
+    "ic3_extracted_raw_hex": "03",
+    "earlier_service_backup_raw_hex": "00",
+    "initial_charge_on_file_raw_hex": "03",
+    "evidence_record_vas": "0x6999e0",
+    "note": "표의 값은 주소 바이트 원시값이며, 마스크 적용 후 논리값/단위/부호를 임의 해석하지 않음"
+  }
+}

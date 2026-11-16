@@ -11,4 +11,6 @@
 
 전체 설명은 [IC3_NVRAM_REPORT_KO.md](IC3_NVRAM_REPORT_KO.md), 한 번에 받는 파일은 [IC3_NVRAM_ANALYSIS_AND_EEP.zip](IC3_NVRAM_ANALYSIS_AND_EEP.zip)입니다. 보고서는 IC3의 0–F 주소 범위, sector 145개, BMAP 사본, EEPROM 2,048바이트 전체를 다룹니다. 확인되지 않은 필드의 의미는 미확인으로 표시했습니다.
 
+추가로 확인한 조정 기능명·상태 항목 대응은 [논리 ID별 기능 대응표](../logical-address-map-v1/LOGICAL_ADDRESS_MEANINGS_KO.md)에 정리했습니다. 여기에는 `0x261`의 잉크 누수 오류 리셋 대상, Bi-D/PF/PW 보정, BAM 옵션, 유지보수통 카운터 등 모델 설정표와 연결한 근거가 포함됩니다.
+
 이 파일은 IC3 전체 이미지나 EFU가 아닙니다. EEPROM 논리 주소와 IC3의 물리 오프셋은 서로 다릅니다. IES 관련 저장 항목과 설치 오류 원인은 아직 특정하지 못했습니다.
