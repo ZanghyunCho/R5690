@@ -1,0 +1,30 @@
+{
+  "status": "V4 WITHDRAWN; defects reproduced; physical shutdown root cause unconfirmed",
+  "protected_cell_setter_returns": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "expected_success_return": 0,
+  "property_uninitialized_setter_controls": [
+    {
+      "program": "stock",
+      "property_manager_guard": [],
+      "pc": "0x20000100"
+    },
+    {
+      "program": "v4",
+      "property_manager_guard": [
+        "0x47c4d30c"
+      ],
+      "pc": "0x47c4d30c"
+    }
+  ],
+  "limits": [
+    "Cold property test deliberately leaves the property manager uninitialized; actual printer call ordering is unknown.",
+    "Protected-cell setter nonzero return is a definite API defect, but its causal link to shutdown is unproved.",
+    "Runtime executable/writable ownership of the FF padding was never established on hardware.",
+    "CSIC initialization omissions and actual OS/watchdog behavior remain unverified."
+  ]
+}

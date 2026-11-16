@@ -84,3 +84,25 @@ containing identity/counter history objects `0x04400001` (853 x 24-byte records)
 and `0x04400002` (4080 bytes), beyond the 2KB service EEPROM backup. The native
 link is documented by `tools/trace_ink_history_storage.py`. It does not prove
 that this history was the live cause of the user's M ink supply fault.
+
+## Physical failure follow-up
+
+The user confirmed that v4 displays the Epson logo and advances the boot
+progress before powering off. Normal USB is unavailable at that stage, but
+firmware update mode remains accessible. The user restored stock themselves
+and explicitly confirmed normal boot with stock. Treat this as a v4 regression;
+there is no basis to ask for board disassembly or NVRAM erasure.
+
+`tools/diagnose_virtual_csic_boot_regression.py` reproduces two findings:
+
+1. The protected-field setter returns the slot index (0,1,2,3), not success 0,
+   for field 0x17. This is an actual API defect missed by the earlier tests.
+2. With property-manager readiness deliberately unset, a stock field setter
+   returns, but the v4 setter enters the original initialization-error guard
+   at 0x47C4D30C because it newly invokes property reads through SEED. The old
+   integration tests replaced that entire read API with a success mock.
+
+Neither finding proves the physical shutdown cause. Actual startup ordering,
+FF-padding execution/write ownership, omitted CSIC initialization, and OS
+watchdog behavior remain unverified. The v4 builder is disabled and no revised
+EFU has been built. Results are in `virtual-csic-v4-boot-regression.json`.

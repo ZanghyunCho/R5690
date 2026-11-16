@@ -31,6 +31,7 @@ def verify(data):
     return blocks
 
 def main():
+    raise RuntimeError('V4 WITHDRAWN: user reports power-off during boot; this builder is disabled pending root-cause analysis')
     parent=ROOT/'firmware/custom/t3400-colour-lut-v1/FWE642TL_GR_VIRTUAL_INK_MB_T3400_CLUT_PROTOTYPE_v1.EFU'
     assert sha(parent.read_bytes())=='42e3630b8be35d8cd6dc469bff4c84528b27e7256b069cdb2e0e003fd5b2a62d'
     with zipfile.ZipFile(parent) as z:
