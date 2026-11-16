@@ -1,0 +1,199 @@
+{
+  "status": "OFFLINE CANDIDATE; physical boot and print output unverified",
+  "file": "FWE642TL_GR_VIRTUAL_INK_MB_T3400_CLUT_PROTOTYPE_v1.EFU",
+  "bytes": 114856015,
+  "sha256": "42e3630b8be35d8cd6dc469bff4c84528b27e7256b069cdb2e0e003fd5b2a62d",
+  "parent_efu_sha256": "8ab2a81dcc85717e26c476b19aad84378395b52c33835d76cf936cb6f06705de",
+  "parent_rcx_sha256": "f3474026cad0f460e420ca24e51fc412b80278073a98c7d336508da4b414f981",
+  "rcx_sha256": "810cdf20006f2854c68ec32eaf9cfdc7810ebadb8044c795011982a19753b43b",
+  "library_sha256": "43f7d5e97f1903f81dc53e5d80c1e614e53bb247638327838dfad49707e1f5ab",
+  "changes": [
+    {
+      "recipient_id": 11,
+      "donor_id": 30,
+      "resolution": [
+        600,
+        600
+      ],
+      "library_range": [
+        1614369,
+        1628531
+      ],
+      "old_compressed_bytes": 14246,
+      "new_compressed_bytes": 14150,
+      "decoded_sha256": "eedaa13878c9436813559ef5a6b361d027d6b711bc3d30367ca1b553e7e16290",
+      "native_decoder_exact": true,
+      "only_decoded_clut_payload_changed": true,
+      "native_ba_transform_exact": true,
+      "transformed_sha256": "4d231c14c7c1948287edb4688df1e47c9b62d1ec09d42fc238905c419fee77ac"
+    },
+    {
+      "recipient_id": 13,
+      "donor_id": 31,
+      "resolution": [
+        600,
+        1200
+      ],
+      "library_range": [
+        1641022,
+        1650875
+      ],
+      "old_compressed_bytes": 11713,
+      "new_compressed_bytes": 9841,
+      "decoded_sha256": "f0cf936158b5a39d2ea08738972f78a361781ec9645353b643e5229821a9afc0",
+      "native_decoder_exact": true,
+      "only_decoded_clut_payload_changed": true,
+      "native_ba_transform_exact": true,
+      "transformed_sha256": "83514639e2405ce89f31e074a2022fb19855a2ce2840c0c3de587b4683a47993"
+    },
+    {
+      "recipient_id": 14,
+      "donor_id": 32,
+      "resolution": [
+        1200,
+        1200
+      ],
+      "library_range": [
+        1652747,
+        1665399
+      ],
+      "old_compressed_bytes": 13137,
+      "new_compressed_bytes": 12640,
+      "decoded_sha256": "a750e2c37ac956f6900c9acb231288f1aa0041e34ee7541e0273b650a0ef6e41",
+      "native_decoder_exact": true,
+      "only_decoded_clut_payload_changed": true,
+      "native_ba_transform_exact": true,
+      "transformed_sha256": "089b7272dadea291ebd500292942daa83487397c457e9b8e194dffc77da29d0f"
+    }
+  ],
+  "crom_codec": {
+    "stock_dht_byte_identical": true,
+    "original_tokens": 137640,
+    "new_tokens": 137679,
+    "invalidated_copies_replaced": 726,
+    "original_bytes": 2479672,
+    "new_bytes": 2490659
+  },
+  "native": {
+    "segments": [
+      {
+        "slot": "0x40000",
+        "segment": 0,
+        "bytes": 519876,
+        "sha256": "1ab8d5541e272e82c0e18386f6e992a9ad4b1f66955e0b4824078fd21c230e14",
+        "native_arm_exact": true
+      },
+      {
+        "slot": "0x40000",
+        "segment": 1,
+        "bytes": 2995828,
+        "sha256": "43f7d5e97f1903f81dc53e5d80c1e614e53bb247638327838dfad49707e1f5ab",
+        "native_arm_exact": true
+      },
+      {
+        "slot": "0x440000",
+        "segment": 0,
+        "bytes": 1310720,
+        "sha256": "4cb442ef51073535dd681d88430f9ccb3faf2351806ffef2d747762e545fcc66",
+        "native_arm_exact": true
+      },
+      {
+        "slot": "0x440000",
+        "segment": 1,
+        "bytes": 65536,
+        "sha256": "8f58305746eb15d380db40271525d08d0a4f5aaa6c493de022689c1bc63f0071",
+        "native_arm_exact": true
+      },
+      {
+        "slot": "0x440000",
+        "segment": 2,
+        "bytes": 6824,
+        "sha256": "a5d376c29e6847bccd8a07d67fdb952caf77f055a47ebe0f139c16f87948a846",
+        "native_arm_exact": true
+      }
+    ],
+    "all_segment_header_checks": [
+      {
+        "slot": "0x40000",
+        "segment": 0,
+        "old_position": "0x40004",
+        "new_position": "0x40004",
+        "native_header_and_DHT_setup_pass": true
+      },
+      {
+        "slot": "0x40000",
+        "segment": 1,
+        "old_position": "0x7556b",
+        "new_position": "0x7556b",
+        "native_header_and_DHT_setup_pass": true
+      },
+      {
+        "slot": "0x440000",
+        "segment": 0,
+        "old_position": "0x440004",
+        "new_position": "0x440004",
+        "native_header_and_DHT_setup_pass": true
+      },
+      {
+        "slot": "0x440000",
+        "segment": 1,
+        "old_position": "0x4c3ac0",
+        "new_position": "0x4c3ac0",
+        "native_header_and_DHT_setup_pass": true
+      },
+      {
+        "slot": "0x440000",
+        "segment": 2,
+        "old_position": "0x4c86ce",
+        "new_position": "0x4c86ce",
+        "native_header_and_DHT_setup_pass": true
+      }
+    ],
+    "stock_descriptor": [
+      "0x244000a",
+      "0x304",
+      "0x652e0",
+      "0xe",
+      "0x3e4a2",
+      "0x655ec",
+      "0x1e4d0"
+    ],
+    "modified_descriptor": [
+      "0x244000a",
+      "0x304",
+      "0x652e0",
+      "0xe",
+      "0x3e4a2",
+      "0x655ec",
+      "0x1e4d0"
+    ],
+    "original_arm_hardware_setup_passed": true,
+    "dht_bank_writes_byte_identical": true,
+    "limitation": "Original header/setup and LZ loop execute; peripheral Huffman decoding and full boot are not emulated"
+  },
+  "all_14_ipl_records_verified": true,
+  "independent_ipl_correction_identical": true,
+  "controller_and_all_bytes_outside_allowed_ranges_identical": true,
+  "allowed_rcx_ranges": [
+    [
+      114606478,
+      114606480
+    ],
+    [
+      114606492,
+      114606512
+    ],
+    [
+      114880856,
+      119075160
+    ]
+  ],
+  "limitations": [
+    "Only PLAIN BASE subtype-0 CMM IDs 11/13/14 CLUT payloads are transplanted.",
+    "Other modes including E-RGB modes retain their original LUTs.",
+    "Driver path and physical CMYK assignment have not been independently verified.",
+    "Original ink limits, gamma, dot conversion resources, monochrome LUT behavior, resolution and pass scheduling are retained.",
+    "No full boot, hardware Huffman decoding, update acceptance or physical print test.",
+    "Parent v1 had a later reported discharge/re-charge stall; this candidate does not address it."
+  ]
+}
