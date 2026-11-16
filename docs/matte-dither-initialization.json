@@ -1,0 +1,105 @@
+{
+  "status": "NATIVE TWO-MATRIX RESOURCE INITIALIZATION PASSED; SYNTHETIC STORAGE/ALLOCATOR",
+  "function": "0x48ADE564",
+  "cleanup_function": "0x48ADE6F0",
+  "freed_all_allocations": true,
+  "raw_native_parameter": 0,
+  "parameter_semantics_unresolved": true,
+  "resource_ids": [
+    682,
+    662
+  ],
+  "channel_resource_mapping": [
+    682,
+    662,
+    682,
+    662
+  ],
+  "matrix_outputs": [
+    {
+      "id": 682,
+      "descriptor": [
+        587203136,
+        1024,
+        1024,
+        608,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        256
+      ],
+      "sha256": "c499ceb9c65251d8294c918cd07d1f97cda8a9f4ae9e184ab035f6d442e95de7"
+    },
+    {
+      "id": 662,
+      "descriptor": [
+        589300304,
+        1024,
+        1024,
+        608,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        256
+      ],
+      "sha256": "aabe3355bde77795b0f59f2bc4c4e79ae1612b48a16437e984467815dccdb4f1"
+    }
+  ],
+  "native_allocations": [
+    {
+      "bytes": 564,
+      "pointer": "0x23000000"
+    },
+    {
+      "bytes": 2097156,
+      "pointer": "0x23000240"
+    },
+    {
+      "bytes": 2097156,
+      "pointer": "0x23200250"
+    }
+  ],
+  "total_matrix_allocation_bytes": 4194312,
+  "resource_release_calls": [
+    {
+      "cached_pointer": "0x22400000"
+    },
+    {
+      "cached_pointer": "0x22200000"
+    },
+    {
+      "cached_pointer": "0x22000000"
+    }
+  ],
+  "resource_handle_cache_cleared": true,
+  "channel_aux": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ]
+  ],
+  "limits": [
+    "The resource table is redirected to host-provided emulator memory; this is not a deployable storage or flash loader.",
+    "Allocator and free mocked with distinct bounded buffers; physical heap capacity/fragmentation unverified.",
+    "The native release API clears its cached resource pointer, but the library release callback is a no-op for static resources; an external loader would need explicit ownership/free handling.",
+    "No complete halftone raster execution, print quality or boot validation; no EFU produced."
+  ]
+}
