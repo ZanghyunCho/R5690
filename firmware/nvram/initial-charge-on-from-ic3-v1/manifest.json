@@ -1,0 +1,43 @@
+{
+  "status": "PREPARED ONLY; no device write or initial-charge execution performed",
+  "source": "firmware/nvram/ic3-bmap-extraction-v1/IC3_BMAP_ACTIVE.eep",
+  "source_sha256": "00853207ebd22c5344c2785910e76a86b590a771dbf5d0ac8e75b0af94b0f5d6",
+  "source_bytes": 2048,
+  "source_ic3_sha256": "ca3c42d3bfa512ae66f7fff3077c81feb2cb45db498f64ac07b098ee805d7d20",
+  "source_ic3_payload_start": "0xFDE830",
+  "source_ic3_payload_end_inclusive": "0xFDF02F",
+  "file": "IC3_BMAP_INITIAL_CHARGE_ON.eep",
+  "bytes": 2048,
+  "sha256": "01759a68f9f1c997cd1e5c4e7f1c61c08cead03eae6deef2f03c82a3e9e0ecce",
+  "changes": [
+    {
+      "eep_offset": "0x0000",
+      "before": "0x00",
+      "after": "0x01",
+      "xor": "0x01"
+    }
+  ],
+  "initial_charge_flag_before": 0,
+  "initial_charge_flag_after": 1,
+  "cleaning_flag_before": 0,
+  "cleaning_flag_after": 0,
+  "unchanged_bytes": 2047,
+  "logical_item": "0xF7",
+  "eeprom_logical_address": "0x0000",
+  "mask": "0x01",
+  "preferred_current_device_operation": "Read current logical byte 0; write current_value | 0x01, preserving other bits",
+  "evidence": {
+    "supplied_adjustment_program_sha256": "43937204e968868fddaf747738287114e0b27280b4ab4d9817f0de7946d5c7b9",
+    "item_row_va": "0x68F028",
+    "set_initial_charge_configuration_va": "0x69A2C8",
+    "named_action": "Set initial charge flag",
+    "program_description": "This will start initial ink charge when the printer will be turned on."
+  },
+  "limits": [
+    "Not a whole SPI image or an EFU; logical EEPROM zero is not physical IC3 offset zero",
+    "The 2KiB source snapshot differs from the earlier service backup in 242 bytes; capture chronology unknown",
+    "Full Data Copy restore can affect fields beyond this single bit; prefer supported individual flag writes",
+    "Enables an initial-charge request; does not fake a charge-complete state or override IES",
+    "No actual charging, boot or resolution of cartridge-installation error verified"
+  ]
+}
