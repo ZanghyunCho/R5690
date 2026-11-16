@@ -1,3 +1,10 @@
+# V4 WITHDRAWN — reported power-off during boot
+
+The user reports that the printer shuts off during boot after installing v4.
+The EFU has been removed from the current branch. Offline results below did
+not validate physical boot and must not be treated as evidence of usability.
+No replacement EFU is authorized by these results alone. Root cause pending.
+
 # Virtual CSIC rewrite: v4 offline candidate
 
 The old ink/maintenance V1 and T3400 CLUT v1 only overrode status/level
