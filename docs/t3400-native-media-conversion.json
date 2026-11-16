@@ -1,0 +1,65 @@
+{
+  "status": "NATIVE CONVERSION/SELECTION PROBES PASSED; UI ASSOCIATION UNRESOLVED",
+  "source": "artifacts/t3400-lut/decoded/71459089.crom.0.bin",
+  "source_sha256": "a4ebcb1e2c40a87d1bbfe66683e0d69b53c87aa1fef40958901aa747c31c5fc7",
+  "main_base": "0x43696000",
+  "cmm_media_conversion": "0x438D1118",
+  "caller": "0x438C69E8",
+  "caller_input_virtual_method_offset": "0x48",
+  "caller_output_byte_offset": "0xE",
+  "conversion_cases": [
+    {
+      "input": 0,
+      "result": 99
+    },
+    {
+      "input": 6,
+      "result": 102
+    },
+    {
+      "input": 15,
+      "result": 116
+    },
+    {
+      "input": 36,
+      "result": 130
+    },
+    {
+      "input": 178,
+      "result": 166
+    },
+    {
+      "input": 183,
+      "result": 167
+    },
+    {
+      "input": 184,
+      "result": 99
+    }
+  ],
+  "other_media_helper": {
+    "function": "0x438D0E70",
+    "input": 36,
+    "output": 178
+  },
+  "donor_catalogue_selection": {
+    "function": "recipient 0x48ABE280",
+    "media_enum": 102,
+    "media_label": "L_APMP_MK",
+    "resolution": [
+      1200,
+      1200
+    ],
+    "doc_type": "BASE",
+    "halftone": "DB",
+    "output_bits": 2,
+    "cmm_id": 14,
+    "sml_id": 213,
+    "dither_id": 702
+  },
+  "limits": [
+    "Numeric codes in UI labels, the 0x438D0E70 helper and CMM media conversion are different namespaces.",
+    "The actual Enhanced Matte job-setting object and its +0x48 method result are not yet traced.",
+    "No EFU or printer access; native catalogue selection uses synthetic inputs."
+  ]
+}

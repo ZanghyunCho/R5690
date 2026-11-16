@@ -55,3 +55,30 @@ No firmware has been released for this staging. V6 remains the working
 baseline. The user reports pumps operating and M nozzle dropout no longer
 occurring under their present conditions; this does not establish long-duration
 reliability or operation with physical chips removed.
+
+## Native donor media conversion follow-up
+
+`tools/trace_t3400_media_conversion.py` identifies donor main base 0x43696000
+using absolute jump-table targets that land exactly on ARM return stubs.
+It executes conversion 0x438D1118: input 6 returns media enum 102. The caller
+0x438C69E8 passes the result of the settings object's virtual method +0x48,
+then stores the converted byte at output offset +0xE.
+
+The original recipient catalogue selector also accepts the donor catalogue
+with synthetic media 102 / BASE / DB / 1200×1200 / OUT_BIT 2 and selects
+CMM 14, SML 213 and dither 702. This confirms the native catalogue relationship
+of enum 102 to L_APMP_MK and the exact data dependencies.
+
+A separate helper 0x438D0E70 converts input 36 to 178 (0xB2), but feeding 178
+to the CMM conversion returns 166, not 102. These are different namespaces.
+The actual Enhanced Matte job-settings object and its +0x48 result still need
+to be traced; a display-name code must not be substituted directly.
+
+The decoded dither header is version 3, 1024×1024, with stored bit width 12
+(header bytes 0x16=1 and 0x17=4). The native unpacker computes the bit width as
+8*byte[0x16]+byte[0x17]. Merely truncating thresholds to 8 bits is not a lossless
+transplant and has not been staged. Complete raster input/comparison semantics
+would need proof before any such representation change.
+
+Results are recorded in `t3400-native-media-conversion.json`. No new EFU is
+produced and the working V6 image is unchanged.
