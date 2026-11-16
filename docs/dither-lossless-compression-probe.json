@@ -1,0 +1,39 @@
+{
+  "status": "OFFLINE COMPRESSION FEASIBILITY ONLY; NO FIRMWARE DECODER IMPLEMENTED",
+  "matrices": [
+    {
+      "id": 662,
+      "min": 0,
+      "max": 4079,
+      "encodings": {
+        "original": {
+          "raw": 1572896,
+          "zlib": 1573382,
+          "lzma": 1573032
+        },
+        "bitplanes": {
+          "raw": 1572864,
+          "zlib": 1561771,
+          "lzma": 1551440
+        }
+      }
+    },
+    {
+      "id": 682,
+      "min": 0,
+      "max": 4079,
+      "encodings": {
+        "original": {
+          "raw": 1572896,
+          "zlib": 1573382,
+          "lzma": 1573032
+        },
+        "bitplanes": {
+          "raw": 1572864,
+          "zlib": 1561778,
+          "lzma": 1551420
+        }
+      }
+    }
+  ]
+}

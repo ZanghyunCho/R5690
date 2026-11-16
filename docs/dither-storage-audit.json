@@ -1,0 +1,59 @@
+{
+  "status": "APPEND LOCATIONS REJECTED: ORIGINAL NATIVE WRITES REPRODUCED",
+  "source_sha256": {
+    "main": "62afb3d436338cbe11ead05975d5a1c86949ad251a54d9ff4a2cb6bb2225fbcc",
+    "library": "e7216c5115bf14a530477b970a5291b627f49284bed64155702003b4b4e6aac1"
+  },
+  "main_append": {
+    "address": "0x4934adfc",
+    "pointer_literal": "0x484B9DE0",
+    "native_snippet": [
+      "0x484B95F8",
+      "0x484B960C"
+    ],
+    "synthetic_halfwords": [
+      42330,
+      23205
+    ],
+    "before": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f",
+    "after": "5aa5a55a0405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f"
+  },
+  "library_append": {
+    "address": "0x4836a674",
+    "pointer_literal": "0x4863C1E0",
+    "caller": "0x4863BA0C",
+    "native_copy": "0x4891CAC1 (Thumb)",
+    "synthetic_string": "owned-runtime-string\u0000",
+    "before": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f",
+    "after": "6f776e65642d72756e74696d652d737472696e670015161718191a1b1c1d1e1f"
+  },
+  "donor_resources": [
+    {
+      "id": 662,
+      "bytes": 1572896,
+      "sha256": "8b5a0983acfb5ceaa60594ec4b78764584f25c5e595e3b11dec89a044a1c90d4"
+    },
+    {
+      "id": 682,
+      "bytes": 1572896,
+      "sha256": "0550aafffdf1274cf87438d5e0736abc0f57bc1e769e61487785f7762217d8d1"
+    },
+    {
+      "id": 702,
+      "bytes": 24,
+      "sha256": "924c0d1bb967fa1cdc854cb91fd479b8fb5df7df0eb436e6102e3915b488aad9"
+    }
+  ],
+  "required_raw_bytes": 3145816,
+  "nominal_library_to_main_gap": 1198476,
+  "conclusions": [
+    "Decoded image EOF is not the end of runtime ownership; both exact EOF addresses are live mutable storage.",
+    "Appending resources at either EOF would conflict with original stores; no such firmware was built.",
+    "Even the nominal library-to-main gap is smaller than the exact donor resource set, and its start is already live storage.",
+    "A separate owned storage/loading mechanism or proven bounded relocation is required."
+  ],
+  "limits": [
+    "Native snippets and strcpy only; synthetic values, no complete boot, MMU or printer hardware emulation.",
+    "No ROM window mapping or safe free flash partition has been established."
+  ]
+}

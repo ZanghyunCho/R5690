@@ -120,3 +120,10 @@ finding code 215 in the independent UI-name and IPP-media tables. Those notes
 are superseded by the confirmed identity section. Native assertions cover both
 records, the CMM producer, and the catalogue selection. The large dither storage
 and full raster-processing blockers remain; no new EFU is released.
+
+## Storage audit update
+
+`dither-storage-audit.md` records native overwrites at both decoded image EOFs.
+Direct library/main append is rejected. Exact reversible bit-plane compression
+also remains about 3.1 MB for the two matrices, so the tested codecs do not
+resolve storage. V6 and the offline SML-only image are unchanged.
