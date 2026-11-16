@@ -60,3 +60,33 @@ working colour LUT is retained as a separate existing artifact.
 
 Evidence: `virtual-csic-transport-validation.json`. The script asserts every
 described test and writes its report to `artifacts/virtual-csic-adapter/`.
+
+## Cold-start and registration follow-up
+
+The user restored all three SPI ROMs with stock firmware when the earlier
+problem disappeared. This does not isolate a single IC or a single flag.
+The later IC3 dump contains a separate `1WAY0001` sector at `0xFC0000`
+with objects `0x04400001` (853 records of 24 bytes) and `0x04400002`
+(4080 bytes). Native routines link these objects to chip identity/counter
+history, beyond the 2KB service EEPROM backup. No history is erased.
+
+New unreleased scripts generate 24 SKU/slot metadata candidates using the
+stock part table and native field packer/capacity parser. A cold-start ARM
+adapter installs the appropriate candidate and four stable in-boot UIDs.
+All 24 cold-load/write/reload cases pass with trapped physical bus calls
+remaining unused. This is synthetic execution, not a printer boot test.
+
+The integrated replay of stock registration `0x47C582B4` currently FAILS:
+SKU 0x10, slot 0 returns 1 with detail 0x27. The original routine
+`0x47C573CC` writes test fields and compares the readback. The current
+RAM transport does not yet satisfy this protocol. Initializing fields
+0x17/0x18 to the comparison constants instead fails the earlier reserved
+flag check (detail 0x38); that attempted workaround was removed.
+Do not bypass either failure or package this controller as an EFU.
+
+`tools/prototype_virtual_csic_registration.py` is an intentionally failing
+integration probe, not a passing validation or a released patch. Its virtual
+acceptance adapters replace vendor-chip authentication with a virtual-slot
+contract; they do not emulate real-chip cryptography. Discovery, reboot
+persistence, unlimited remaining semantics and physical ink supply remain
+unverified.
