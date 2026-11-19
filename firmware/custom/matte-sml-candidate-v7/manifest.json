@@ -1,0 +1,154 @@
+{
+  "status": "V7 CANDIDATE: V6 + donor Enhanced Matte SML 213 as R5691 SML 214; physical boot and print unverified",
+  "file": "FWE642TL_GR_VIRTUAL_CSIC_MB_T3400_CLUT_MATTE_SML_CANDIDATE_v7.EFU",
+  "bytes": 114855984,
+  "sha256": "5040470409309b63d070841cd3606858bf891e6a507c42ded7e589c805207859",
+  "parent_efu_sha256": "290efca81c5a061c819a1bea03c11a676bd5eee1847e823393ae850ade008e26",
+  "rcx_sha256": "c9a5d5bc48504c7ae5ca3f376c3221a64d79077c7f42c3b43250fd7421d2a118",
+  "library_before_sha256": "43f7d5e97f1903f81dc53e5d80c1e614e53bb247638327838dfad49707e1f5ab",
+  "library_after_sha256": "b9e4308e3a25c1adefe9e4b37e9992e084c47151618996d101178c09ecc3328f",
+  "changed_library_bytes": 656,
+  "table_pointer_field": "0x48215100",
+  "inserted_range": [
+    "0x482220bb",
+    "0x4822234d"
+  ],
+  "resources_decoded_with_original_arm": 87,
+  "resources_changed": [
+    214
+  ],
+  "resource_214_decoded_sha256": "ae4dd99102cf032358ee35b0cb79f79ac0fff71fc7393d4cd3e408f8ee1fa964",
+  "donor_sml_213_sha256": "ae4dd99102cf032358ee35b0cb79f79ac0fff71fc7393d4cd3e408f8ee1fa964",
+  "affected_catalogue_rows": "PLAIN 1200x1200 OUT_BIT 2: CMM 14 (BASE), 414 (E-RGB), 574 (E-BIZ-COLOR)",
+  "native_crom": {
+    "segments": [
+      {
+        "slot": "0x40000",
+        "segment": 0,
+        "bytes": 519876,
+        "sha256": "1ab8d5541e272e82c0e18386f6e992a9ad4b1f66955e0b4824078fd21c230e14",
+        "native_arm_exact": true
+      },
+      {
+        "slot": "0x40000",
+        "segment": 1,
+        "bytes": 2995828,
+        "sha256": "b9e4308e3a25c1adefe9e4b37e9992e084c47151618996d101178c09ecc3328f",
+        "native_arm_exact": true
+      },
+      {
+        "slot": "0x440000",
+        "segment": 0,
+        "bytes": 1310720,
+        "sha256": "4e75ad9b22d56eb21eb116b3fb1b3c2fd980dab9e6db172b3b292bd4da204ea4",
+        "native_arm_exact": true
+      },
+      {
+        "slot": "0x440000",
+        "segment": 1,
+        "bytes": 65536,
+        "sha256": "8f58305746eb15d380db40271525d08d0a4f5aaa6c493de022689c1bc63f0071",
+        "native_arm_exact": true
+      },
+      {
+        "slot": "0x440000",
+        "segment": 2,
+        "bytes": 6824,
+        "sha256": "a5d376c29e6847bccd8a07d67fdb952caf77f055a47ebe0f139c16f87948a846",
+        "native_arm_exact": true
+      }
+    ],
+    "all_segment_header_checks": [
+      {
+        "slot": "0x40000",
+        "segment": 0,
+        "old_position": "0x40004",
+        "new_position": "0x40004",
+        "native_header_and_DHT_setup_pass": true
+      },
+      {
+        "slot": "0x40000",
+        "segment": 1,
+        "old_position": "0x7556b",
+        "new_position": "0x7556b",
+        "native_header_and_DHT_setup_pass": true
+      },
+      {
+        "slot": "0x440000",
+        "segment": 0,
+        "old_position": "0x440004",
+        "new_position": "0x440004",
+        "native_header_and_DHT_setup_pass": true
+      },
+      {
+        "slot": "0x440000",
+        "segment": 1,
+        "old_position": "0x4c438c",
+        "new_position": "0x4c438c",
+        "native_header_and_DHT_setup_pass": true
+      },
+      {
+        "slot": "0x440000",
+        "segment": 2,
+        "old_position": "0x4c8f9a",
+        "new_position": "0x4c8f9a",
+        "native_header_and_DHT_setup_pass": true
+      }
+    ],
+    "stock_descriptor": [
+      "0x244000a",
+      "0x304",
+      "0x65060",
+      "0xe",
+      "0x3e4a2",
+      "0x6536c",
+      "0x1f01c"
+    ],
+    "modified_descriptor": [
+      "0x244000a",
+      "0x304",
+      "0x65060",
+      "0xe",
+      "0x3e4a2",
+      "0x6536c",
+      "0x1f01c"
+    ],
+    "original_arm_hardware_setup_passed": true,
+    "dht_bank_writes_byte_identical": true,
+    "limitation": "Original header/setup and LZ loop execute; peripheral Huffman decoding and full boot are not emulated"
+  },
+  "crom_repair": {
+    "stock_dht_byte_identical": true,
+    "original_tokens": 137679,
+    "new_tokens": 137682,
+    "invalidated_copies_replaced": 12,
+    "original_bytes": 2490659,
+    "new_bytes": 2491441
+  },
+  "all_14_records_verified": true,
+  "zip_readback_identical": true,
+  "allowed_rcx_ranges": [
+    [
+      114606478,
+      114606480
+    ],
+    [
+      114606492,
+      114606512
+    ],
+    [
+      115099331,
+      119075160
+    ]
+  ],
+  "controller_main_boot_dither_byte_identical_to_v6": true,
+  "donor_verified_against": "FWF649TL_LN22Q1.efu (2026-01-21): SML 213 and dither 702/662/682 hashes equal earlier donor",
+  "limits": [
+    "Only the dot-size conversion (SML) changes. Stock R5691 dither 652 is retained; donor dither 702/662/682 is not installed.",
+    "Donor SML was designed together with donor 12-bit 1024x1024 dither; combination with stock dither is untested on paper.",
+    "Same print head reported by user; drive waveform equality not verified.",
+    "Only plain paper 1200x1200 modes use SML 214. Other qualities/media are unchanged. Driver path selection unverified.",
+    "Independent rcx_correct cross-check was unavailable in this environment; in-tool IPL checksum/SHA-1 verification passed.",
+    "Physical update acceptance, boot, ink duty and print quality have not been tested."
+  ]
+}

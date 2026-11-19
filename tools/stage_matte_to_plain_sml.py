@@ -28,7 +28,7 @@ def main():
     target=[r for r in rows(cat) if r.get('cSMB-ID')=='214' or r.get('mSMB-ID')=='214']
     assert {r['CMM-ID'] for r in target}=={'14','414','574'}
     assert all(r['media']=='PLAIN' and r['H-RES']==r['V-RES']=='1200' and r['OUT_BIT']=='2' for r in target)
-    donor=[r for r in rows(donor_cat) if r.get('media')=='L_APMP_MK' and r.get('DocType')=='BASE' and r.get('H-RES')=='1200' and r.get('V-RES')=='1200']
+    donor=[r for r in rows(donor_cat) if r.get('media')=='L_APMP_MK' and r.get('DocType')=='BASE' and r.get('H-RES')=='1200' and r.get('V-RES')=='1200' and r.get('subType','0')=='0']
     assert len(donor)==1 and donor[0]['cSMB-ID']==donor[0]['mSMB-ID']=='213' and donor[0]['OUT_BIT']=='2'
     source,source_record=blob('t3400',213);codec=Codec();stream=codec.encode(source)
     assert codec.decode(stream,len(source))==source

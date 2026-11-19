@@ -7,3 +7,4 @@ firmware/custom/virtual-csic-t3400-candidate-v4/FWE642TL_GR_VIRTUAL_CSIC_MB_T340
 firmware/original/FWE642TL_STOCK.EFU filter=lfs diff=lfs merge=lfs -text
 firmware/custom/virtual-csic-t3400-candidate-v5/FWE642TL_GR_VIRTUAL_CSIC_MB_T3400_CLUT_CANDIDATE_v5.EFU filter=lfs diff=lfs merge=lfs -text
 firmware/custom/virtual-csic-t3400-candidate-v6/FWE642TL_GR_VIRTUAL_CSIC_MB_T3400_CLUT_CANDIDATE_v6.EFU filter=lfs diff=lfs merge=lfs -text
+firmware/custom/matte-sml-candidate-v7/FWE642TL_GR_VIRTUAL_CSIC_MB_T3400_CLUT_MATTE_SML_CANDIDATE_v7.EFU filter=lfs diff=lfs merge=lfs -text
