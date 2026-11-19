@@ -1,0 +1,300 @@
+{
+  "status": "NATIVE STATUS-EVALUATOR CHECK; synthetic thresholds and mocks; no printer",
+  "controller_before_sha256": "4e75ad9b22d56eb21eb116b3fb1b3c2fd980dab9e6db172b3b292bd4da204ea4",
+  "controller_after_sha256": "75a9c2dadc81879c6d00c075b0fab8021173fab30960c2fa68c0e074df133767",
+  "patch": {
+    "function": "0x47C61B24",
+    "replaced": [
+      "0x47c61b78",
+      "0x47c61bbc"
+    ],
+    "operation": "cumulative ink-use reads 0x808/0x809/0x80D/0x80E -> 0 for status evaluation only"
+  },
+  "cases": [
+    {
+      "scenario": "all fresh",
+      "used": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "sensor_flag": 0,
+      "v7": {
+        "state": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "record": [
+          128,
+          128,
+          128,
+          128
+        ],
+        "level": [
+          100,
+          100,
+          100,
+          100
+        ],
+        "usage_property_reads": [
+          "0x808",
+          "0x809",
+          "0x80d",
+          "0x80e"
+        ]
+      },
+      "patched": {
+        "state": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "record": [
+          128,
+          128,
+          128,
+          128
+        ],
+        "level": [
+          100,
+          100,
+          100,
+          100
+        ],
+        "usage_property_reads": []
+      }
+    },
+    {
+      "scenario": "C near end (photo)",
+      "used": [
+        100000,
+        950000,
+        0,
+        0
+      ],
+      "sensor_flag": 0,
+      "v7": {
+        "state": [
+          0,
+          4,
+          0,
+          0
+        ],
+        "record": [
+          128,
+          131,
+          128,
+          128
+        ],
+        "level": [
+          90,
+          5,
+          100,
+          100
+        ],
+        "usage_property_reads": [
+          "0x808",
+          "0x809",
+          "0x80d",
+          "0x80e"
+        ]
+      },
+      "patched": {
+        "state": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "record": [
+          128,
+          128,
+          128,
+          128
+        ],
+        "level": [
+          100,
+          100,
+          100,
+          100
+        ],
+        "usage_property_reads": []
+      }
+    },
+    {
+      "scenario": "C past end",
+      "used": [
+        0,
+        1200000,
+        0,
+        0
+      ],
+      "sensor_flag": 0,
+      "v7": {
+        "state": [
+          0,
+          6,
+          0,
+          0
+        ],
+        "record": [
+          128,
+          133,
+          128,
+          128
+        ],
+        "level": [
+          100,
+          0,
+          100,
+          100
+        ],
+        "usage_property_reads": [
+          "0x808",
+          "0x809",
+          "0x80d",
+          "0x80e"
+        ]
+      },
+      "patched": {
+        "state": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "record": [
+          128,
+          128,
+          128,
+          128
+        ],
+        "level": [
+          100,
+          100,
+          100,
+          100
+        ],
+        "usage_property_reads": []
+      }
+    },
+    {
+      "scenario": "sensor flag set, counters fresh",
+      "used": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "sensor_flag": 1,
+      "v7": {
+        "state": [
+          6,
+          6,
+          6,
+          6
+        ],
+        "record": [
+          128,
+          128,
+          128,
+          128
+        ],
+        "level": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "usage_property_reads": [
+          "0x808",
+          "0x809",
+          "0x80d",
+          "0x80e"
+        ]
+      },
+      "patched": {
+        "state": [
+          6,
+          6,
+          6,
+          6
+        ],
+        "record": [
+          128,
+          128,
+          128,
+          128
+        ],
+        "level": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "usage_property_reads": []
+      }
+    },
+    {
+      "scenario": "sensor flag set, counters high",
+      "used": [
+        0,
+        1200000,
+        0,
+        0
+      ],
+      "sensor_flag": 1,
+      "v7": {
+        "state": [
+          6,
+          6,
+          6,
+          6
+        ],
+        "record": [
+          128,
+          133,
+          128,
+          128
+        ],
+        "level": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "usage_property_reads": [
+          "0x808",
+          "0x809",
+          "0x80d",
+          "0x80e"
+        ]
+      },
+      "patched": {
+        "state": [
+          6,
+          6,
+          6,
+          6
+        ],
+        "record": [
+          128,
+          128,
+          128,
+          128
+        ],
+        "level": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "usage_property_reads": []
+      }
+    }
+  ]
+}

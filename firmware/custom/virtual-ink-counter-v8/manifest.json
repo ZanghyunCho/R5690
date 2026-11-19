@@ -1,0 +1,150 @@
+{
+  "status": "V8 CANDIDATE: V7 + virtual-cartridge ink-use status fix; physical boot unverified",
+  "file": "FWE642TL_GR_VIRTUAL_CSIC_MB_T3400_CLUT_MATTE_SML_INKCOUNT_CANDIDATE_v8.EFU",
+  "bytes": 114855985,
+  "sha256": "84dc8553e9184f4dcaf85425e7518ab737a416d07aa1fa44717b531784b641dc",
+  "parent_efu_sha256": "5040470409309b63d070841cd3606858bf891e6a507c42ded7e589c805207859",
+  "rcx_sha256": "1b9d2310cdeca433cb56664c81ef23caaa082909e1e43316194ba78c9346b410",
+  "controller_before_sha256": "4e75ad9b22d56eb21eb116b3fb1b3c2fd980dab9e6db172b3b292bd4da204ea4",
+  "controller_after_sha256": "75a9c2dadc81879c6d00c075b0fab8021173fab30960c2fa68c0e074df133767",
+  "patch": {
+    "function": "0x47C61B24",
+    "replaced": [
+      "0x47c61b78",
+      "0x47c61bbc"
+    ],
+    "operation": "cumulative ink-use reads 0x808/0x809/0x80D/0x80E -> 0 for status evaluation only"
+  },
+  "native_status_check": "docs/virtual-ink-counter-fix.json",
+  "native_crom": {
+    "segments": [
+      {
+        "slot": "0x40000",
+        "segment": 0,
+        "bytes": 519876,
+        "sha256": "1ab8d5541e272e82c0e18386f6e992a9ad4b1f66955e0b4824078fd21c230e14",
+        "native_arm_exact": true
+      },
+      {
+        "slot": "0x40000",
+        "segment": 1,
+        "bytes": 2995828,
+        "sha256": "b9e4308e3a25c1adefe9e4b37e9992e084c47151618996d101178c09ecc3328f",
+        "native_arm_exact": true
+      },
+      {
+        "slot": "0x440000",
+        "segment": 0,
+        "bytes": 1310720,
+        "sha256": "75a9c2dadc81879c6d00c075b0fab8021173fab30960c2fa68c0e074df133767",
+        "native_arm_exact": true
+      },
+      {
+        "slot": "0x440000",
+        "segment": 1,
+        "bytes": 65536,
+        "sha256": "8f58305746eb15d380db40271525d08d0a4f5aaa6c493de022689c1bc63f0071",
+        "native_arm_exact": true
+      },
+      {
+        "slot": "0x440000",
+        "segment": 2,
+        "bytes": 6824,
+        "sha256": "a5d376c29e6847bccd8a07d67fdb952caf77f055a47ebe0f139c16f87948a846",
+        "native_arm_exact": true
+      }
+    ],
+    "all_segment_header_checks": [
+      {
+        "slot": "0x40000",
+        "segment": 0,
+        "old_position": "0x40004",
+        "new_position": "0x40004",
+        "native_header_and_DHT_setup_pass": true
+      },
+      {
+        "slot": "0x40000",
+        "segment": 1,
+        "old_position": "0x7556b",
+        "new_position": "0x7556b",
+        "native_header_and_DHT_setup_pass": true
+      },
+      {
+        "slot": "0x440000",
+        "segment": 0,
+        "old_position": "0x440004",
+        "new_position": "0x440004",
+        "native_header_and_DHT_setup_pass": true
+      },
+      {
+        "slot": "0x440000",
+        "segment": 1,
+        "old_position": "0x4c438c",
+        "new_position": "0x4c43d4",
+        "native_header_and_DHT_setup_pass": true
+      },
+      {
+        "slot": "0x440000",
+        "segment": 2,
+        "old_position": "0x4c8f9a",
+        "new_position": "0x4c8fe2",
+        "native_header_and_DHT_setup_pass": true
+      }
+    ],
+    "stock_descriptor": [
+      "0x244000a",
+      "0x304",
+      "0x65060",
+      "0xe",
+      "0x3e4a2",
+      "0x6536c",
+      "0x1f01c"
+    ],
+    "modified_descriptor": [
+      "0x244000a",
+      "0x304",
+      "0x65050",
+      "0xe",
+      "0x3e4a2",
+      "0x6535c",
+      "0x1f074"
+    ],
+    "original_arm_hardware_setup_passed": true,
+    "dht_bank_writes_byte_identical": true,
+    "limitation": "Original header/setup and LZ loop execute; peripheral Huffman decoding and full boot are not emulated"
+  },
+  "crom_repair": {
+    "stock_dht_byte_identical": true,
+    "original_tokens": 255138,
+    "new_tokens": 255138,
+    "invalidated_copies_replaced": 20,
+    "original_bytes": 541576,
+    "new_bytes": 541648
+  },
+  "all_14_records_verified": true,
+  "zip_readback_identical": true,
+  "allowed_rcx_ranges": [
+    [
+      114606478,
+      114606480
+    ],
+    [
+      114606492,
+      114606512
+    ],
+    [
+      119075160,
+      119664984
+    ]
+  ],
+  "library_main_boot_byte_identical_to_v7": true,
+  "cause": "Virtual identities never change, so the stock new-pack reset of cumulative ink use (0x47C58B5C -> 0x47C5BB68) never runs; the counters reach near-end (0x83) and then ink end.",
+  "limits": [
+    "Only status evaluator 0x47C61B24 ignores the cumulative counters. Counters still accumulate in NVRAM; virtual chip synchronisation is unchanged.",
+    "Other consumers of the counters (e.g. 0x47C5A488 level cache, 0x47D10C88) are unchanged; their user-visible effect is unverified.",
+    "Physical ink-end sensor flag path (0x47D5EE1C set by 0x47C62038) is retained; its sensor identity is inferred from debounced sampling, not a hardware trace.",
+    "Ink level is no longer estimated from usage. Watch the packs physically; empty packs rely on the sensor path only.",
+    "Synthetic capacity thresholds and mocked helpers in the native check; no complete boot or printer test.",
+    "Independent rcx_correct cross-check unavailable in this environment."
+  ]
+}
