@@ -1,0 +1,305 @@
+{
+  "status": "V9 NATIVE REFILL-RESET CHECKS PASSED; synthetic properties/OS mocks; no printer",
+  "controller_v6_sha256": "4e75ad9b22d56eb21eb116b3fb1b3c2fd980dab9e6db172b3b292bd4da204ea4",
+  "controller_v9_sha256": "fb93ab5abde0daa3fedaf4d8cce15048f40db614b5dc0c99317b4874c28d9c10",
+  "patch": {
+    "helper": "0x47c8d8dc",
+    "helper_bytes": 200,
+    "scan_hook": "0x47c58ab0",
+    "level_hooks_restored": [
+      "0x47cab5a4",
+      "0x47ca99dc"
+    ],
+    "dead_area_restored": [
+      "0x47c63e1c",
+      "0x47c63ea4"
+    ],
+    "reset_states": "near-end 4, end 5/6 at 0x47D5EE18",
+    "manual_trigger": "property 0x75B == 0 -> all slots, then 0x75B := 1",
+    "controller_sha256": "fb93ab5abde0daa3fedaf4d8cce15048f40db614b5dc0c99317b4874c28d9c10"
+  },
+  "cases": [
+    {
+      "sku": "0x10",
+      "initial": 10000000,
+      "counts_before": [
+        99,
+        172,
+        172,
+        172
+      ],
+      "counts_after_slot_resets": [
+        99,
+        0,
+        0,
+        172
+      ]
+    },
+    {
+      "sku": "0x10",
+      "initial": 100000000,
+      "counts_before": [
+        990,
+        1717,
+        1717,
+        1717
+      ],
+      "counts_after_slot_resets": [
+        990,
+        0,
+        0,
+        1717
+      ]
+    },
+    {
+      "sku": "0x20",
+      "initial": 10000000,
+      "counts_before": [
+        99,
+        172,
+        172,
+        172
+      ],
+      "counts_after_slot_resets": [
+        99,
+        0,
+        0,
+        172
+      ]
+    },
+    {
+      "sku": "0x20",
+      "initial": 100000000,
+      "counts_before": [
+        990,
+        1717,
+        1717,
+        1717
+      ],
+      "counts_after_slot_resets": [
+        990,
+        0,
+        0,
+        1717
+      ]
+    },
+    {
+      "sku": "0x21",
+      "initial": 10000000,
+      "counts_before": [
+        221,
+        342,
+        342,
+        342
+      ],
+      "counts_after_slot_resets": [
+        221,
+        0,
+        0,
+        342
+      ]
+    },
+    {
+      "sku": "0x21",
+      "initial": 100000000,
+      "counts_before": [
+        2210,
+        3419,
+        3419,
+        3419
+      ],
+      "counts_after_slot_resets": [
+        2210,
+        0,
+        0,
+        3419
+      ]
+    },
+    {
+      "sku": "0x22",
+      "initial": 10000000,
+      "counts_before": [
+        99,
+        172,
+        172,
+        172
+      ],
+      "counts_after_slot_resets": [
+        99,
+        0,
+        0,
+        172
+      ]
+    },
+    {
+      "sku": "0x22",
+      "initial": 100000000,
+      "counts_before": [
+        990,
+        1717,
+        1717,
+        1717
+      ],
+      "counts_after_slot_resets": [
+        990,
+        0,
+        0,
+        1717
+      ]
+    },
+    {
+      "sku": "0x40",
+      "initial": 10000000,
+      "counts_before": [
+        69,
+        172,
+        172,
+        172
+      ],
+      "counts_after_slot_resets": [
+        69,
+        0,
+        0,
+        172
+      ]
+    },
+    {
+      "sku": "0x40",
+      "initial": 100000000,
+      "counts_before": [
+        690,
+        1717,
+        1717,
+        1717
+      ],
+      "counts_after_slot_resets": [
+        690,
+        0,
+        0,
+        1717
+      ]
+    },
+    {
+      "sku": "0x50",
+      "initial": 10000000,
+      "counts_before": [
+        99,
+        172,
+        172,
+        172
+      ],
+      "counts_after_slot_resets": [
+        99,
+        0,
+        0,
+        172
+      ]
+    },
+    {
+      "sku": "0x50",
+      "initial": 100000000,
+      "counts_before": [
+        990,
+        1717,
+        1717,
+        1717
+      ],
+      "counts_after_slot_resets": [
+        990,
+        0,
+        0,
+        1717
+      ]
+    }
+  ],
+  "display_clear_preserves_helper": true,
+  "status_evaluator": {
+    "near_end": {
+      "state": [
+        0,
+        4,
+        0,
+        0
+      ],
+      "record": [
+        128,
+        131,
+        128,
+        128
+      ],
+      "level": [
+        90,
+        5,
+        100,
+        100
+      ],
+      "usage_property_reads": [
+        "0x808",
+        "0x809",
+        "0x80d",
+        "0x80e"
+      ]
+    },
+    "end": {
+      "state": [
+        0,
+        6,
+        0,
+        0
+      ],
+      "record": [
+        128,
+        133,
+        128,
+        128
+      ],
+      "level": [
+        100,
+        0,
+        100,
+        100
+      ],
+      "usage_property_reads": [
+        "0x808",
+        "0x809",
+        "0x80d",
+        "0x80e"
+      ]
+    },
+    "fresh": {
+      "state": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "record": [
+        128,
+        128,
+        128,
+        128
+      ],
+      "level": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "usage_property_reads": [
+        "0x808",
+        "0x809",
+        "0x80d",
+        "0x80e"
+      ]
+    }
+  },
+  "checks": [
+    "boot-like scan does not reset",
+    "near-end(4)/end(6) slot resets on next scan, others unchanged",
+    "virtual chip counter follows reset; commit and re-registration succeed afterwards",
+    "MB counter 0x75B==0 resets all once and is consumed (set to 1)",
+    "property manager not ready -> no action",
+    "V6 control never resets",
+    "stock near-end/end/level reporting active"
+  ]
+}

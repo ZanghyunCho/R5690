@@ -1,0 +1,164 @@
+{
+  "status": "V9 CANDIDATE: V7 + real ink levels, stock ink-end stop, refill reset on pack re-check; physical boot unverified",
+  "file": "FWE642TL_GR_VIRTUAL_CSIC_MB_T3400_CLUT_MATTE_SML_REFILL_CANDIDATE_v9.EFU",
+  "bytes": 114855843,
+  "sha256": "82bf94481246962096d27f141196c3a43b5377a2d673e127c73f43b294228df4",
+  "parent_efu_sha256": "5040470409309b63d070841cd3606858bf891e6a507c42ded7e589c805207859",
+  "rcx_sha256": "814ce712376b3f02966651068f28c3ee3af47b552b14d04d0311c170214335d9",
+  "controller_before_sha256": "4e75ad9b22d56eb21eb116b3fb1b3c2fd980dab9e6db172b3b292bd4da204ea4",
+  "controller_after_sha256": "fb93ab5abde0daa3fedaf4d8cce15048f40db614b5dc0c99317b4874c28d9c10",
+  "patch": {
+    "helper": "0x47c8d8dc",
+    "helper_bytes": 200,
+    "scan_hook": "0x47c58ab0",
+    "level_hooks_restored": [
+      "0x47cab5a4",
+      "0x47ca99dc"
+    ],
+    "dead_area_restored": [
+      "0x47c63e1c",
+      "0x47c63ea4"
+    ],
+    "reset_states": "near-end 4, end 5/6 at 0x47D5EE18",
+    "manual_trigger": "property 0x75B == 0 -> all slots, then 0x75B := 1",
+    "controller_sha256": "fb93ab5abde0daa3fedaf4d8cce15048f40db614b5dc0c99317b4874c28d9c10"
+  },
+  "native_checks": "docs/virtual-ink-refill-v9.json",
+  "v6_integration_suite_on_v9": "PASS: 72 scans, 144 commits, 144 re-registrations (MB counter mocked nonzero)",
+  "startup_checks_on_v9": "PASS: 64 early setter cases, 36 pre-activation entry controls",
+  "native_crom": {
+    "segments": [
+      {
+        "slot": "0x40000",
+        "segment": 0,
+        "bytes": 519876,
+        "sha256": "1ab8d5541e272e82c0e18386f6e992a9ad4b1f66955e0b4824078fd21c230e14",
+        "native_arm_exact": true
+      },
+      {
+        "slot": "0x40000",
+        "segment": 1,
+        "bytes": 2995828,
+        "sha256": "b9e4308e3a25c1adefe9e4b37e9992e084c47151618996d101178c09ecc3328f",
+        "native_arm_exact": true
+      },
+      {
+        "slot": "0x440000",
+        "segment": 0,
+        "bytes": 1310720,
+        "sha256": "fb93ab5abde0daa3fedaf4d8cce15048f40db614b5dc0c99317b4874c28d9c10",
+        "native_arm_exact": true
+      },
+      {
+        "slot": "0x440000",
+        "segment": 1,
+        "bytes": 65536,
+        "sha256": "8f58305746eb15d380db40271525d08d0a4f5aaa6c493de022689c1bc63f0071",
+        "native_arm_exact": true
+      },
+      {
+        "slot": "0x440000",
+        "segment": 2,
+        "bytes": 6824,
+        "sha256": "a5d376c29e6847bccd8a07d67fdb952caf77f055a47ebe0f139c16f87948a846",
+        "native_arm_exact": true
+      }
+    ],
+    "all_segment_header_checks": [
+      {
+        "slot": "0x40000",
+        "segment": 0,
+        "old_position": "0x40004",
+        "new_position": "0x40004",
+        "native_header_and_DHT_setup_pass": true
+      },
+      {
+        "slot": "0x40000",
+        "segment": 1,
+        "old_position": "0x7556b",
+        "new_position": "0x7556b",
+        "native_header_and_DHT_setup_pass": true
+      },
+      {
+        "slot": "0x440000",
+        "segment": 0,
+        "old_position": "0x440004",
+        "new_position": "0x440004",
+        "native_header_and_DHT_setup_pass": true
+      },
+      {
+        "slot": "0x440000",
+        "segment": 1,
+        "old_position": "0x4c438c",
+        "new_position": "0x4c447e",
+        "native_header_and_DHT_setup_pass": true
+      },
+      {
+        "slot": "0x440000",
+        "segment": 2,
+        "old_position": "0x4c8f9a",
+        "new_position": "0x4c908c",
+        "native_header_and_DHT_setup_pass": true
+      }
+    ],
+    "stock_descriptor": [
+      "0x244000a",
+      "0x304",
+      "0x65060",
+      "0xe",
+      "0x3e4a2",
+      "0x6536c",
+      "0x1f01c"
+    ],
+    "modified_descriptor": [
+      "0x244000a",
+      "0x304",
+      "0x65010",
+      "0xe",
+      "0x3e4a2",
+      "0x6531c",
+      "0x1f15e"
+    ],
+    "original_arm_hardware_setup_passed": true,
+    "dht_bank_writes_byte_identical": true,
+    "limitation": "Original header/setup and LZ loop execute; peripheral Huffman decoding and full boot are not emulated"
+  },
+  "crom_repair": {
+    "stock_dht_byte_identical": true,
+    "original_tokens": 255138,
+    "new_tokens": 255138,
+    "invalidated_copies_replaced": 75,
+    "original_bytes": 541576,
+    "new_bytes": 541818
+  },
+  "all_14_records_verified": true,
+  "zip_readback_identical": true,
+  "allowed_rcx_ranges": [
+    [
+      114606478,
+      114606480
+    ],
+    [
+      114606492,
+      114606512
+    ],
+    [
+      119075160,
+      119664984
+    ]
+  ],
+  "library_main_boot_byte_identical_to_v7": true,
+  "v8_status_override_included": false,
+  "usage": [
+    "Levels drop with use; at ink end printing stops as stock.",
+    "Refill, then open and close the ink cover (pack re-check): every colour in near-end or end state is reset to full.",
+    "All colours at once: service program Maintenance Box counter Initialize, then power cycle."
+  ],
+  "limits": [
+    "Which physical action triggers the stock full scan 0x47C58AB0 (cover close / replacement flow) is inferred from callers, not traced on hardware.",
+    "Property 0x75B is read by the stock maintenance-box gate; its link to EEPROM 0x28-0x29 written by the service program is inferred, not proven.",
+    "A colour that is merely near-end is also reset when the cover is closed, even without refilling.",
+    "Synthetic properties, OS and GPIO mocks; no complete boot or printer test.",
+    "Independent rcx_correct cross-check unavailable in this environment."
+  ]
+}
